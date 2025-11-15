@@ -1,9 +1,971 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ONDA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ONDA – Marketing, Advertising & Brand Creation</title>
+  <meta name="description" content="ONDA is a marketing and brand creation studio specialising in digital campaigns, content production, influencer partnerships and European market entry." />
+
+  <style>
+    :root {
+      --bg: #05060a;
+      --bg-soft: #0e1017;
+      --card: #11141f;
+      --accent: #00b4d8;
+      --accent-soft: rgba(0, 180, 216, 0.1);
+      --text: #f5f5f5;
+      --muted: #9aa0b5;
+      --border: #222631;
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+      --max-width: 1080px;
+      --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.55);
+      --transition: 200ms ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #141821 0, #05060a 55%);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    main {
+      min-height: 100vh;
+    }
+
+    .shell {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* NAVBAR */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(22px);
+      background: linear-gradient(
+        to bottom,
+        rgba(5, 6, 10, 0.95),
+        rgba(5, 6, 10, 0.7),
+        transparent
+      );
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 0.25rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .logo-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      background: radial-gradient(circle at 20% 0, #48cae4, #030711 70%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .logo-wave {
+      width: 140%;
+      height: 140%;
+      background-image: radial-gradient(
+          circle at 0 80%,
+          rgba(255, 255, 255, 0.22) 0,
+          transparent 55%
+        ),
+        linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.2) 0,
+          transparent 45%,
+          transparent 55%,
+          rgba(255, 255, 255, 0.18) 100%
+        );
+      mix-blend-mode: screen;
+      opacity: 0.9;
+      transform: translateY(8%);
+    }
+
+    .logo-text {
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.3rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .nav-links a {
+      position: relative;
+      padding-bottom: 0.2rem;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), #72efdd);
+      border-radius: 999px;
+      transition: width var(--transition);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      padding: 0.45rem 0.95rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(0, 180, 216, 0.55);
+      background: radial-gradient(circle at top left, #00b4d8 0, #05060a 60%);
+      color: #fdfdfd;
+      font-size: 0.86rem;
+      font-weight: 500;
+      box-shadow: 0 10px 30px rgba(0, 180, 216, 0.28);
+      cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition),
+        background var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .nav-cta span {
+      font-size: 1.1rem;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 40px rgba(0, 180, 216, 0.4);
+    }
+
+    .nav-cta:active {
+      transform: translateY(0);
+      box-shadow: 0 10px 30px rgba(0, 180, 216, 0.25);
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 4.5rem 0 4rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), #72efdd);
+      box-shadow: 0 0 0 4px rgba(0, 180, 216, 0.15);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.1rem;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(120deg, #72efdd, var(--accent));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-lead {
+      color: var(--muted);
+      font-size: 0.98rem;
+      max-width: 32rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .btn-primary,
+    .btn-ghost {
+      padding: 0.8rem 1.35rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      transition: background var(--transition), transform var(--transition),
+        box-shadow var(--transition), border-color var(--transition),
+        color var(--transition);
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), #72efdd);
+      color: #05060a;
+      box-shadow: 0 18px 40px rgba(0, 180, 216, 0.5);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 22px 50px rgba(0, 180, 216, 0.7);
+    }
+
+    .btn-ghost {
+      background: rgba(8, 11, 24, 0.9);
+      color: var(--muted);
+      border-color: rgba(154, 160, 181, 0.35);
+    }
+
+    .btn-ghost:hover {
+      border-color: rgba(114, 239, 221, 0.9);
+      color: #e1e7ff;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.17em;
+      color: var(--muted);
+    }
+
+    .hero-meta strong {
+      display: block;
+      font-size: 0.82rem;
+      color: #e6ebff;
+      margin-bottom: 0.1rem;
+    }
+
+    .hero-card {
+      background: radial-gradient(circle at top, #161b29 0, #05060a 70%);
+      border-radius: 28px;
+      padding: 1.6rem 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+      min-height: 260px;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(
+          circle at 0% 0%,
+          rgba(114, 239, 221, 0.2) 0,
+          transparent 45%
+        ),
+        radial-gradient(
+          circle at 100% 100%,
+          rgba(0, 180, 216, 0.16) 0,
+          transparent 55%
+        );
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    .hero-card-inner {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-pill);
+      background: rgba(5, 6, 10, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.75rem;
+      color: #c6d0ff;
+      align-self: flex-start;
+    }
+
+    .hero-metric {
+      display: flex;
+      gap: 1.2rem;
+      align-items: baseline;
+    }
+
+    .hero-metric-main {
+      font-size: 2.3rem;
+      letter-spacing: -0.04em;
+      font-weight: 600;
+    }
+
+    .hero-metric-label {
+      font-size: 0.86rem;
+      color: var(--muted);
+      max-width: 11rem;
+    }
+
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.76rem;
+      color: var(--muted);
+    }
+
+    .pill {
+      padding: 0.28rem 0.7rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(5, 6, 10, 0.7);
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 3.7rem 0;
+    }
+
+    section:nth-of-type(even) {
+      background: var(--bg-soft);
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      align-items: flex-end;
+      margin-bottom: 2rem;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.2rem;
+    }
+
+    .section-kicker {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .section-description {
+      color: var(--muted);
+      font-size: 0.94rem;
+      max-width: 30rem;
+    }
+
+    /* SERVICES */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: rgba(5, 6, 10, 0.9);
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.3rem 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .service-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+    }
+
+    .service-title {
+      font-size: 1.05rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .service-body {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .service-list {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #cfd4ec;
+      list-style: none;
+    }
+
+    .service-list li::before {
+      content: "•";
+      color: var(--accent);
+      margin-right: 0.35rem;
+    }
+
+    /* APPROACH / VISION */
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .copy-block {
+      font-size: 0.96rem;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .copy-block p strong {
+      color: #e6ebff;
+      font-weight: 600;
+    }
+
+    .stat-card {
+      background: rgba(5, 6, 10, 0.9);
+      border-radius: 24px;
+      padding: 1.5rem 1.4rem;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1.5rem;
+    }
+
+    .stat-label {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+
+    .stat-value {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+    }
+
+    .stat-pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    .stat-pill {
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-pill);
+      background: var(--accent-soft);
+      border: 1px solid rgba(0, 180, 216, 0.3);
+      color: #d5f9ff;
+    }
+
+    /* CONTACT */
+
+    .contact-card {
+      background: linear-gradient(
+        135deg,
+        rgba(0, 180, 216, 0.12),
+        rgba(5, 6, 10, 0.95)
+      );
+      border-radius: 26px;
+      padding: 2rem 1.8rem;
+      border: 1px solid rgba(0, 180, 216, 0.35);
+      box-shadow: 0 22px 50px rgba(0, 0, 0, 0.75);
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 1.8rem;
+      align-items: center;
+    }
+
+    .contact-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .contact-text {
+      font-size: 0.95rem;
+      color: #e3f7ff;
+      max-width: 30rem;
+    }
+
+    .contact-meta {
+      font-size: 0.88rem;
+      color: #d0f3ff;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-top: 0.7rem;
+    }
+
+    .contact-meta span {
+      opacity: 0.9;
+    }
+
+    .contact-right {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .field-label {
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.74rem;
+      color: rgba(2, 9, 17, 0.9);
+      opacity: 0.9;
+    }
+
+    .field-value {
+      padding: 0.55rem 0.7rem;
+      border-radius: 0.75rem;
+      background: rgba(3, 10, 19, 0.85);
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      color: #f3fcff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
+        Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.82rem;
+    }
+
+    .field-value button {
+      background: transparent;
+      border: none;
+      color: rgba(153, 210, 255, 0.9);
+      font-size: 0.75rem;
+      cursor: pointer;
+      padding: 0.15rem 0.4rem;
+      border-radius: 999px;
+    }
+
+    .field-value button:hover {
+      background: rgba(9, 37, 59, 0.8);
+    }
+
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 1.4rem 0 1.6rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-inner a {
+      color: var(--muted);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 880px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 3.2rem;
+      }
+
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-card {
+        order: -1;
+      }
+
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .services-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .two-col {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .contact-card {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Welcome to ONDA</h1>
+  <header>
+    <div class="shell">
+      <nav class="nav">
+        <div class="logo">
+          <div class="logo-mark">
+            <div class="logo-wave"></div>
+          </div>
+          <div class="logo-text">ONDA</div>
+        </div>
+
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#approach">Approach</a>
+          <a href="#vision">Vision</a>
+          <a href="#contact">Contact</a>
+          <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+            Book a consultation
+            <span>↗</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="shell">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Marketing · Advertising · Brand Creation
+            </div>
+            <h1>
+              We help brands
+              <span>enter, grow & stand out</span>
+              in Europe.
+            </h1>
+            <p class="hero-lead">
+              ONDA is a marketing and brand studio specialising in digital campaigns, content production, influencer partnerships and community-driven retail experiences. We connect global brands with the right European audiences and local creators.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn-primary" href="#contact">
+                Schedule a consultation
+                <span>↗</span>
+              </a>
+              <a class="btn-ghost" href="#services">
+                Explore our services
+              </a>
+            </div>
+
+            <div class="hero-meta">
+              <div>
+                <strong>What we do</strong>
+                Strategy, content, campaigns & brand build.
+              </div>
+              <div>
+                <strong>How we work</strong>
+                Lean, senior-only, outcome-focused partnerships.
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-hidden="true">
+            <div class="hero-card-inner">
+              <div class="hero-tag">
+                European Market Entry
+              </div>
+
+              <div class="hero-metric">
+                <div class="hero-metric-main">Local-first strategy.</div>
+              </div>
+              <div class="hero-metric-label">
+                We match brands with the right local influencers, channels and communities to help them land in Europe with relevance and credibility.
+              </div>
+
+              <div class="hero-pills">
+                <span class="pill">Influencer & creator mapping</span>
+                <span class="pill">Launch campaigns</span>
+                <span class="pill">Community-driven retail</span>
+                <span class="pill">Owned & private-label brands</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="shell">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">What we offer</div>
+            <h2 class="section-title">Services designed for modern brands</h2>
+          </div>
+          <p class="section-description">
+            From first market entry to ongoing growth, we provide an integrated set of services that blends strategy, creative execution and operational support.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-label">01 · Strategy & Positioning</div>
+            <h3 class="service-title">Marketing & brand foundations</h3>
+            <p class="service-body">
+              We help define where your brand sits, who it serves and how it shows up across channels, with a clear roadmap for growth.
+            </p>
+            <ul class="service-list">
+              <li>Brand positioning & value proposition</li>
+              <li>Go-to-market & European entry strategy</li>
+              <li>Channel and audience mapping</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-label">02 · Campaigns & Content</div>
+            <h3 class="service-title">Digital marketing & production</h3>
+            <p class="service-body">
+              We design and run campaigns that combine storytelling with performance, from concepts to content delivery.
+            </p>
+            <ul class="service-list">
+              <li>Content strategy & creative direction</li>
+              <li>Social, paid, and lifecycle campaigns</li>
+              <li>Photo, video and digital asset production</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-label">03 · Creators & Commerce</div>
+            <h3 class="service-title">Influencers, retail & brand build</h3>
+            <p class="service-body">
+              Beyond media, we help brands connect with local creators, retail experiences and proprietary products.
+            </p>
+            <ul class="service-list">
+              <li>Influencer & ambassador partnerships</li>
+              <li>Community-driven retail & pop-ups</li>
+              <li>Proprietary & private-label brand development</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section id="approach">
+      <div class="shell">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">How we work</div>
+            <h2 class="section-title">Strategic, lean and execution-focused</h2>
+          </div>
+          <p class="section-description">
+            We blend senior-level thinking with a hands-on approach, working as an extension of your team rather than as an external vendor.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="copy-block">
+            <p>
+              <strong>Clarity first.</strong> Every collaboration starts with understanding where you are today – markets, channels, internal resources, and brand perception – and where you want to go.
+            </p>
+            <p>
+              <strong>Then we design the path.</strong> We prioritise the initiatives that will create traction quickly, while building foundations that can scale: clear positioning, coherent messaging and measurable campaigns.
+            </p>
+            <p>
+              <strong>Execution included.</strong> ONDA is not just a deck. We stay involved to run campaigns, produce content, coordinate with influencers and support your launch or ongoing operations.
+            </p>
+          </div>
+
+          <aside class="stat-card">
+            <div class="stat-row">
+              <div>
+                <div class="stat-label">Typical engagement</div>
+                <div class="stat-value">3–6 months</div>
+              </div>
+              <div>
+                <div class="stat-label">Collaboration model</div>
+                <div class="stat-value">Embedded team</div>
+              </div>
+            </div>
+
+            <div class="stat-pill-row">
+              <span class="stat-pill">Strategy & execution under one roof</span>
+              <span class="stat-pill">Senior-only core team</span>
+              <span class="stat-pill">Modular scope – from audits to full launch</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION -->
+    <section id="vision">
+      <div class="shell">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Our vision</div>
+            <h2 class="section-title">Building brands that travel well</h2>
+          </div>
+          <p class="section-description">
+            ONDA exists to help brands move confidently across markets, without losing what makes them unique.
+          </p>
+        </div>
+
+        <div class="two-col">
+          <div class="copy-block">
+            <p>
+              We specialise in helping brands enter and scale within the European market, aligning global strategy with local nuance. That means understanding culture, regulations, consumer behaviour – and the real people and communities that shape trends.
+            </p>
+            <p>
+              By combining structured marketing capabilities with content, creator partnerships and retail experiences, we enable brands to build presence that feels both premium and grounded in reality.
+            </p>
+          </div>
+
+          <aside class="copy-block">
+            <p>
+              Whether you’re launching a new label, expanding an existing brand or developing proprietary products, our goal is the same: to make your marketing both effective and sustainable.
+            </p>
+            <p>
+              We believe good marketing is additive – it respects time, attention and intelligence. That’s the standard we hold ourselves to in every project.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="shell">
+        <div class="contact-card">
+          <div>
+            <h2 class="contact-title">Let’s talk about your next move.</h2>
+            <p class="contact-text">
+              Share where you are today and what you’d like to achieve. We’ll come back with a focused view on how ONDA can support – or point you in the right direction.
+            </p>
+            <div class="contact-meta">
+              <span>Ideal for: market entry, brand build, launch campaigns and creator strategy.</span>
+              <span>Languages: English · Italian · French (written).</span>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <div>
+              <div class="field-label">Email</div>
+              <div class="field-value">
+                <span>hello@meetonda.com</span>
+                <button onclick="copyToClipboard('hello@meetonda.com')">Copy</button>
+              </div>
+            </div>
+
+            <div>
+              <div class="field-label">Book a call</div>
+              <a class="btn-primary" href="mailto:hello@meetonda.com?subject=ONDA%20–%20Consultation&body=Hi%20ONDA,%0D%0A%0D%0AWe%27d%20like%20to%20discuss...">
+                Request a consultation by email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <div class="footer-inner">
+        <span>© ONDA Limited. All rights reserved.</span>
+        <span>Built for www.meetonda.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function copyToClipboard(text) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () {
+          alert("Email address copied to clipboard.");
+        });
+      } else {
+        const tempInput = document.createElement("input");
+        tempInput.value = text;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        alert("Email address copied to clipboard.");
+      }
+    }
+  </script>
 </body>
 </html>
