@@ -1,5 +1,3 @@
-// --- TRANSLATIONS (EN + ZH) ---
-
 const translations = {
   en: {
     "nav.overview": "Overview",
@@ -8,81 +6,69 @@ const translations = {
     "nav.contact": "Contact",
     "nav.book": "Book a consultation",
 
-    "home.eyebrow": "Marketing · Creators · Brand Creation",
-    "home.hero_before": "Creator-led marketing",
-    "home.hero_highlight": " built for European growth ",
-    "home.hero_after": "",
-    "home.hero_lead":
+    "hero.eyebrow": "MARKETING · CREATORS · BRAND CREATION",
+    "hero.title": "Creator-led marketing built for European growth",
+    "hero.lead":
       "ONDA is a marketing and brand studio specialising in digital campaigns, social content, creator partnerships and community-driven retail experiences. We help brands land in Europe with the right creators and channels.",
-    "home.hero_btn_primary": "Talk to ONDA",
-    "home.hero_btn_secondary": "See how we work",
-    "home.meta1_title": "What we do",
-    "home.meta1_body":
-      "Strategy, campaigns, content and brand creation.",
-    "home.meta2_title": "How we work",
-    "home.meta2_body":
-      "Lean, senior team – embedded with your brand.",
-    "home.phone_title": "Creator-first launch concepts",
+    "hero.btn_primary": "Talk to ONDA",
+    "hero.btn_secondary": "See our services",
+    "hero.meta1_title": "What we do",
+    "hero.meta1_body": "Strategy, campaigns, content and brand creation.",
+    "hero.meta2_title": "How we work",
+    "hero.meta2_body": "Lean, senior team – embedded with your brand.",
+    "hero.aside_tag": "Built around creators",
+    "hero.aside_li1": "Localised strategies for key European markets.",
+    "hero.aside_li2": "Creator programmes that feel natural for both sides.",
+    "hero.aside_li3":
+      "Clear measurement and learning loops for every launch.",
 
     "services.kicker": "Service overview",
-    "services.title": "From strategy to creator programs and retail.",
-    "services.desc":
-      "We design and run marketing systems native to each European market while staying true to your brand.",
+    "services.title": "From strategy to creator programmes and retail.",
+    "services.subtitle":
+      "We work across marketing, advertising and brand creation – with modular services that can be combined depending on your stage and needs.",
 
-    "services.tab_strategy": "Strategy",
-    "services.tab_campaigns": "Campaigns",
-    "services.tab_creators": "Creators",
-    "services.tab_retail": "Retail & Brand",
+    "services.s1_kicker": "01 · Strategy",
+    "services.s1_title": "Positioning & go-to-market",
+    "services.s1_body":
+      "Clarify what you stand for, who you serve and how you compete in Europe.",
+    "services.s1_li1": "Brand positioning and narrative frameworks",
+    "services.s1_li2": "Go-to-market and European entry strategy",
+    "services.s1_li3": "Channel, audience and category mapping",
 
-    "strategy.label": "Brand & marketing foundations",
-    "strategy.title": "Positioning and go-to-market strategy",
-    "strategy.body":
-      "We clarify what you stand for, who you serve and how you enter or grow within Europe.",
-    "strategy.li1": "Brand positioning and messaging frameworks",
-    "strategy.li2": "European entry and prioritisation strategy",
-    "strategy.li3": "Channel, audience and category mapping",
-
-    "campaigns.label": "Digital campaigns",
-    "campaigns.title": "Always-on and launch campaigns",
-    "campaigns.body":
+    "services.s2_kicker": "02 · Campaigns & content",
+    "services.s2_title": "Digital marketing & launch campaigns",
+    "services.s2_body":
       "From concept to reporting, we orchestrate campaigns across social, paid and CRM.",
-    "campaigns.li1": "Campaign concepts & creative territories",
-    "campaigns.li2": "Cross-channel media planning",
-    "campaigns.li3": "Measurement, reporting & optimisation loops",
+    "services.s2_li1": "Campaign concepts and creative territories",
+    "services.s2_li2": "Always-on and launch campaigns for social & paid",
+    "services.s2_li3": "Measurement frameworks and reporting",
 
-    "creatorsvc.label": "Creator programs",
-    "creatorsvc.title": "Influencer and creator partnerships",
-    "creatorsvc.body":
-      "We help brands build sustainable, long-term creator relationships rather than one-off posts.",
-    "creatorsvc.li1": "Creator mapping by category & market",
-    "creatorsvc.li2": "Campaign-based & evergreen creator programs",
-    "creatorsvc.li3": "Briefing, content direction & workflow support",
+    "services.s3_kicker": "03 · Creators & brands",
+    "services.s3_title": "Creator programmes & brand creation",
+    "services.s3_body":
+      "Sustainable, long-term relationships with creators plus community-led brands.",
+    "services.s3_li1": "Creator mapping and outreach in priority markets",
+    "services.s3_li2": "Evergreen programmes and launch sprints",
+    "services.s3_li3": "Proprietary and private-label brand development",
 
-    "retail.label": "Retail & brand creation",
-    "retail.title": "Community-driven retail and new brands",
-    "retail.body":
-      "From proprietary brands to pop-ups, we design experiences that connect online and offline.",
-    "retail.li1": "Concept & launch for private-label brands",
-    "retail.li2": "Pop-ups, events & community activations",
-    "retail.li3": "E-commerce merchandising & content alignment",
+    "creators.kicker": "Creators & communities",
+    "creators.title": "Beyond reach, towards real relationships.",
+    "creators.p1":
+      "We map the creator landscape around your brand: who already talks about your category, who your audience trusts, and where culture is moving.",
+    "creators.p2":
+      "From there, we design partnerships that feel natural for both creator and brand – with clear expectations, fair terms and room for creative input.",
+    "creators.p3":
+      "We treat creators as strategic partners, not just media inventory. That means listening, co-creating and sharing what we learn.",
+    "creators.p4":
+      "The result is content that feels genuine, performs better and can support your brand for years rather than weeks.",
 
-    "creatorsec.kicker": "Creators & communities",
-    "creatorsec.title": "Beyond reach, towards real relationships.",
-    "creatorsec.desc":
-      "Our work with creators focuses on fit, credibility and long-term collaboration.",
-    "creatorsec.p1":
-      "We map the creator landscape: who talks about your category, who your audience trusts, and where culture is moving.",
-    "creatorsec.p2":
-      "We design partnerships that feel natural for both creator and brand – with clear expectations and fair terms.",
-    "creatorsec.p3":
-      "The goal: content that feels genuine, relationships that grow and performance that compounds.",
+    "contact.kicker": "Contact",
+    "contact.title": "Planning a launch or expansion in Europe?",
+    "contact.body":
+      "Share a few lines about your brand, markets and timing. We’ll respond with a focused view on how ONDA can support – or suggest another path if we’re not the right partner.",
+    "contact.btn": "Email ONDA",
 
-    "cta.title": "Planning a launch or expansion in Europe?",
-    "cta.text":
-      "Share a bit about your brand, markets and timing. We’ll reply with how ONDA can support – or guide you elsewhere if we're not the right fit.",
-    "cta.button": "Email ONDA",
-
-    "footer.copyright": "© ONDA Limited. All rights reserved."
+    "footer.copy": "© ONDA Limited. All rights reserved."
   },
 
   zh: {
@@ -92,82 +78,70 @@ const translations = {
     "nav.contact": "联系",
     "nav.book": "预约咨询",
 
-    "home.eyebrow": "营销 · 创作者 · 品牌打造",
-    "home.hero_before": "以创作者为核心的营销，",
-    "home.hero_highlight": " 专为进入欧洲市场而设计 ",
-    "home.hero_after": "",
-    "home.hero_lead":
+    "hero.eyebrow": "营销 · 创作者 · 品牌打造",
+    "hero.title": "以创作者为核心的营销，专为进入欧洲市场的品牌",
+    "hero.lead":
       "ONDA 是一家专注于数字营销与品牌打造的工作室，提供数字广告活动、社交内容制作、创作者合作以及以社区为核心的零售体验，帮助品牌通过合适的创作者和渠道进入欧洲。",
-    "home.hero_btn_primary": "与 ONDA 沟通",
-    "home.hero_btn_secondary": "了解我们的方式",
-    "home.meta1_title": "我们做什么",
-    "home.meta1_body": "品牌战略、整合营销、内容与品牌打造。",
-    "home.meta2_title": "我们的方式",
-    "home.meta2_body": "精干资深团队，可嵌入您的品牌团队。",
-    "home.phone_title": "以创作者为核心的传播概念",
+    "hero.btn_primary": "与 ONDA 沟通",
+    "hero.btn_secondary": "查看服务",
+    "hero.meta1_title": "我们做什么",
+    "hero.meta1_body": "品牌战略、整合营销、内容与品牌打造。",
+    "hero.meta2_title": "我们的方式",
+    "hero.meta2_body": "精干资深团队，可嵌入您的品牌团队。",
+    "hero.aside_tag": "围绕创作者展开",
+    "hero.aside_li1": "针对重点欧洲市场制定本地化策略。",
+    "hero.aside_li2": "让品牌与创作者双方都自然舒适的合作形式。",
+    "hero.aside_li3": "每一次上线都配套清晰的衡量与复盘机制。",
 
     "services.kicker": "服务概览",
     "services.title": "从战略到创作者项目与零售体验。",
-    "services.desc":
-      "我们为欧洲市场设计和执行本地化的营销体系，同时保持品牌一致性与高级感。",
+    "services.subtitle":
+      "我们覆盖营销、广告与品牌打造，不同模块可以独立使用，也可以根据发展阶段组合成一套体系。",
 
-    "services.tab_strategy": "战略",
-    "services.tab_campaigns": "活动",
-    "services.tab_creators": "创作者",
-    "services.tab_retail": "零售与品牌",
+    "services.s1_kicker": "01 · 战略",
+    "services.s1_title": "定位与进入欧洲市场策略",
+    "services.s1_body":
+      "帮助你明确品牌价值、目标受众以及在欧洲的竞争方式。",
+    "services.s1_li1": "品牌定位与叙事框架",
+    "services.s1_li2": "欧洲市场进入与优先级策略",
+    "services.s1_li3": "渠道、受众与品类分析",
 
-    "strategy.label": "品牌与营销基础",
-    "strategy.title": "定位与进入欧洲市场的策略",
-    "strategy.body":
-      "明确品牌定位、目标受众以及在欧洲的进入与增长路径。",
-    "strategy.li1": "品牌定位与关键信息框架",
-    "strategy.li2": "欧洲市场进入与优先级策略",
-    "strategy.li3": "渠道、受众与品类地图",
+    "services.s2_kicker": "02 · 活动与内容",
+    "services.s2_title": "数字营销与上线活动",
+    "services.s2_body":
+      "从创意到复盘，统筹社交媒体、付费流量与 CRM。",
+    "services.s2_li1": "活动创意方向与核心概念",
+    "services.s2_li2": "社交与付费渠道的整合活动",
+    "services.s2_li3": "衡量指标设计与报告机制",
 
-    "campaigns.label": "数字营销活动",
-    "campaigns.title": "常规与重点上线活动",
-    "campaigns.body":
-      "从创意到复盘，为社交、媒介与 CRM 提供一体化活动方案。",
-    "campaigns.li1": "活动创意方向与核心概念",
-    "campaigns.li2": "多渠道媒介规划与分工",
-    "campaigns.li3": "数据追踪、报告与持续优化",
+    "services.s3_kicker": "03 · 创作者与品牌",
+    "services.s3_title": "创作者项目与品牌孵化",
+    "services.s3_body":
+      "搭建可持续的创作者合作关系，并孵化社区驱动的品牌。",
+    "services.s3_li1": "按品类与市场筛选与联络创作者",
+    "services.s3_li2": "短期冲刺与长期创作者项目设计",
+    "services.s3_li3": "自有及联名品牌的概念与落地",
 
-    "creatorsvc.label": "创作者项目",
-    "creatorsvc.title": "影响者与创作者合作",
-    "creatorsvc.body":
-      "帮助品牌搭建可持续的创作者关系，而不是一次性投放。",
-    "creatorsvc.li1": "按品类与市场筛选创作者",
-    "creatorsvc.li2": "基于活动与常驻的创作者合作计划",
-    "creatorsvc.li3": "简报、内容方向与协作流程支持",
+    "creators.kicker": "创作者与社区",
+    "creators.title": "不止曝光，更重真实关系。",
+    "creators.p1":
+      "我们分析与你品牌相关的创作者生态：谁在讨论你的品类，谁真正赢得了目标人群的信任，以及文化趋势的走向。",
+    "creators.p2":
+      "在此基础上，设计对品牌和创作者都自然合理的合作形式，制定清晰预期、合理报酬，并留出创作空间。",
+    "creators.p3":
+      "我们把创作者视作策略伙伴，而不仅是投放渠道，这意味着共同思考、共同创作与共享经验。",
+    "creators.p4":
+      "由此产生的内容更真实、更有效，也能在更长时间里持续支撑品牌。",
 
-    "retail.label": "零售与品牌孵化",
-    "retail.title": "社区驱动的零售体验与自有品牌",
-    "retail.body": "从自有品牌到快闪活动，连接线上线下体验。",
-    "retail.li1": "自有品牌的概念与上市规划",
-    "retail.li2": "快闪店、线下活动与社区零售运营",
-    "retail.li3": "电商内容与陈列策略的统一",
+    "contact.kicker": "联系 ONDA",
+    "contact.title": "正在规划进入或扩展欧洲市场？",
+    "contact.body":
+      "简单介绍一下你的品牌、目前市场与时间规划，我们会给出 ONDA 可以提供支持的清晰思路。如果并不匹配，也会提出其他建议。",
+    "contact.btn": "发送邮件给 ONDA",
 
-    "creatorsec.kicker": "创作者与社区",
-    "creatorsec.title": "不止曝光，更重长期关系。",
-    "creatorsec.desc":
-      "我们关注匹配度、可信度与长期合作的可能性。",
-    "creatorsec.p1":
-      "我们分析创作者生态：谁在讨论你的品类，谁真正赢得了用户的信任，以及趋势走向。",
-    "creatorsec.p2":
-      "我们设计双向自然的合作形式，制定清晰预期与公平条款。",
-    "creatorsec.p3":
-      "目标：真实可信的内容、可持续发展的关系与稳定增长的表现。",
-
-    "cta.title": "正在规划进入或扩展欧洲市场？",
-    "cta.text":
-      "简单介绍一下你的品牌、市场与时间规划，我们会提供 ONDA 能如何支持的清晰思路。",
-    "cta.button": "发送邮件给 ONDA",
-
-    "footer.copyright": "© ONDA Limited. 保留所有权利。"
+    "footer.copy": "© ONDA Limited. 保留所有权利。"
   }
 };
-
-// --- APPLY LANGUAGE ---
 
 function applyLanguage(lang) {
   const dict = translations[lang] || translations.en;
@@ -175,8 +149,11 @@ function applyLanguage(lang) {
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    if (dict[key]) el.textContent = dict[key];
-    else if (translations.en[key]) el.textContent = translations.en[key];
+    if (dict[key]) {
+      el.textContent = dict[key];
+    } else if (translations.en[key]) {
+      el.textContent = translations.en[key];
+    }
   });
 
   document.querySelectorAll(".nav-lang").forEach((btn) => {
@@ -186,30 +163,34 @@ function applyLanguage(lang) {
   localStorage.setItem("onda_lang", lang);
 }
 
-// --- INIT ---
-
 document.addEventListener("DOMContentLoaded", () => {
   const saved = localStorage.getItem("onda_lang") || "en";
   applyLanguage(saved);
 
-  // language toggle
+  // Language buttons
   document.querySelectorAll(".nav-lang").forEach((btn) => {
     btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
   });
 
-  // smooth scroll
+  // Smooth scroll for in-page links
   document.addEventListener("click", (e) => {
     const link = e.target.closest("a[href^='#']");
     if (!link) return;
+
     const id = link.getAttribute("href").slice(1);
     const target = document.getElementById(id);
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: "smooth" });
-    }
+    if (!target) return;
+
+    e.preventDefault();
+    target.scrollIntoView({ behavior: "smooth" });
+
+    // highlight nav
+    document.querySelectorAll(".nav-links a").forEach((a) => {
+      a.classList.toggle("is-active", a === link);
+    });
   });
 
-  // scroll reveal
+  // Scroll reveal
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -222,21 +203,5 @@ document.addEventListener("DOMContentLoaded", () => {
     { threshold: 0.15 }
   );
 
-  document.querySelectorAll(".reveal").forEach((el) =>
-    observer.observe(el)
-  );
-
-  // service tabs
-  const tabs = document.querySelectorAll(".service-tab");
-  const panels = document.querySelectorAll(".service-panel");
-
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      const panelName = tab.dataset.panel;
-      tabs.forEach((t) => t.classList.toggle("is-active", t === tab));
-      panels.forEach((p) => {
-        p.style.display = p.dataset.panel === panelName ? "grid" : "none";
-      });
-    });
-  });
+  document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 });
