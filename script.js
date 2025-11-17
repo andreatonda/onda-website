@@ -69,6 +69,32 @@ const translations = {
     "contact.body":
       "Share a few lines about your brand, markets and timing. We’ll respond with a focused view on how ONDA can support – or suggest another path if we’re not the right partner.",
     "contact.btn": "Email ONDA",
+    
+    // nav top
+    "nav.home": "Home",
+    "nav.services": "Services",
+    "nav.channels": "Channels",
+    "nav.industries": "Industries",
+    "nav.contact": "Contact",
+    
+    // services submenu
+    "nav.services_content": "TikTok content & storytelling",
+    "nav.services_ads": "TikTok performance ads",
+    "nav.services_tiktok_account": "TikTok account management",
+    "nav.services_amazon": "Amazon & marketplace operations",
+    
+    // channels submenu
+    "nav.channel_tiktok": "TikTok",
+    "nav.channel_amazon": "Amazon",
+    "nav.channel_d2c": "Direct-to-consumer (D2C)",
+    "nav.channel_shopapotheke": "ShopApotheke",
+    "nav.channel_walmart": "Walmart",
+    
+    // industries submenu
+    "nav.ind_beauty": "Beauty",
+    "nav.ind_skincare": "Skincare",
+    "nav.ind_fashion": "Fashion & lifestyle",
+    "nav.ind_supplements": "Supplements & wellness",
 
     "footer.copy": "© ONDA Limited. All rights reserved."
   },
@@ -140,6 +166,28 @@ const translations = {
     "contact.body":
       "简单介绍一下你的品牌、目前市场与时间规划，我们会给出 ONDA 可以提供支持的清晰思路。如果并不匹配，也会提出其他建议。",
     "contact.btn": "发送邮件给 ONDA",
+
+    "nav.home": "首页",
+    "nav.services": "服务",
+    "nav.channels": "渠道",
+    "nav.industries": "行业",
+    "nav.contact": "联系",
+    
+    "nav.services_content": "TikTok 内容与故事",
+    "nav.services_ads": "TikTok 效果广告",
+    "nav.services_tiktok_account": "TikTok 账号运营",
+    "nav.services_amazon": "亚马逊与电商运营",
+    
+    "nav.channel_tiktok": "TikTok",
+    "nav.channel_amazon": "亚马逊",
+    "nav.channel_d2c": "D2C 自营官网",
+    "nav.channel_shopapotheke": "ShopApotheke",
+    "nav.channel_walmart": "Walmart",
+    
+    "nav.ind_beauty": "美妆",
+    "nav.ind_skincare": "护肤",
+    "nav.ind_fashion": "时尚与生活方式",
+    "nav.ind_supplements": "营养与健康",
 
     "footer.copy": "© ONDA Limited. 保留所有权利。"
   }
