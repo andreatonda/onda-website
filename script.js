@@ -1,3 +1,5 @@
+// Simple translation + language toggle
+
 const translations = {
   en: {
     "nav.overview": "Overview",
@@ -145,15 +147,16 @@ const translations = {
 
 function applyLanguage(lang) {
   const dict = translations[lang] || translations.en;
+
   document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    if (dict[key]) {
-      el.textContent = dict[key];
-    } else if (translations.en[key]) {
-      el.textContent = translations.en[key];
-    }
+    const value =
+      (dict && Object.prototype.hasOwnProperty.call(dict, key) && dict[key]) ||
+      translations.en[key] ||
+      "";
+    el.textContent = value;
   });
 
   document.querySelectorAll(".nav-lang").forEach((btn) => {
@@ -167,41 +170,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const saved = localStorage.getItem("onda_lang") || "en";
   applyLanguage(saved);
 
-  // Language buttons
   document.querySelectorAll(".nav-lang").forEach((btn) => {
-    btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
-  });
-
-  // Smooth scroll for in-page links
-  document.addEventListener("click", (e) => {
-    const link = e.target.closest("a[href^='#']");
-    if (!link) return;
-
-    const id = link.getAttribute("href").slice(1);
-    const target = document.getElementById(id);
-    if (!target) return;
-
-    e.preventDefault();
-    target.scrollIntoView({ behavior: "smooth" });
-
-    // highlight nav
-    document.querySelectorAll(".nav-links a").forEach((a) => {
-      a.classList.toggle("is-active", a === link);
+    btn.addEventListener("click", () => {
+      applyLanguage(btn.dataset.lang);
     });
   });
-
-  // Scroll reveal
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in-view");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.15 }
-  );
-
-  document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 });
