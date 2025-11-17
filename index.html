@@ -4,14 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ONDA – Creator-led Marketing & Brand Studio</title>
-  <link rel="icon" type="image/png" href="favicon.png?v=3" />
+  <link rel="icon" type="image/png" href="favicon.png?v=4" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <!-- HEADER / NAV -->
+  <header class="site-header">
     <div class="shell">
       <nav class="nav">
-        <a href="index.html" class="logo">
+        <a href="#overview" class="logo">
           <div class="logo-mark">
             <div class="logo-wave"></div>
           </div>
@@ -23,6 +24,7 @@
             <a href="#overview" class="is-active" data-i18n="nav.overview"></a>
             <a href="#services" data-i18n="nav.services"></a>
             <a href="#creators" data-i18n="nav.creators"></a>
+            <a href="#process" data-i18n="nav.process"></a>
             <a href="#contact" data-i18n="nav.contact"></a>
           </div>
 
@@ -43,197 +45,161 @@
 
   <main>
     <!-- HERO / OVERVIEW -->
-    <section class="hero" id="overview">
-      <div class="shell">
-        <div class="hero-grid">
-          <div class="reveal">
-            <div class="eyebrow" data-i18n="home.eyebrow"></div>
-            <h1>
-              <span data-i18n="home.hero_before"></span>
-              <span class="highlight" data-i18n="home.hero_highlight"></span>
-              <span data-i18n="home.hero_after"></span>
-            </h1>
-            <p class="hero-lead" data-i18n="home.hero_lead"></p>
+    <section id="overview" class="section hero">
+      <div class="shell hero-layout">
+        <div class="hero-copy reveal">
+          <div class="eyebrow" data-i18n="home.eyebrow"></div>
 
-            <div class="hero-actions">
-              <a class="nav-cta" href="#contact">
-                <span data-i18n="home.hero_btn_primary"></span>
-                <span>↗</span>
-              </a>
-              <a class="btn-ghost" href="#services">
-                <span data-i18n="home.hero_btn_secondary"></span>
-              </a>
-            </div>
+          <h1 class="hero-title">
+            <span data-i18n="home.title_line1"></span><br />
+            <span class="hero-highlight" data-i18n="home.title_line2"></span>
+          </h1>
 
-            <div class="hero-meta">
-              <div>
-                <strong data-i18n="home.meta1_title"></strong>
-                <span data-i18n="home.meta1_body"></span>
-              </div>
-              <div>
-                <strong data-i18n="home.meta2_title"></strong>
-                <span data-i18n="home.meta2_body"></span>
-              </div>
-            </div>
+          <p class="hero-lead" data-i18n="home.lead"></p>
+
+          <div class="hero-actions">
+            <a class="btn-primary" href="#contact">
+              <span data-i18n="home.btn_primary"></span>
+              <span>↗</span>
+            </a>
+            <a class="btn-ghost" href="#services">
+              <span data-i18n="home.btn_secondary"></span>
+            </a>
           </div>
 
-          <aside class="hero-phone reveal">
-            <div class="hero-phone-inner">
-              <div class="phone-header">
-                <span data-i18n="home.phone_title"></span>
-                <span class="phone-tag">TikTok · IG</span>
-              </div>
-              <div class="phone-feed">
-                <img src="https://images.pexels.com/photos/5077060/pexels-photo-5077060.jpeg?auto=compress&cs=tinysrgb&w=600" />
-                <img src="https://images.pexels.com/photos/6898859/pexels-photo-6898859.jpeg?auto=compress&cs=tinysrgb&w=600" />
-                <img src="https://images.pexels.com/photos/6898852/pexels-photo-6898852.jpeg?auto=compress&cs=tinysrgb&w=600" />
-                <img src="https://images.pexels.com/photos/3825575/pexels-photo-3825575.jpeg?auto=compress&cs=tinysrgb&w=600" />
-              </div>
+          <div class="hero-meta">
+            <div>
+              <strong data-i18n="home.meta1_title"></strong>
+              <span data-i18n="home.meta1_body"></span>
             </div>
-          </aside>
+            <div>
+              <strong data-i18n="home.meta2_title"></strong>
+              <span data-i18n="home.meta2_body"></span>
+            </div>
+          </div>
         </div>
+
+        <aside class="hero-aside reveal">
+          <div class="hero-pill" data-i18n="home.aside_tag"></div>
+          <ul class="hero-list">
+            <li data-i18n="home.aside_li1"></li>
+            <li data-i18n="home.aside_li2"></li>
+            <li data-i18n="home.aside_li3"></li>
+          </ul>
+
+          <div class="platform-chips">
+            <span class="chip">TikTok</span>
+            <span class="chip">Instagram</span>
+            <span class="chip">YouTube</span>
+            <span class="chip">Amazon</span>
+          </div>
+        </aside>
       </div>
     </section>
 
     <!-- SERVICES -->
-    <section id="services">
+    <section id="services" class="section">
       <div class="shell">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker" data-i18n="services.kicker"></div>
-            <h2 class="section-title" data-i18n="services.title"></h2>
-          </div>
-          <p class="section-description" data-i18n="services.desc"></p>
+        <div class="section-header reveal">
+          <div class="section-kicker" data-i18n="services.kicker"></div>
+          <h2 class="section-title" data-i18n="services.title"></h2>
+          <p class="section-subtitle" data-i18n="services.subtitle"></p>
         </div>
 
-        <div class="service-tabs">
-          <button class="service-tab is-active" data-panel="strategy" data-i18n="services.tab_strategy"></button>
-          <button class="service-tab" data-panel="campaigns" data-i18n="services.tab_campaigns"></button>
-          <button class="service-tab" data-panel="creators" data-i18n="services.tab_creators"></button>
-          <button class="service-tab" data-panel="retail" data-i18n="services.tab_retail"></button>
-        </div>
-
-        <!-- PANEL: STRATEGY -->
-        <div class="services-grid reveal service-panel" data-panel="strategy">
-          <article class="service-card">
-            <div class="service-label" data-i18n="strategy.label"></div>
-            <h3 class="service-title" data-i18n="strategy.title"></h3>
-            <p class="service-body" data-i18n="strategy.body"></p>
-            <ul class="service-list">
-              <li data-i18n="strategy.li1"></li>
-              <li data-i18n="strategy.li2"></li>
-              <li data-i18n="strategy.li3"></li>
+        <div class="card-grid reveal">
+          <article class="card">
+            <div class="card-kicker" data-i18n="services.s1_kicker"></div>
+            <h3 class="card-title" data-i18n="services.s1_title"></h3>
+            <p class="card-body" data-i18n="services.s1_body"></p>
+            <ul class="card-list">
+              <li data-i18n="services.s1_li1"></li>
+              <li data-i18n="services.s1_li2"></li>
+              <li data-i18n="services.s1_li3"></li>
             </ul>
           </article>
-          <div class="service-images">
-            <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/1181529/pexels-photo-1181529.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/4348403/pexels-photo-4348403.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=600" />
-          </div>
-        </div>
 
-        <!-- PANEL: CAMPAIGNS -->
-        <div class="services-grid reveal service-panel" data-panel="campaigns" style="display:none">
-          <article class="service-card">
-            <div class="service-label" data-i18n="campaigns.label"></div>
-            <h3 class="service-title" data-i18n="campaigns.title"></h3>
-            <p class="service-body" data-i18n="campaigns.body"></p>
-            <ul class="service-list">
-              <li data-i18n="campaigns.li1"></li>
-              <li data-i18n="campaigns.li2"></li>
-              <li data-i18n="campaigns.li3"></li>
+          <article class="card">
+            <div class="card-kicker" data-i18n="services.s2_kicker"></div>
+            <h3 class="card-title" data-i18n="services.s2_title"></h3>
+            <p class="card-body" data-i18n="services.s2_body"></p>
+            <ul class="card-list">
+              <li data-i18n="services.s2_li1"></li>
+              <li data-i18n="services.s2_li2"></li>
+              <li data-i18n="services.s2_li3"></li>
             </ul>
           </article>
-          <div class="service-images">
-            <img src="https://images.pexels.com/photos/8111812/pexels-photo-8111812.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/8111811/pexels-photo-8111811.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/8101526/pexels-photo-8101526.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/8101538/pexels-photo-8101538.jpeg?auto=compress&cs=tinysrgb&w=600" />
-          </div>
-        </div>
 
-        <!-- PANEL: CREATORS -->
-        <div class="services-grid reveal service-panel" data-panel="creators" style="display:none">
-          <article class="service-card">
-            <div class="service-label" data-i18n="creatorsvc.label"></div>
-            <h3 class="service-title" data-i18n="creatorsvc.title"></h3>
-            <p class="service-body" data-i18n="creatorsvc.body"></p>
-            <ul class="service-list">
-              <li data-i18n="creatorsvc.li1"></li>
-              <li data-i18n="creatorsvc.li2"></li>
-              <li data-i18n="creatorsvc.li3"></li>
+          <article class="card">
+            <div class="card-kicker" data-i18n="services.s3_kicker"></div>
+            <h3 class="card-title" data-i18n="services.s3_title"></h3>
+            <p class="card-body" data-i18n="services.s3_body"></p>
+            <ul class="card-list">
+              <li data-i18n="services.s3_li1"></li>
+              <li data-i18n="services.s3_li2"></li>
+              <li data-i18n="services.s3_li3"></li>
             </ul>
           </article>
-          <div class="service-images">
-            <img src="https://images.pexels.com/photos/6898851/pexels-photo-6898851.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/6898857/pexels-photo-6898857.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/6898854/pexels-photo-6898854.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/6898858/pexels-photo-6898858.jpeg?auto=compress&cs=tinysrgb&w=600" />
-          </div>
-        </div>
-
-        <!-- PANEL: RETAIL -->
-        <div class="services-grid reveal service-panel" data-panel="retail" style="display:none">
-          <article class="service-card">
-            <div class="service-label" data-i18n="retail.label"></div>
-            <h3 class="service-title" data-i18n="retail.title"></h3>
-            <p class="service-body" data-i18n="retail.body"></p>
-            <ul class="service-list">
-              <li data-i18n="retail.li1"></li>
-              <li data-i18n="retail.li2"></li>
-              <li data-i18n="retail.li3"></li>
-            </ul>
-          </article>
-          <div class="service-images">
-            <img src="https://images.pexels.com/photos/5621927/pexels-photo-5621927.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/5721908/pexels-photo-5721908.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/6311662/pexels-photo-6311662.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/5621937/pexels-photo-5621937.jpeg?auto=compress&cs=tinysrgb&w=600" />
-          </div>
         </div>
       </div>
     </section>
 
     <!-- CREATORS -->
-    <section id="creators">
+    <section id="creators" class="section section-alt">
       <div class="shell">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker" data-i18n="creatorsec.kicker"></div>
-            <h2 class="section-title" data-i18n="creatorsec.title"></h2>
-          </div>
-          <p class="section-description" data-i18n="creatorsec.desc"></p>
+        <div class="section-header reveal">
+          <div class="section-kicker" data-i18n="creators.kicker"></div>
+          <h2 class="section-title" data-i18n="creators.title"></h2>
         </div>
 
-        <div class="creator-gallery">
-          <div class="creator-copy reveal">
-            <p data-i18n="creatorsec.p1"></p>
-            <p data-i18n="creatorsec.p2"></p>
-            <p data-i18n="creatorsec.p3"></p>
+        <div class="two-column reveal">
+          <div class="column">
+            <p data-i18n="creators.p1"></p>
+            <p data-i18n="creators.p2"></p>
           </div>
-          <div class="creator-grid reveal">
-            <img src="https://images.pexels.com/photos/6898855/pexels-photo-6898855.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/6898853/pexels-photo-6898853.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/6898856/pexels-photo-6898856.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/6898850/pexels-photo-6898850.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/6898859/pexels-photo-6898859.jpeg?auto=compress&cs=tinysrgb&w=600" />
-            <img src="https://images.pexels.com/photos/6898852/pexels-photo-6898852.jpeg?auto=compress&cs=tinysrgb&w=600" />
+          <div class="column">
+            <p data-i18n="creators.p3"></p>
+            <p data-i18n="creators.p4"></p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section id="contact">
+    <!-- PROCESS -->
+    <section id="process" class="section">
       <div class="shell">
-        <div class="cta-card reveal">
+        <div class="section-header reveal">
+          <div class="section-kicker" data-i18n="process.kicker"></div>
+          <h2 class="section-title" data-i18n="process.title"></h2>
+        </div>
+
+        <ol class="steps reveal">
+          <li>
+            <h3 data-i18n="process.step1_title"></h3>
+            <p data-i18n="process.step1_body"></p>
+          </li>
+          <li>
+            <h3 data-i18n="process.step2_title"></h3>
+            <p data-i18n="process.step2_body"></p>
+          </li>
+          <li>
+            <h3 data-i18n="process.step3_title"></h3>
+            <p data-i18n="process.step3_body"></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="shell">
+        <div class="cta reveal">
           <div>
-            <h3 class="cta-title" data-i18n="cta.title"></h3>
-            <p class="cta-text" data-i18n="cta.text"></p>
+            <div class="section-kicker" data-i18n="contact.kicker"></div>
+            <h2 class="section-title" data-i18n="contact.title"></h2>
+            <p class="section-subtitle" data-i18n="contact.body"></p>
           </div>
-          <a class="nav-cta" href="mailto:hello@meetonda.com">
-            <span data-i18n="cta.button"></span>
+          <a class="btn-primary" href="mailto:hello@meetonda.com">
+            <span data-i18n="contact.btn"></span>
             <span>↗</span>
           </a>
         </div>
@@ -241,12 +207,10 @@
     </section>
   </main>
 
-  <footer>
-    <div class="shell">
-      <div class="footer-inner">
-        <span data-i18n="footer.copyright"></span>
-        <span>www.meetonda.com</span>
-      </div>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span data-i18n="footer.copy"></span>
+      <span>www.meetonda.com</span>
     </div>
   </footer>
 
