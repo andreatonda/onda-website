@@ -4,140 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact – ONDA</title>
-  <link rel="icon" type="image/png" href="favicon.png?v=2" />
+  <link rel="icon" type="image/png" href="favicon.png?v=5" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <div class="shell">
       <nav class="nav">
-        <a href="index.html" class="logo">
-          <div class="logo-mark">
-            <div class="logo-wave"></div>
-          </div>
-          <div class="logo-text">ONDA</div>
-        </a>
-      
-        <div class="nav-main">
-          <div class="nav-links">
-            <!-- HOME -->
-            <a href="index.html" class="top-link" data-i18n="nav.home"></a>
-      
-            <!-- SERVICES DROPDOWN -->
-            <div class="nav-item has-panel">
-              <a href="services.html" class="top-link" data-i18n="nav.services"></a>
-              <div class="nav-panel">
-                <a href="service-tiktok-content.html" data-i18n="nav.services_content"></a>
-                <a href="service-tiktok-ads.html" data-i18n="nav.services_ads"></a>
-                <a href="service-tiktok-account.html" data-i18n="nav.services_tiktok_account"></a>
-                <a href="service-amazon-account.html" data-i18n="nav.services_amazon"></a>
-              </div>
-            </div>
-      
-            <!-- CHANNELS DROPDOWN -->
-            <div class="nav-item has-panel">
-              <a href="channels.html" class="top-link" data-i18n="nav.channels"></a>
-              <div class="nav-panel">
-                <a href="channel-tiktok.html" data-i18n="nav.channel_tiktok"></a>
-                <a href="channel-amazon.html" data-i18n="nav.channel_amazon"></a>
-                <a href="channel-d2c.html" data-i18n="nav.channel_d2c"></a>
-                <a href="channel-shopapotheke.html" data-i18n="nav.channel_shopapotheke"></a>
-                <a href="channel-walmart.html" data-i18n="nav.channel_walmart"></a>
-              </div>
-            </div>
-      
-            <!-- INDUSTRIES DROPDOWN -->
-            <div class="nav-item has-panel">
-              <a href="industries.html" class="top-link" data-i18n="nav.industries"></a>
-              <div class="nav-panel">
-                <a href="industry-beauty.html" data-i18n="nav.ind_beauty"></a>
-                <a href="industry-skincare.html" data-i18n="nav.ind_skincare"></a>
-                <a href="industry-fashion.html" data-i18n="nav.ind_fashion"></a>
-                <a href="industry-supplements.html" data-i18n="nav.ind_supplements"></a>
-              </div>
-            </div>
-      
-            <!-- CONTACT (single link) -->
-            <a href="contact.html" class="top-link" data-i18n="nav.contact"></a>
-          </div>
-      
-          <div class="nav-actions">
-            <div class="nav-lang-toggle">
-              <button class="nav-lang is-active" data-lang="en">EN</button>
-              <button class="nav-lang" data-lang="zh">中文</button>
-            </div>
-            <a class="nav-cta" href="contact.html">
-              <span data-i18n="nav.book"></span>
-              <span>↗</span>
-            </a>
-          </div>
-        </div>
+        <!-- nav -->
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
+    <section class="section">
       <div class="shell">
-        <div class="reveal">
-          <div class="section-kicker">Contact</div>
-          <h1>Let’s talk about your next move.</h1>
-          <p>
-            Whether you’re planning a launch, exploring creator programs or looking
-            for a partner to refine your brand and marketing, we’d love to hear from you.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="shell">
-        <div class="contact-card reveal">
+        <div class="cta">
           <div>
-            <h2 class="contact-title">Share a bit about your context.</h2>
-            <p class="contact-text">
-              A short overview of your brand, markets, team and current challenges is
-              more than enough. We’ll reply with questions or a suggestion for how to
-              structure an initial session.
+            <p class="section-kicker">Contact</p>
+            <h1 class="section-title">
+              Planning a launch or expansion in Europe?
+            </h1>
+            <p class="section-subtitle">
+              Share a few lines about your brand, markets and timing. We’ll
+              respond with a focused view on how ONDA can support – or suggest
+              another path if we’re not the right partner.
             </p>
-            <div class="contact-meta">
-              <span>Ideal topics: European entry, creator strategy, launch planning, brand creation.</span>
-            </div>
           </div>
-
-          <div class="contact-right">
-            <div>
-              <div class="field-label">Email</div>
-              <div class="field-value">
-                <span>hello@meetonda.com</span>
-                <button onclick="copyToClipboard('hello@meetonda.com')">Copy</button>
-              </div>
-            </div>
-
-            <div>
-              <div class="field-label">Direct</div>
-              <a
-                class="btn-primary"
-                href="mailto:hello@meetonda.com?subject=ONDA%20–%20Enquiry&body=Hi%20ONDA,%0D%0A%0D%0AWe%27d%20like%20to%20discuss..."
-              >
-                Open in your email client
-              </a>
-            </div>
-          </div>
+          <a class="btn-primary" href="mailto:hello@meetonda.com">
+            <span>Email ONDA</span>
+            <span>↗</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-      <div class="shell">
-        <div class="footer-inner">
-          <span data-i18n="footer.copyright"></span>
-          <span data-i18n="footer.built"></span>
-        </div>
-      </div>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span data-i18n="footer.copy"></span>
+      <span>www.meetonda.com</span>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
