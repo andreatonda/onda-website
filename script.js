@@ -224,3 +224,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Reveal hero copy after user starts scrolling a little
+(function () {
+  const heroCopy = document.querySelector(".hero-copy");
+  if (!heroCopy) return;
+
+  const onScroll = () => {
+    if (window.scrollY > 30) {
+      heroCopy.classList.add("hero-copy-visible");
+      window.removeEventListener("scroll", onScroll);
+    }
+  };
+
+  // If user reloads mid-page, show immediately
+  if (window.scrollY > 30) {
+    heroCopy.classList.add("hero-copy-visible");
+  } else {
+    window.addEventListener("scroll", onScroll);
+  }
+})();
