@@ -228,7 +228,8 @@ a {
 /* HERO */
 
 .hero {
-  padding-top: 3.4rem;
+  padding-top: 4.5rem;   /* a bit more breathing room below the nav */
+  min-height: 70vh;      /* ONDA fills most of the screen */
 }
 
 .hero-layout {
@@ -244,15 +245,15 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 1.2rem;
-  margin-bottom: 0.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .hero-wave-text {
   position: relative;
   font-weight: 700;
-  letter-spacing: 0.35em;
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  letter-spacing: 0.4em;
+  font-size: clamp(3.5rem, 12vw, 10rem); /* bigger ONDA */
   text-transform: uppercase;
   color: rgba(16, 19, 31, 0.12);
 }
@@ -271,6 +272,7 @@ a {
   );
   background-size: 220% 100%;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   animation: ondaWaveSweep 2.4s ease-out forwards;
 }
