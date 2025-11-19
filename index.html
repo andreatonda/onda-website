@@ -23,18 +23,20 @@
           <div class="nav-links">
             <a href="index.html" class="top-link" data-i18n="nav.home"></a>
 
+            <!-- SERVICES DROPDOWN -->
             <div class="nav-item has-panel">
-              <a href="#" class="top-link" data-i18n="nav.services"></a>
+              <a href="services.html" class="top-link" data-i18n="nav.services"></a>
               <div class="nav-panel">
                 <a href="service-tiktok-content.html" data-i18n="nav.services_content"></a>
-                <a href="ervice-tiktok-ads.html" data-i18n="nav.services_ads"></a>
+                <a href="service-tiktok-ads.html" data-i18n="nav.services_ads"></a>
                 <a href="service-tiktok-account.html" data-i18n="nav.services_tiktok_account"></a>
                 <a href="service-amazon-account.html" data-i18n="nav.services_amazon"></a>
               </div>
             </div>
 
+            <!-- CHANNELS DROPDOWN -->
             <div class="nav-item has-panel">
-              <a href="#" class="top-link" data-i18n="nav.channels"></a>
+              <a href="channel-tiktok.html" class="top-link" data-i18n="nav.channels"></a>
               <div class="nav-panel">
                 <a href="channel-tiktok.html" data-i18n="nav.channel_tiktok"></a>
                 <a href="channel-amazon.html" data-i18n="nav.channel_amazon"></a>
@@ -44,8 +46,9 @@
               </div>
             </div>
 
+            <!-- INDUSTRIES DROPDOWN -->
             <div class="nav-item has-panel">
-              <a href="#" class="top-link" data-i18n="nav.industries"></a>
+              <a href="industry-beauty.html" class="top-link" data-i18n="nav.industries"></a>
               <div class="nav-panel">
                 <a href="industry-beauty.html" data-i18n="nav.ind_beauty"></a>
                 <a href="industry-skincare.html" data-i18n="nav.ind_skincare"></a>
@@ -73,159 +76,189 @@
   </header>
 
   <main>
-  <!-- HERO (unchanged, still using your i18n texts + wave animation) -->
-  <section id="overview" class="section hero">
-    <div class="shell hero-layout">
-      <div class="hero-copy reveal">
-        <p class="eyebrow" data-i18n="hero.eyebrow"></p>
-
-        <div class="hero-wave-logo">
-          <div class="hero-wave-text">ONDA</div>
-        </div>
-
-        <h1 class="hero-title" data-i18n="hero.title"></h1>
-
-        <p class="hero-lead" data-i18n="hero.lead"></p>
-
-        <div class="hero-actions">
-          <a class="btn-primary" href="contact.html">
-            <span data-i18n="hero.btn_primary"></span>
-            <span>↗</span>
-          </a>
-          <a class="btn-ghost" href="services.html">
-            <span data-i18n="hero.btn_secondary"></span>
-          </a>
-        </div>
-
-        <div class="hero-meta">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="shell">
+        <div class="hero-grid">
+          <!-- LEFT COLUMN -->
           <div>
-            <strong data-i18n="hero.meta1_title"></strong>
-            <span data-i18n="hero.meta1_body"></span>
+            <!-- animated ONDA word -->
+            <div class="hero-wave-intro">
+              <div class="hero-wave-text">ONDA</div>
+            </div>
+
+            <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+
+            <h1 class="hero-title" data-i18n="hero.title"></h1>
+
+            <p class="hero-lead" data-i18n="hero.lead"></p>
+
+            <div class="hero-actions">
+              <a class="btn-primary" href="contact.html">
+                <span data-i18n="hero.btn_primary"></span>
+                <span>↗</span>
+              </a>
+              <a class="btn-ghost" href="services.html">
+                <span data-i18n="hero.btn_secondary"></span>
+              </a>
+            </div>
+
+            <div class="hero-meta">
+              <div>
+                <strong data-i18n="hero.meta1_title"></strong>
+                <span data-i18n="hero.meta1_body"></span>
+              </div>
+              <div>
+                <strong data-i18n="hero.meta2_title"></strong>
+                <span data-i18n="hero.meta2_body"></span>
+              </div>
+            </div>
           </div>
+
+          <!-- RIGHT COLUMN CARD -->
+          <aside class="hero-card" aria-hidden="true">
+            <div class="hero-card-inner">
+              <div class="hero-tag">
+                European market entry
+              </div>
+
+              <div class="hero-metric">
+                <div class="hero-metric-main">Creator-first launches.</div>
+              </div>
+              <div class="hero-metric-label">
+                We match brands with the right local creators, channels and
+                communities to help them land in Europe with relevance
+                and credibility.
+              </div>
+
+              <div class="hero-pills">
+                <span class="pill">TikTok & social creators</span>
+                <span class="pill">Launch & always-on campaigns</span>
+                <span class="pill">Amazon & marketplaces</span>
+                <span class="pill">D2C & community retail</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW SECTION -->
+    <section class="section section-overview" id="overview">
+      <div class="shell">
+        <div class="section-header">
           <div>
-            <strong data-i18n="hero.meta2_title"></strong>
-            <span data-i18n="hero.meta2_body"></span>
+            <div class="section-kicker">Overview</div>
+            <h2 class="section-title">What ONDA actually does</h2>
           </div>
-        </div>
-      </div>
-
-      <aside class="hero-aside reveal">
-        <div class="hero-pill" data-i18n="hero.aside_tag"></div>
-        <ul class="hero-list">
-          <li data-i18n="hero.aside_li1"></li>
-          <li data-i18n="hero.aside_li2"></li>
-          <li data-i18n="hero.aside_li3"></li>
-        </ul>
-
-        <div class="platform-chips">
-          <span class="chip">TikTok</span>
-          <span class="chip">Instagram</span>
-          <span class="chip">YouTube</span>
-          <span class="chip">Amazon</span>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- COMPANY OVERVIEW / WHAT WE DO -->
-  <section class="section">
-    <div class="shell">
-      <div class="text-box reveal">
-        <p class="section-kicker">Who we are</p>
-        <h2 class="section-title">
-          A creator-led marketing studio helping brands enter and grow in Europe.
-        </h2>
-        <p class="section-subtitle">
-          ONDA designs and runs TikTok-first marketing systems for brands landing
-          in key European markets. We combine strategy, content, creators and
-          marketplace operations so you can test, learn and scale without
-          building a full local team on day one.
-        </p>
-
-        <div class="what-we-do-grid">
-          <div class="what-we-do-col">
-            <p class="what-we-do-col-title">What we do</p>
-            <ul class="what-we-do-col-list">
-              <li>Launch brands on TikTok with local-first concepts.</li>
-              <li>Run content and paid campaigns across social and marketplaces.</li>
-              <li>Manage TikTok and Amazon accounts, from strategy to reporting.</li>
-              <li>Connect you with the right creators and communities in Europe.</li>
-            </ul>
-          </div>
-
-          <div class="what-we-do-col">
-            <p class="what-we-do-col-title">Who we work with</p>
-            <ul class="what-we-do-col-list">
-              <li>Brands entering Europe for the first time.</li>
-              <li>European brands looking to scale TikTok quickly.</li>
-              <li>Consumer categories where TikTok drives discovery:
-                  beauty, skincare, fashion, supplements and more.</li>
-            </ul>
-          </div>
-
-          <div class="what-we-do-col">
-            <p class="what-we-do-col-title">How we work</p>
-            <ul class="what-we-do-col-list">
-              <li>Lean, senior team embedded with your brand.</li>
-              <li>Modular scope – from a launch sprint to ongoing management.</li>
-              <li>Clear measurement frameworks and growth KPIs.</li>
-              <li>Always creator- and content-first, not media-only.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- OPTIONAL: quick link strip to key sections/pages -->
-  <section class="section section-alt">
-    <div class="shell">
-      <div class="section-header">
-        <div>
-          <p class="section-kicker">Where to next</p>
-          <h2 class="section-title">Explore ONDA in more detail</h2>
-        </div>
-        <p class="section-description">
-          Dive into our core services, the channels we operate on, and
-          the industries where TikTok and creator-led marketing are moving the
-          fastest.
-        </p>
-      </div>
-
-      <div class="card-grid">
-        <article class="card">
-          <p class="card-kicker">Services</p>
-          <h3 class="card-title">What we deliver</h3>
-          <p class="card-body">
-            Content, ads and account management for TikTok, Amazon and other
-            growth channels.
+          <p class="section-description">
+            A small, senior team helping brands test, launch and grow in Europe
+            through creator-led campaigns, channel operations and long-term
+            brand building.
           </p>
-          <a class="btn-ghost" href="services.html">View all services ↗</a>
-        </article>
+        </div>
 
-        <article class="card">
-          <p class="card-kicker">Channels</p>
-          <h3 class="card-title">Where we operate</h3>
-          <p class="card-body">
-            TikTok, Amazon, D2C, ShopApotheke and Walmart – with a focus on how
-            they work together in Europe.
-          </p>
-          <a class="btn-ghost" href="channel-tiktok.html">Explore channels ↗</a>
-        </article>
+        <div class="overview-grid">
+          <article class="overview-card">
+            <p class="overview-kicker">For who</p>
+            <h3 class="overview-title">Brands entering or scaling in Europe</h3>
+            <p class="overview-body">
+              We work with consumer brands that want to understand where TikTok,
+              Amazon, D2C and new retail channels fit in their European growth
+              roadmap.
+            </p>
+            <ul class="overview-list">
+              <li>International brands entering EU for the first time</li>
+              <li>Local brands looking to professionalise their marketing</li>
+              <li>Founders building new concepts or private labels</li>
+            </ul>
+          </article>
 
-        <article class="card">
-          <p class="card-kicker">Industries</p>
-          <h3 class="card-title">Where ONDA is strongest</h3>
-          <p class="card-body">
-            Beauty, skincare, fashion and supplements – categories that live and
-            grow on TikTok.
-          </p>
-          <a class="btn-ghost" href="industry-beauty.html">See industries ↗</a>
-        </article>
+          <article class="overview-card">
+            <p class="overview-kicker">What we deliver</p>
+            <h3 class="overview-title">From strategy to daily execution</h3>
+            <p class="overview-body">
+              We combine planning with hands-on work: campaigns, content calendars,
+              creator management and channel optimisation.
+            </p>
+            <ul class="overview-list">
+              <li>Market entry, positioning & go-to-market plans</li>
+              <li>TikTok and social content systems & paid media</li>
+              <li>Amazon / marketplace setup & account management</li>
+            </ul>
+          </article>
+
+          <article class="overview-card">
+            <p class="overview-kicker">How we work</p>
+            <h3 class="overview-title">Embedded with your team</h3>
+            <p class="overview-body">
+              No big agency layers. You work directly with the people doing the work,
+              in a format that feels like an extension of your team.
+            </p>
+            <ul class="overview-list">
+              <li>3–6-month projects or ongoing retainers</li>
+              <li>Remote-first with European market expertise</li>
+              <li>Transparent scopes, clear metrics and reporting</li>
+            </ul>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+
+    <!-- WHERE TO NEXT / CROSS-LINKS -->
+    <section class="section section-next">
+      <div class="shell">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Where to next</div>
+            <h2 class="section-title">Explore ONDA in more detail</h2>
+          </div>
+          <p class="section-description">
+            Dive into our core services, the channels we operate on, and the
+            industries where TikTok and creator-led marketing are moving the fastest.
+          </p>
+        </div>
+
+        <div class="next-grid">
+          <article class="next-card">
+            <p class="next-kicker">Services</p>
+            <h3 class="next-title">What we deliver</h3>
+            <p class="next-body">
+              Content, ads and account management for TikTok, Amazon and other
+              growth channels.
+            </p>
+            <a class="next-link" href="services.html">
+              View all services ↗
+            </a>
+          </article>
+
+          <article class="next-card">
+            <p class="next-kicker">Channels</p>
+            <h3 class="next-title">Where we operate</h3>
+            <p class="next-body">
+              TikTok, Amazon, D2C, ShopApotheke and Walmart – with a focus on how
+              they work together in Europe.
+            </p>
+            <a class="next-link" href="channel-tiktok.html">
+              Explore channels ↗
+            </a>
+          </article>
+
+          <article class="next-card">
+            <p class="next-kicker">Industries</p>
+            <h3 class="next-title">Where ONDA is strongest</h3>
+            <p class="next-body">
+              Beauty, skincare, fashion and supplements – categories that live
+              and grow on TikTok.
+            </p>
+            <a class="next-link" href="industry-beauty.html">
+              See industries ↗
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
