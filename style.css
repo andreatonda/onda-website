@@ -77,7 +77,7 @@ header {
 }
 
 .logo-img {
-  height: 40px;          /* change this to 48 / 56 etc. if you want it bigger */
+  height: 56px;          /* change this to 48 / 56 etc. if you want it bigger */
   width: auto;
   display: block;
   object-fit: contain;
