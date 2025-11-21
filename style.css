@@ -69,50 +69,29 @@ header {
   padding: 0.9rem 0.25rem;
 }
 
+/* NEW: logo uses image */
+
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
 }
 
-.logo-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 12px;
-  background: radial-gradient(circle at 20% 0, #48cae4, #030711 70%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
+.logo-img {
+  height: 40px;          /* change this to 48 / 56 etc. if you want it bigger */
+  width: auto;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(0, 180, 216, 0.55));
 }
 
-.logo-wave {
-  width: 140%;
-  height: 140%;
-  background-image: radial-gradient(
-      circle at 0 80%,
-      rgba(255, 255, 255, 0.22) 0,
-      transparent 55%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.2) 0,
-      transparent 45%,
-      transparent 55%,
-      rgba(255, 255, 255, 0.18) 100%
-    );
-  mix-blend-mode: screen;
-  opacity: 0.9;
-  transform: translateY(8%);
-}
+/* old logo-mark / logo-wave / logo-text not needed anymore
+   (you can delete them entirely if you like) */
 
-.logo-text {
-  font-weight: 600;
-  letter-spacing: 0.24em;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
+/*
+.logo-mark { ... }
+.logo-wave { ... }
+.logo-text { ... }
+*/
 
 .nav-links {
   display: flex;
