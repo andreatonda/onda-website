@@ -1,18 +1,12 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
-
 export const Header = () => {
-  return (
-    <header className="sticky top-0 z-20 backdrop-blur-xl bg-background/95 border-b border-white/[0.04]">
-      <div className="shell">
-        <nav className="flex items-center justify-between py-3.5">
+  return <header className="sticky top-0 z-20 backdrop-blur-xl bg-background/95 border-b border-white/[0.04]">
+      <div className="shell py-0">
+        <nav className="flex items-center justify-between py-0">
           <Link to="/" className="flex items-center">
-            <img 
-              src={logo} 
-              alt="ONDA logo" 
-              className="h-24 w-auto object-contain drop-shadow-[0_0_12px_rgba(0,180,216,0.55)]"
-            />
+            <img src={logo} alt="ONDA logo" className="h-24 w-auto object-contain drop-shadow-[0_0_12px_rgba(0,180,216,0.55)] border-0" />
           </Link>
           
           <div className="flex items-center gap-8">
@@ -34,6 +28,5 @@ export const Header = () => {
           </div>
         </nav>
       </div>
-    </header>
-  );
+    </header>;
 };

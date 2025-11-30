@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
       
       <main>
         {/* HERO SECTION */}
-        <section className="py-20 md:py-32">
+        <section className="py-20 md:py-[50px]">
           <div className="shell">
             <div className="grid lg:grid-cols-[1.2fr,0.8fr] gap-12 items-start">
               <div className="reveal space-y-8">
@@ -170,42 +168,30 @@ const Index = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                {
-                  title: "Strategy & Positioning",
-                  description: "Market analysis, brand positioning, go-to-market frameworks and competitive landscape mapping."
-                },
-                {
-                  title: "Content & Campaigns",
-                  description: "End-to-end campaign development from concept through production, launch and performance tracking."
-                },
-                {
-                  title: "Creator Partnerships",
-                  description: "Matchmaking, contract negotiation, briefing, content direction and long-term relationship management."
-                },
-                {
-                  title: "Community Building",
-                  description: "Building engaged communities around your brand through events, ambassador programs and digital spaces."
-                },
-                {
-                  title: "Retail Activations",
-                  description: "Pop-up stores, retail partnerships, in-store experiences and community-driven commerce."
-                },
-                {
-                  title: "European Expansion",
-                  description: "Local market entry strategy, partnerships, operations and growth across European markets."
-                }
-              ].map((service, index) => (
-                <div 
-                  key={index}
-                  className="reveal bg-card border border-border/50 rounded-2xl p-8 hover:border-accent/30 transition-colors"
-                >
+              {[{
+              title: "Strategy & Positioning",
+              description: "Market analysis, brand positioning, go-to-market frameworks and competitive landscape mapping."
+            }, {
+              title: "Content & Campaigns",
+              description: "End-to-end campaign development from concept through production, launch and performance tracking."
+            }, {
+              title: "Creator Partnerships",
+              description: "Matchmaking, contract negotiation, briefing, content direction and long-term relationship management."
+            }, {
+              title: "Community Building",
+              description: "Building engaged communities around your brand through events, ambassador programs and digital spaces."
+            }, {
+              title: "Retail Activations",
+              description: "Pop-up stores, retail partnerships, in-store experiences and community-driven commerce."
+            }, {
+              title: "European Expansion",
+              description: "Local market entry strategy, partnerships, operations and growth across European markets."
+            }].map((service, index) => <div key={index} className="reveal bg-card border border-border/50 rounded-2xl p-8 hover:border-accent/30 transition-colors">
                   <h3 className="text-xl font-bold mb-3">{service.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     {service.description}
                   </p>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <div className="mt-12 text-center">
@@ -219,8 +205,6 @@ const Index = () => {
           </div>
         </section>
       </main>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
