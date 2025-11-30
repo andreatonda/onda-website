@@ -6,7 +6,7 @@ export const Header = () => {
       <div className="shell py-0">
         <nav className="flex items-center justify-between py-0">
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="ONDA logo" className="h-24 w-auto object-contain drop-shadow-[0_0_12px_rgba(0,180,216,0.55)] border-0" />
+            <img src={logo} alt="ONDA logo" className="h-28 w-40 object-cover object-center drop-shadow-[0_0_12px_rgba(0,180,216,0.55)] border-0" />
           </Link>
           
           <div className="flex items-center gap-8">
