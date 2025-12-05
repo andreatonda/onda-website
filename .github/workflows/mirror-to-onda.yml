@@ -26,4 +26,4 @@ jobs:
           git remote add website https://x-access-token:${MIRROR_TOKEN}@github.com/andreatonda/onda-website.git
 
           # Push main from Repo A -> Repo B
-          git push website main
+          git push website main --force
