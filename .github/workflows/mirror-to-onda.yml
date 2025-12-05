@@ -23,7 +23,7 @@ jobs:
           git config user.email "actions@github.com"
 
           # Add Repo B (onda-website) as a remote
-          git remote add website https://x-access-token:${MIRROR_TOKEN}@github.com/andreatonda/onda-website.git
+          git remote add website https://x-access-token:${mirror_token}@github.com/andreatonda/onda-website.git
 
           # Push main from Repo A -> Repo B
           git push website main
