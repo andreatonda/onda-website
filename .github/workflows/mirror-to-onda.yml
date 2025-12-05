@@ -17,7 +17,7 @@ jobs:
 
       - name: Push to onda-website repo
         env:
-          MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
+          MIRROR_TOKEN: ${{ secrets.mirror_token }}
         run: |
           git config user.name "Lovable Mirror Bot"
           git config user.email "actions@github.com"
