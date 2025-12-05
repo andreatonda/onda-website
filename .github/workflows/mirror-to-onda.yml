@@ -19,11 +19,16 @@ jobs:
         env:
           MIRROR_TOKEN: ${{ secrets.MIRROR_TOKEN }}
         run: |
+          set -e
+
           git config user.name "Lovable Mirror Bot"
           git config user.email "actions@github.com"
+
+          # Clean up any existing 'website' remote if it’s already defined
+          git remote remove website || true
 
           # Add Repo B (onda-website) as a remote
           git remote add website https://x-access-token:${MIRROR_TOKEN}@github.com/andreatonda/onda-website.git
 
-          # Push main from Repo A -> Repo B
-          git push website main --force
+          # Force-push current main to Repo B main
+          git push website HEAD:main --force
