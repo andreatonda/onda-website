@@ -13,7 +13,7 @@ const Index = () => {
 
       <main>
         {/* HERO SECTION */}
-        <section className="py-20 md:py-[50px] bg-glossy-hero">
+        <section className="py-20 md:py-[50px]">
           <div className="shell">
             <div className="grid lg:grid-cols-[1.2fr,0.8fr] gap-12 items-start">
               <div className="reveal space-y-8">
@@ -38,7 +38,7 @@ const Index = () => {
                   <Button
                     onClick={() => setModalOpen(true)}
                     size="lg"
-                    className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-8 btn-glossy shadow-lg shadow-accent/40"
+                    className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-8"
                   >
                     Schedule a consultation
                     <span className="ml-2">↗</span>
@@ -68,7 +68,7 @@ const Index = () => {
 
               {/* Side card */}
               <div className="reveal lg:sticky lg:top-32">
-                <div className="card-glass rounded-2xl p-8">
+                <div className="bg-card border border-border/50 rounded-2xl p-8 backdrop-blur-sm">
                   <div className="text-xs uppercase tracking-wider text-muted-foreground mb-4">
                     Creator & brand matchmaking
                   </div>
