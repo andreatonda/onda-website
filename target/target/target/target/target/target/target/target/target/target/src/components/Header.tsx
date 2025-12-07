@@ -9,7 +9,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="nav-liquid">
+      <header className="sticky top-0 z-20 backdrop-blur-xl bg-background/95 border-b border-white/[0.04]">
         <div className="shell py-0">
           <nav className="flex items-center justify-between py-0">
             <Link to="/" className="flex items-center">
@@ -32,7 +32,7 @@ export const Header = () => {
               </Link>
               <Button
                 onClick={() => setModalOpen(true)}
-                className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full btn-liquid"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full"
               >
                 Book a consultation
                 <span className="ml-1">↗</span>

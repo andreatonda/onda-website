@@ -138,3 +138,96 @@ All colors MUST be HSL.
   backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
+
+/* === ONDA liquid nav & buttons =============================== */
+
+/* Top nav: dark glass + liquid highlight */
+.nav-liquid {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: radial-gradient(circle at top left, rgba(80, 178, 192, 0.14), transparent 55%),
+              radial-gradient(circle at bottom right, rgba(9, 12, 24, 0.9), #05060a);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.nav-liquid::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(80, 178, 192, 0.35), transparent 60%),
+    radial-gradient(circle at 100% 100%, rgba(250, 170, 141, 0.22), transparent 65%);
+  opacity: 0.5;
+  mix-blend-mode: screen;
+  transform: translate3d(0, 0, 0);
+  animation: navLiquidMove 22s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes navLiquidMove {
+  0% {
+    transform: translate3d(-8%, -6%, 0) scale(1.05);
+  }
+  50% {
+    transform: translate3d(6%, 4%, 0) scale(1.07);
+  }
+  100% {
+    transform: translate3d(-4%, 8%, 0) scale(1.03);
+  }
+}
+
+
+/* Primary blue buttons: inner glow + subtle border + sheen */
+.btn-liquid {
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+  box-shadow:
+    0 14px 30px rgba(4, 116, 178, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.btn-liquid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 10% 0%, rgba(255, 255, 255, 0.45), transparent 60%);
+  opacity: 0.8;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.btn-liquid::after {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: -40%;
+  width: 80%;
+  height: 260%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.55) 40%,
+    transparent 80%
+  );
+  opacity: 0;
+  transform: translate3d(0, 0, 0) rotate(8deg);
+  pointer-events: none;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.btn-liquid:hover::after {
+  opacity: 0.9;
+  transform: translate3d(40%, 0, 0) rotate(8deg);
+}
+
+/* Make button text a bit crisper against the glow */
+.btn-liquid span,
+.btn-liquid svg {
+  position: relative;
+  z-index: 1;
+}
