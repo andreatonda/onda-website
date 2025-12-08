@@ -191,7 +191,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                     className={`flex-1 py-3 px-4 rounded-lg border transition-all text-sm font-medium ${
                       formData.role === "brand"
                         ? "border-accent bg-accent/10 text-accent"
-                        : "border-border/50 hover:border-accent/50 text-foreground"
+                        : "border-white/14 bg-black/40 text-foreground/80 hover:border-accent/40"
                     }`}
                   >
                     Brand
@@ -202,7 +202,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                     className={`flex-1 py-3 px-4 rounded-lg border transition-all text-sm font-medium ${
                       formData.role === "creator"
                         ? "border-accent bg-accent/10 text-accent"
-                        : "border-border/50 hover:border-accent/50 text-foreground"
+                        : "border-white/14 bg-black/40 text-foreground/80 hover:border-accent/40"
                     }`}
                   >
                     Creator
@@ -221,7 +221,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                   ref={firstInputRef}
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="bg-background border-border/50 focus:border-accent"
+                  className="bg-[#050915] text-foreground border border-white/12 focus:border-accent focus:ring-2 focus:ring-accent/30 placeholder:text-muted-foreground/80 rounded-xl px-4 py-3 shadow-[0_0_0_1px_rgba(0,0,0,0.6)]"
                   placeholder="Your full name"
                 />
                 {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
@@ -237,7 +237,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                   type="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="bg-background border-border/50 focus:border-accent"
+                  className="bg-[#050915] text-foreground border border-white/12 focus:border-accent focus:ring-2 focus:ring-accent/30 placeholder:text-muted-foreground/80 rounded-xl px-4 py-3 shadow-[0_0_0_1px_rgba(0,0,0,0.6)]"
                   placeholder="your@email.com"
                 />
                 {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
@@ -252,7 +252,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                   id="company"
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                  className="bg-background border-border/50 focus:border-accent"
+                  className="bg-[#050915] text-foreground border border-white/12 focus:border-accent focus:ring-2 focus:ring-accent/30 placeholder:text-muted-foreground/80 rounded-xl px-4 py-3 shadow-[0_0_0_1px_rgba(0,0,0,0.6)]"
                   placeholder="Optional"
                 />
               </div>
@@ -266,14 +266,14 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                   id="message"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="bg-background border-border/50 focus:border-accent min-h-[100px] resize-none"
+                  className="bg-[#050915] text-foreground border border-white/12 focus:border-accent focus:ring-2 focus:ring-accent/30 placeholder:text-muted-foreground/80 rounded-xl px-4 py-3 min-h-[120px] resize-none shadow-[0_0_0_1px_rgba(0,0,0,0.6)]"
                   placeholder="Tell us about your brand or channel, your category, and what you're looking for in Europe."
                 />
                 {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
               </div>
 
               {/* GDPR Consent */}
-              <div className="space-y-2">
+              <div className="mt-4 rounded-xl bg-black/40 border border-white/10 px-4 py-3 space-y-2">
                 <div className="flex items-start gap-3">
                   <Checkbox
                     id="consent"
@@ -281,22 +281,22 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                     onCheckedChange={(checked) =>
                       setFormData({ ...formData, consent: checked === true })
                     }
-                    className="mt-0.5 border-border/50 data-[state=checked]:bg-accent data-[state=checked]:border-accent"
+                    className="mt-0.5 h-5 w-5 border-white/40 data-[state=checked]:bg-accent data-[state=checked]:border-accent shadow-[0_0_0_1px_rgba(0,0,0,0.9)]"
                   />
-                  <Label htmlFor="consent" className="text-sm leading-relaxed cursor-pointer">
+                  <Label htmlFor="consent" className="text-sm text-muted-foreground leading-relaxed cursor-pointer">
                     I agree to the processing of my personal data according to the{" "}
                     <Link
                       to="/privacy"
-                      className="text-accent hover:underline"
+                      className="text-accent underline-offset-2 hover:underline"
                       onClick={(e) => e.stopPropagation()}
                     >
                       Privacy Policy
                     </Link>
-                    . <span className="text-destructive">*</span>
+                    . <span className="text-accent">*</span>
                   </Label>
                 </div>
-                {errors.consent && <p className="text-destructive text-xs mt-1">{errors.consent}</p>}
-                <p className="text-xs text-muted-foreground pl-6">
+                {errors.consent && <p className="text-xs text-red-400">{errors.consent}</p>}
+                <p className="text-xs text-muted-foreground/80">
                   We use your information only to respond to your enquiry. You can request deletion of your data at any time.
                 </p>
               </div>
