@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Link } from "react-router-dom";
 import { Loader2, CheckCircle2 } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 interface ConsultationModalProps {
   open: boolean;
@@ -33,6 +34,7 @@ interface FormErrors {
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/manrbvok";
 
 export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps) => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState<FormData>({
     role: "",
     name: "",
@@ -75,23 +77,23 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
     const newErrors: FormErrors = {};
 
     if (!formData.role) {
-      newErrors.role = "Please select whether you are a Brand or Creator.";
+      newErrors.role = t("error.role");
     }
     if (!formData.name.trim()) {
-      newErrors.name = "Name is required.";
+      newErrors.name = t("error.name");
     }
     if (!formData.email.trim()) {
-      newErrors.email = "Email is required.";
+      newErrors.email = t("error.emailRequired");
     } else if (!validateEmail(formData.email)) {
-      newErrors.email = "Please enter a valid email address.";
+      newErrors.email = t("error.emailInvalid");
     }
     if (!formData.message.trim()) {
-      newErrors.message = "Message is required.";
+      newErrors.message = t("error.messageRequired");
     } else if (formData.message.trim().length < 5) {
-      newErrors.message = "Message must be filled.";
+      newErrors.message = t("error.messageShort");
     }
     if (!formData.consent) {
-      newErrors.consent = "You must agree to the privacy policy to continue.";
+      newErrors.consent = t("error.consent");
     }
 
     setErrors(newErrors);
@@ -129,9 +131,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
         throw new Error("Form submission failed");
       }
     } catch (error) {
-      setSubmitError(
-        "Something went wrong while sending your request. Please try again or email us directly at andre@meetonda.com."
-      );
+      setSubmitError(t("error.submit"));
     } finally {
       setIsSubmitting(false);
     }
@@ -153,24 +153,24 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
               <CheckCircle2 className="w-16 h-16 text-accent" />
             </div>
             <DialogHeader className="space-y-2">
-              <DialogTitle className="text-2xl font-bold text-center">Thank you!</DialogTitle>
+              <DialogTitle className="text-2xl font-bold text-center">{t("modal.successTitle")}</DialogTitle>
               <DialogDescription className="text-muted-foreground text-center text-base">
-                We've received your request and will get back to you as soon as possible.
+                {t("modal.successBody")}
               </DialogDescription>
             </DialogHeader>
             <Button
               onClick={() => onOpenChange(false)}
               className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-8 btn-liquid"
             >
-              Close
+              {t("modal.close")}
             </Button>
           </div>
         ) : (
           <>
             <DialogHeader className="space-y-2">
-              <DialogTitle className="text-2xl font-bold">Book a consultation</DialogTitle>
+              <DialogTitle className="text-2xl font-bold">{t("modal.title")}</DialogTitle>
               <DialogDescription className="text-muted-foreground">
-                Tell us a bit about yourself and we'll get back to you shortly.
+                {t("modal.subtitle")}
               </DialogDescription>
             </DialogHeader>
 
@@ -183,7 +183,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
             <form onSubmit={handleSubmit} className="space-y-5">
               {/* Role Selection */}
               <div className="space-y-2">
-                <Label className="text-sm font-medium">I am a <span className="text-destructive">*</span></Label>
+                <Label className="text-sm font-medium">{t("modal.roleLabel")} <span className="text-destructive">*</span></Label>
                 <div className="flex gap-3">
                   <button
                     type="button"
@@ -194,7 +194,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                         : "border-white/14 bg-black/40 text-foreground/80 hover:border-accent/40"
                     }`}
                   >
-                    Brand
+                    {t("modal.role.brand")}
                   </button>
                   <button
                     type="button"
@@ -205,7 +205,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                         : "border-white/14 bg-black/40 text-foreground/80 hover:border-accent/40"
                     }`}
                   >
-                    Creator
+                    {t("modal.role.creator")}
                   </button>
                 </div>
                 {errors.role && <p className="text-destructive text-xs mt-1">{errors.role}</p>}
@@ -214,7 +214,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
               {/* Name */}
               <div className="space-y-2">
                 <Label htmlFor="name" className="text-sm font-medium">
-                  Name <span className="text-destructive">*</span>
+                  {t("modal.nameLabel")} <span className="text-destructive">*</span>
                 </Label>
                 <Input
                   id="name"
@@ -222,7 +222,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="bg-[#050915] text-foreground border border-white/12 focus:border-accent focus:ring-2 focus:ring-accent/30 placeholder:text-muted-foreground/80 rounded-xl px-4 py-3 shadow-[0_0_0_1px_rgba(0,0,0,0.6)]"
-                  placeholder="Your full name"
+                  placeholder={t("modal.namePlaceholder")}
                 />
                 {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
               </div>
@@ -230,7 +230,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
               {/* Email */}
               <div className="space-y-2">
                 <Label htmlFor="email" className="text-sm font-medium">
-                  Email <span className="text-destructive">*</span>
+                  {t("modal.emailLabel")} <span className="text-destructive">*</span>
                 </Label>
                 <Input
                   id="email"
@@ -238,7 +238,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="bg-[#050915] text-foreground border border-white/12 focus:border-accent focus:ring-2 focus:ring-accent/30 placeholder:text-muted-foreground/80 rounded-xl px-4 py-3 shadow-[0_0_0_1px_rgba(0,0,0,0.6)]"
-                  placeholder="your@email.com"
+                  placeholder={t("modal.emailPlaceholder")}
                 />
                 {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
               </div>
@@ -246,28 +246,28 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
               {/* Company */}
               <div className="space-y-2">
                 <Label htmlFor="company" className="text-sm font-medium">
-                  Company / Brand / Channel name
+                  {t("modal.companyLabel")}
                 </Label>
                 <Input
                   id="company"
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                   className="bg-[#050915] text-foreground border border-white/12 focus:border-accent focus:ring-2 focus:ring-accent/30 placeholder:text-muted-foreground/80 rounded-xl px-4 py-3 shadow-[0_0_0_1px_rgba(0,0,0,0.6)]"
-                  placeholder="Optional"
+                  placeholder={t("modal.companyPlaceholder")}
                 />
               </div>
 
               {/* Message */}
               <div className="space-y-2">
                 <Label htmlFor="message" className="text-sm font-medium">
-                  Message <span className="text-destructive">*</span>
+                  {t("modal.messageLabel")} <span className="text-destructive">*</span>
                 </Label>
                 <Textarea
                   id="message"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="bg-[#050915] text-foreground border border-white/12 focus:border-accent focus:ring-2 focus:ring-accent/30 placeholder:text-muted-foreground/80 rounded-xl px-4 py-3 min-h-[120px] resize-none shadow-[0_0_0_1px_rgba(0,0,0,0.6)]"
-                  placeholder="Tell us about your brand or channel, your category, and what you're looking for in Europe."
+                  placeholder={t("modal.messagePlaceholder")}
                 />
                 {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
               </div>
@@ -284,7 +284,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                     className="mt-0.5 h-5 w-5 border-white/40 data-[state=checked]:bg-accent data-[state=checked]:border-accent shadow-[0_0_0_1px_rgba(0,0,0,0.9)]"
                   />
                   <Label htmlFor="consent" className="text-sm text-muted-foreground leading-relaxed cursor-pointer">
-                    I agree to the processing of my personal data according to the{" "}
+                    {t("modal.consentLabel").replace("Privacy Policy.", "")}
                     <Link
                       to="/privacy"
                       className="text-accent underline-offset-2 hover:underline"
@@ -297,7 +297,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                 </div>
                 {errors.consent && <p className="text-xs text-red-400">{errors.consent}</p>}
                 <p className="text-xs text-muted-foreground/80">
-                  We use your information only to respond to your enquiry. You can request deletion of your data at any time.
+                  {t("modal.consentHelper")}
                 </p>
               </div>
 
@@ -310,10 +310,10 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                 {isSubmitting ? (
                   <>
                     <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                    Sending...
+                    {t("modal.sending")}
                   </>
                 ) : (
-                  "Send request"
+                  t("modal.submit")
                 )}
               </Button>
             </form>

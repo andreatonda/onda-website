@@ -38,7 +38,7 @@ const Index = () => {
                   <Button
                     onClick={() => setModalOpen(true)}
                     size="lg"
-                    className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-8 btn-glossy shadow-lg shadow-accent/40"
+                    className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-8 btn-liquid"
                   >
                     Schedule a consultation
                     <span className="ml-2">↗</span>
