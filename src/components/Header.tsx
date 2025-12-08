@@ -32,7 +32,7 @@ export const Header = () => {
               </Link>
               <Button
                 onClick={() => setModalOpen(true)}
-                className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full btn-liquid"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full btn-liquid px-5 sm:px-6"
               >
                 Book a consultation
                 <span className="ml-1">↗</span>
