@@ -1,17 +1,25 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ConsultationModal } from "@/components/ConsultationModal";
 import logo from "@/assets/logo.png";
 
 export const Header = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setMobileOpen(false);
+    setModalOpen(true);
+  };
 
   return (
     <>
       <header className="nav-liquid">
         <div className="shell py-0">
           <nav className="flex items-center justify-between py-0">
+            {/* Logo - always visible */}
             <Link to="/" className="flex items-center">
               <img
                 src={logo}
@@ -20,7 +28,8 @@ export const Header = () => {
               />
             </Link>
 
-            <div className="flex items-center gap-8">
+            {/* Desktop navigation */}
+            <div className="hidden md:flex items-center gap-8">
               <Link to="/services" className="text-foreground hover:text-accent transition-colors">
                 Services
               </Link>
@@ -31,15 +40,62 @@ export const Header = () => {
                 Creators
               </Link>
               <Button
-                onClick={() => setModalOpen(true)}
+                onClick={handleOpenModal}
                 className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full btn-liquid px-5 sm:px-6"
               >
                 Book a consultation
                 <span className="ml-1">↗</span>
               </Button>
             </div>
+
+            {/* Mobile hamburger button */}
+            <button
+              type="button"
+              onClick={() => setMobileOpen(prev => !prev)}
+              className="md:hidden inline-flex items-center justify-center rounded-full p-2 text-muted-foreground hover:text-foreground hover:bg-accent/10 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background"
+              aria-label={mobileOpen ? "Close navigation" : "Open navigation"}
+            >
+              {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </nav>
         </div>
+
+        {/* Mobile menu panel */}
+        {mobileOpen && (
+          <nav className="md:hidden border-t border-border/60 bg-background/98 backdrop-blur-xl">
+            <div className="px-6 py-6 space-y-4">
+              <Link
+                to="/services"
+                onClick={() => setMobileOpen(false)}
+                className="block text-base font-medium text-foreground hover:text-accent transition-colors"
+              >
+                Services
+              </Link>
+              <Link
+                to="/about"
+                onClick={() => setMobileOpen(false)}
+                className="block text-base font-medium text-foreground hover:text-accent transition-colors"
+              >
+                About
+              </Link>
+              <Link
+                to="/services#creators"
+                onClick={() => setMobileOpen(false)}
+                className="block text-base font-medium text-foreground hover:text-accent transition-colors"
+              >
+                Creators
+              </Link>
+
+              <Button
+                onClick={handleOpenModal}
+                className="w-full mt-4 bg-accent hover:bg-accent/90 text-accent-foreground rounded-full btn-liquid"
+              >
+                Book a consultation
+                <span className="ml-1">↗</span>
+              </Button>
+            </div>
+          </nav>
+        )}
       </header>
 
       <ConsultationModal open={modalOpen} onOpenChange={setModalOpen} />
