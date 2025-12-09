@@ -141,7 +141,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
     formData.role &&
     formData.name.trim() &&
     validateEmail(formData.email) &&
-    formData.message.trim().length >= 20 &&
+    formData.message.trim().length >= 5 &&
     formData.consent;
 
   return (
