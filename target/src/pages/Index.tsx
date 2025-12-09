@@ -3,9 +3,38 @@ import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { ConsultationModal } from "@/components/ConsultationModal";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Index = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const { t } = useLanguage();
+
+  const services = [
+    {
+      titleKey: "services.card.strategy",
+      descKey: "services.card.strategyBody",
+    },
+    {
+      titleKey: "services.card.content",
+      descKey: "services.card.contentBody",
+    },
+    {
+      titleKey: "services.card.partnerships",
+      descKey: "services.card.partnershipsBody",
+    },
+    {
+      titleKey: "services.card.community",
+      descKey: "services.card.communityBody",
+    },
+    {
+      titleKey: "services.card.retail",
+      descKey: "services.card.retailBody",
+    },
+    {
+      titleKey: "services.card.expansion",
+      descKey: "services.card.expansionBody",
+    },
+  ];
 
   return (
     <div className="min-h-screen">
@@ -19,19 +48,19 @@ const Index = () => {
               <div className="reveal space-y-8">
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <span className="inline-block w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span>
-                  Brands · Creators · New Markets
+                  {t("nav.brandCreatorsNewMarkets")}
                 </div>
 
                 <h1 className="text-5xl md:text-7xl font-bold leading-[1.1]">
-                  Where brands meet the{" "}
-                  <span className="text-gradient-cyan">right creators</span>{" "}
-                  to grow in Europe.
+                  {t("hero.title").split("right creators").map((part, i) => 
+                    i === 0 ? (
+                      <span key={i}>{part}<span className="text-gradient-cyan">right creators</span></span>
+                    ) : part
+                  )}
                 </h1>
 
                 <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                  ONDA is a marketing and brand studio specialising in digital campaigns,
-                  content production, influencer partnerships and community-driven retail
-                  experiences. We connect global brands with local creators and audiences.
+                  {t("hero.body")}
                 </p>
 
                 <div className="flex flex-wrap gap-4">
@@ -40,27 +69,27 @@ const Index = () => {
                     size="lg"
                     className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-8 btn-liquid"
                   >
-                    Schedule a consultation
+                    {t("hero.schedule")}
                     <span className="ml-2">↗</span>
                   </Button>
                   <Button asChild variant="outline" size="lg" className="rounded-full px-8 border-border/50 hover:border-accent/50">
                     <Link to="/services">
-                      Explore our services
+                      {t("hero.exploreServices")}
                     </Link>
                   </Button>
                 </div>
 
                 <div className="grid grid-cols-2 gap-6 pt-8">
                   <div>
-                    <div className="text-sm font-semibold mb-2">WHAT WE DO</div>
+                    <div className="text-sm font-semibold mb-2">{t("hero.whatWeDo")}</div>
                     <div className="text-sm text-muted-foreground uppercase tracking-wide">
-                      Strategy, content, campaigns & brand build.
+                      {t("hero.whatWeDoBody")}
                     </div>
                   </div>
                   <div>
-                    <div className="text-sm font-semibold mb-2">HOW WE WORK</div>
+                    <div className="text-sm font-semibold mb-2">{t("hero.howWeWork")}</div>
                     <div className="text-sm text-muted-foreground uppercase tracking-wide">
-                      Lean, senior team · creator-first.
+                      {t("hero.howWeWorkBody")}
                     </div>
                   </div>
                 </div>
@@ -70,27 +99,26 @@ const Index = () => {
               <div className="reveal lg:sticky lg:top-32">
                 <div className="card-glass rounded-2xl p-8">
                   <div className="text-xs uppercase tracking-wider text-muted-foreground mb-4">
-                    Creator & brand matchmaking
+                    {t("side.matchmaking")}
                   </div>
                   <h3 className="text-2xl font-bold mb-6">
-                    Local-first strategy.
+                    {t("side.localFirstTitle")}
                   </h3>
                   <p className="text-muted-foreground mb-6 leading-relaxed">
-                    We map the creator, culture and retail landscape for your category,
-                    then design campaigns that feel native to each European market.
+                    {t("side.localFirstBody")}
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-4 py-2 rounded-full border border-accent/30 bg-accent/5 text-sm">
-                      Influencers & ambassadors
+                      {t("side.pill.influencers")}
                     </span>
                     <span className="px-4 py-2 rounded-full border border-accent/30 bg-accent/5 text-sm">
-                      Creators with real communities
+                      {t("side.pill.communities")}
                     </span>
                     <span className="px-4 py-2 rounded-full border border-accent/30 bg-accent/5 text-sm">
-                      Retail & pop-up partners
+                      {t("side.pill.retail")}
                     </span>
                     <span className="px-4 py-2 rounded-full border border-accent/30 bg-accent/5 text-sm">
-                      Category experts & tastemakers
+                      {t("side.pill.experts")}
                     </span>
                   </div>
                 </div>
@@ -103,55 +131,44 @@ const Index = () => {
         <section className="py-20">
           <div className="shell">
             <div className="text-xs uppercase tracking-wider text-muted-foreground mb-4">
-              Creators & Communities
+              {t("creators.sectionLabel")}
             </div>
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               <div className="reveal">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  Beyond impressions, into relationships
+                  {t("creators.title")}
                 </h2>
               </div>
               <div className="reveal space-y-6 text-muted-foreground">
-                <p>
-                  We treat creators as long-term partners, not just media placements.
-                  Our work focuses on relevance, fit and credibility – on both sides.
-                </p>
-                <p>
-                  We help brands find creators whose audience, values and aesthetic truly
-                  align with what they stand for. That might be a niche specialist with deep
-                  trust, or a wider-reach profile who can anchor a launch.
-                </p>
-                <p>
-                  Once the match is right, we support briefing, content direction, workflow
-                  and long-term relationship building – so collaborations feel smooth and
-                  sustainable for everyone involved.
-                </p>
+                <p>{t("creators.p1")}</p>
+                <p>{t("creators.p2")}</p>
+                <p>{t("creators.p3")}</p>
               </div>
             </div>
 
             <div className="mt-16 reveal">
               <div className="bg-card border border-border/50 rounded-2xl p-10">
                 <div className="text-xs uppercase tracking-wider text-accent mb-4">
-                  Creator programs
+                  {t("creators.programsLabel")}
                 </div>
                 <h3 className="text-3xl font-bold mb-6">
-                  From one-off posts to owned communities
+                  {t("creators.programsTitle")}
                 </h3>
                 <p className="text-muted-foreground mb-8 max-w-2xl">
-                  We design creator programs that can start lean and scale over time:
+                  {t("creators.programsBody")}
                 </p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <span className="text-accent mt-1">•</span>
-                    <span>Creator & influencer mapping for priority markets</span>
+                    <span>{t("creators.bullet.mapping")}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-accent mt-1">•</span>
-                    <span>Campaign concepts & storytelling frameworks</span>
+                    <span>{t("creators.bullet.story")}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-accent mt-1">•</span>
-                    <span>Hybrid campaigns: digital + retail + product</span>
+                    <span>{t("creators.bullet.hybrid")}</span>
                   </li>
                 </ul>
               </div>
@@ -163,51 +180,25 @@ const Index = () => {
         <section className="py-20">
           <div className="shell">
             <div className="text-xs uppercase tracking-wider text-muted-foreground mb-4">
-              What we offer
+              {t("services.sectionLabel")}
             </div>
             <div className="mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 max-w-3xl">
-                Services designed for modern brands
+                {t("services.sectionTitle")}
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl">
-                From first market entry to ongoing growth, we blend strategy, creative and
-                execution – with a strong focus on creator-led initiatives.
+                {t("services.sectionBody")}
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                {
-                  title: "Strategy & Positioning",
-                  description: "Market analysis, brand positioning, go-to-market frameworks and competitive landscape mapping.",
-                },
-                {
-                  title: "Content & Campaigns",
-                  description: "End-to-end campaign development from concept through production, launch and performance tracking.",
-                },
-                {
-                  title: "Creator Partnerships",
-                  description: "Matchmaking, contract negotiation, briefing, content direction and long-term relationship management.",
-                },
-                {
-                  title: "Community Building",
-                  description: "Building engaged communities around your brand through events, ambassador programs and digital spaces.",
-                },
-                {
-                  title: "Retail Activations",
-                  description: "Pop-up stores, retail partnerships, in-store experiences and community-driven commerce.",
-                },
-                {
-                  title: "European Expansion",
-                  description: "Local market entry strategy, partnerships, operations and growth across European markets.",
-                },
-              ].map((service, index) => (
+              {services.map((service, index) => (
                 <div
                   key={index}
                   className="reveal bg-card border border-border/50 rounded-2xl p-8 hover:border-accent/30 transition-colors"
                 >
-                  <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                  <h3 className="text-xl font-bold mb-3">{t(service.titleKey)}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{t(service.descKey)}</p>
                 </div>
               ))}
             </div>
@@ -215,7 +206,7 @@ const Index = () => {
             <div className="mt-12 text-center">
               <Button asChild size="lg" variant="outline" className="rounded-full px-8 border-border/50 hover:border-accent/50">
                 <Link to="/services">
-                  View all services
+                  {t("services.viewAll")}
                   <span className="ml-2">→</span>
                 </Link>
               </Button>
