@@ -160,7 +160,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
             </DialogHeader>
             <Button
               onClick={() => onOpenChange(false)}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-8"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-8 btn-liquid"
             >
               Close
             </Button>
@@ -305,7 +305,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
               <Button
                 type="submit"
                 disabled={!isFormValid || isSubmitting}
-                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground rounded-full py-6 text-base font-medium disabled:opacity-50"
+                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground rounded-full py-6 text-base font-medium disabled:opacity-50 btn-liquid"
               >
                 {isSubmitting ? (
                   <>

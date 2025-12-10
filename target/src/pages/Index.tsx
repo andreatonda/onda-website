@@ -52,11 +52,9 @@ const Index = () => {
                 </div>
 
                 <h1 className="text-5xl md:text-7xl font-bold leading-[1.1]">
-                  {t("hero.title").split("right creators").map((part, i) => 
-                    i === 0 ? (
-                      <span key={i}>{part}<span className="text-gradient-cyan">right creators</span></span>
-                    ) : part
-                  )}
+                  {t("hero.title.part1")}{" "}
+                  <span className="highlight">{t("hero.title.highlight")}</span>{" "}
+                  {t("hero.title.part2")}
                 </h1>
 
                 <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
