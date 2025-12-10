@@ -12,8 +12,9 @@ export const translations: Record<Lang, Messages> = {
     "nav.brandCreatorsNewMarkets": "Brands · Creators · New Markets",
 
     // HERO
-    "hero.title":
-      "Where brands meet the <span class='highlight'>right creators</span> to grow in Europe.",
+    "hero.title.part1": "Where brands meet the",
+    "hero.title.highlight": "right creators",
+    "hero.title.part2": "to grow in Europe.",
     "hero.body":
       "ONDA is a marketing and brand studio specialising in digital campaigns, content production, influencer partnerships and community-driven retail experiences. We connect global brands with local creators and audiences.",
     "hero.schedule": "Schedule a consultation",
@@ -178,7 +179,9 @@ export const translations: Record<Lang, Messages> = {
     "nav.brandCreatorsNewMarkets": "品牌 · 创作者 · 新市场",
 
     // HERO
-    "hero.title": "在这里，助力品牌牵手 <span class='highlight'>契合的创作者达人</span>，让品牌在欧洲实现增长。",
+    "hero.title.part1": "在这里，助力品牌牵手契合的",
+    "hero.title.highlight": "创作者达人",
+    "hero.title.part2": "，让品牌在欧洲实现增长。",
     "hero.body":
       "ONDA 是一家营销与品牌工作室，专注于数字营销、内容制作、创作者达人合作以及以社区为驱动的零售体验。我们把全球品牌与本地创作者达人和受众连接在一起。",
     "hero.schedule": "预约咨询",

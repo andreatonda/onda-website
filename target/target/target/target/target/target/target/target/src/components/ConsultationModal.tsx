@@ -284,13 +284,13 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
                     className="mt-0.5 h-5 w-5 border-white/40 data-[state=checked]:bg-accent data-[state=checked]:border-accent shadow-[0_0_0_1px_rgba(0,0,0,0.9)]"
                   />
                   <Label htmlFor="consent" className="text-sm text-muted-foreground leading-relaxed cursor-pointer">
-                    {t("modal.consentLabel").replace("Privacy Policy.", "")}
+                    {t("modal.consentLabel").replace(t("modal.privacyPolicy") + ".", "").replace("Privacy Policy.", "")}
                     <Link
                       to="/privacy"
                       className="text-accent underline-offset-2 hover:underline"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      Privacy Policy
+                      {t("modal.privacyPolicy")}
                     </Link>
                     . <span className="text-accent">*</span>
                   </Label>
