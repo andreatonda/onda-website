@@ -13,7 +13,7 @@ export const translations: Record<Lang, Messages> = {
 
     // HERO
     "hero.title":
-      "Where brands meet the right creators to grow in Europe.",
+      "Where brands meet the <span class='highlight'>right creators</span> to grow in Europe.",
     "hero.body":
       "ONDA is a marketing and brand studio specialising in digital campaigns, content production, influencer partnerships and community-driven retail experiences. We connect global brands with local creators and audiences.",
     "hero.schedule": "Schedule a consultation",
@@ -178,7 +178,7 @@ export const translations: Record<Lang, Messages> = {
     "nav.brandCreatorsNewMarkets": "品牌 · 创作者 · 新市场",
 
     // HERO
-    "hero.title": "在这里，助力品牌牵手契合的创作者达人，让品牌在欧洲实现增长。",
+    "hero.title": "在这里，助力品牌牵手 <span class='highlight'>契合的创作者达人</span>，让品牌在欧洲实现增长。",
     "hero.body":
       "ONDA 是一家营销与品牌工作室，专注于数字营销、内容制作、创作者达人合作以及以社区为驱动的零售体验。我们把全球品牌与本地创作者达人和受众连接在一起。",
     "hero.schedule": "预约咨询",
@@ -204,7 +204,7 @@ export const translations: Record<Lang, Messages> = {
     "creators.p1":
       "我们将创作者达人视为长期合作伙伴，而不只是一次性的媒体投放。我们的工作重点在于相关性、匹配度与可信度——对品牌和创作者达人双方皆然。",
     "creators.p2":
-      "我们帮助品牌找到在受众、价值观与审美风格上真正契合其品牌主张的创作者达人。这个人选可能是一个在细分领域拥有深度信任的专家型达人，也可能是覆盖面更广、能够为新品发布或活动“定调”的核心创作者。",
+      "我们帮助品牌找到在受众、价值观与审美风格上真正契合其品牌主张的创作者达人。这个人选可能是一个在细分领域拥有深度信任的专家型达人，也可能是一位覆盖面更广、能够为新品发布或活动“定调”的核心创作者。",
     "creators.p3":
       "当匹配到位后，我们会协助完成需求简报、内容方向把控、流程协作以及长期关系建设，让每一次合作对所有参与方而言都顺畅且可持续。",
     "creators.programsLabel": "创作者达人项目",

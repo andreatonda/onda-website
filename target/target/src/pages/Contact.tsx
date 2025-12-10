@@ -1,6 +1,9 @@
 import { Header } from "@/components/Header";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Contact = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -10,14 +13,13 @@ const Contact = () => {
           <div className="shell">
             <div className="reveal max-w-3xl">
               <div className="text-xs uppercase tracking-wider text-accent mb-4">
-                Get in touch
+                {t("contact.label")}
               </div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                Let's talk about your project.
+                {t("contact.title")}
               </h1>
               <p className="text-xl text-muted-foreground">
-                Ready to grow your brand in Europe? Book a consultation to discuss
-                your goals and how we can help.
+                {t("contact.subtitle")}
               </p>
             </div>
           </div>
