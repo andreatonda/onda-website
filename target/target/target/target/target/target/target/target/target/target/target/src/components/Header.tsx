@@ -3,11 +3,18 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ConsultationModal } from "@/components/ConsultationModal";
+import { useLanguage } from "@/i18n/LanguageContext";
 import logo from "@/assets/logo.png";
 
 export const Header = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { lang, setLang, t } = useLanguage();
+
+  const languages: { code: "en" | "zh"; label: string }[] = [
+    { code: "en", label: "EN" },
+    { code: "zh", label: "中文" }
+  ];
 
   const handleOpenModal = () => {
     setMobileOpen(false);
@@ -31,19 +38,38 @@ export const Header = () => {
             {/* Desktop navigation */}
             <div className="hidden md:flex items-center gap-8">
               <Link to="/services" className="text-foreground hover:text-accent transition-colors">
-                Services
+                {t("nav.services")}
               </Link>
               <Link to="/about" className="text-foreground hover:text-accent transition-colors">
-                About
+                {t("nav.about")}
               </Link>
               <Link to="/services#creators" className="text-foreground hover:text-accent transition-colors">
-                Creators
+                {t("nav.creators")}
               </Link>
+
+              {/* Language switcher */}
+              <div className="inline-flex items-center rounded-full bg-black/40 border border-white/10 px-2 py-0.5 text-xs gap-1">
+                {languages.map((l) => (
+                  <button
+                    key={l.code}
+                    type="button"
+                    onClick={() => setLang(l.code)}
+                    className={`px-2.5 py-0.5 rounded-full transition-all ${
+                      lang === l.code
+                        ? "bg-accent text-accent-foreground font-semibold shadow-sm"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {l.label}
+                  </button>
+                ))}
+              </div>
+
               <Button
                 onClick={handleOpenModal}
                 className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full btn-liquid px-5 sm:px-6"
               >
-                Book a consultation
+                {t("nav.bookConsultation")}
                 <span className="ml-1">↗</span>
               </Button>
             </div>
@@ -69,28 +95,46 @@ export const Header = () => {
                 onClick={() => setMobileOpen(false)}
                 className="block text-base font-medium text-foreground hover:text-accent transition-colors"
               >
-                Services
+                {t("nav.services")}
               </Link>
               <Link
                 to="/about"
                 onClick={() => setMobileOpen(false)}
                 className="block text-base font-medium text-foreground hover:text-accent transition-colors"
               >
-                About
+                {t("nav.about")}
               </Link>
               <Link
                 to="/services#creators"
                 onClick={() => setMobileOpen(false)}
                 className="block text-base font-medium text-foreground hover:text-accent transition-colors"
               >
-                Creators
+                {t("nav.creators")}
               </Link>
+
+              {/* Mobile language switcher */}
+              <div className="flex items-center gap-2 pt-2">
+                {languages.map((l) => (
+                  <button
+                    key={l.code}
+                    type="button"
+                    onClick={() => setLang(l.code)}
+                    className={`px-3 py-1 rounded-full text-sm transition-all ${
+                      lang === l.code
+                        ? "bg-accent text-accent-foreground font-semibold"
+                        : "bg-black/40 border border-white/10 text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {l.label}
+                  </button>
+                ))}
+              </div>
 
               <Button
                 onClick={handleOpenModal}
                 className="w-full mt-4 bg-accent hover:bg-accent/90 text-accent-foreground rounded-full btn-liquid"
               >
-                Book a consultation
+                {t("nav.bookConsultation")}
                 <span className="ml-1">↗</span>
               </Button>
             </div>

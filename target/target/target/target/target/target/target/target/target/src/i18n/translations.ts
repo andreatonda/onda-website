@@ -35,7 +35,7 @@ export const translations: Record<Lang, Messages> = {
     "side.pill.retail": "Retail & pop-up partners",
     "side.pill.experts": "Category experts & tastemakers",
 
-    // CREATORS SECTION
+    // CREATORS SECTION (homepage)
     "creators.sectionLabel": "Creators & Communities",
     "creators.title": "Beyond impressions, into relationships",
     "creators.p1":
@@ -56,7 +56,7 @@ export const translations: Record<Lang, Messages> = {
     "creators.bullet.hybrid":
       "Hybrid campaigns: digital + retail + product",
 
-    // SERVICES SECTION
+    // SERVICES SECTION (homepage)
     "services.sectionLabel": "What we offer",
     "services.sectionTitle": "Services designed for modern brands",
     "services.sectionBody":
@@ -81,6 +81,52 @@ export const translations: Record<Lang, Messages> = {
     "services.card.expansion": "European Expansion",
     "services.card.expansionBody":
       "Local market entry strategy, partnerships, operations and growth across European markets.",
+
+    // SERVICES PAGE
+    "servicesPage.label": "Our Services",
+    "servicesPage.title": "Everything you need to grow in Europe.",
+    "servicesPage.subtitle": "We blend strategy, creative and execution with a focus on creator-led marketing and community-driven growth.",
+
+    // ABOUT PAGE
+    "about.label": "About ONDA",
+    "about.title": "Marketing, brand creation & creator strategy under one roof.",
+    "about.subtitle": "ONDA specialises in helping brands enter, grow and stay relevant in the European market – with a strong focus on creator-led marketing and community-driven retail.",
+
+    // CONTACT PAGE
+    "contact.label": "Get in touch",
+    "contact.title": "Let's talk about your project.",
+    "contact.subtitle": "Ready to grow your brand in Europe? Book a consultation to discuss your goals and how we can help.",
+
+    // PRIVACY PAGE
+    "privacy.label": "Legal",
+    "privacy.title": "Privacy Policy",
+    "privacy.intro": "This page explains how ONDA uses and protects the personal data you share with us, in particular through the consultation form.",
+    "privacy.whoWeAre": "Who we are",
+    "privacy.whoWeAreBody": "ONDA is a marketing and brand studio helping global brands work with creators and communities in Europe. You can contact us at",
+    "privacy.whatWeCollect": "What data we collect",
+    "privacy.whatWeCollectIntro": "When you submit the consultation form, we collect:",
+    "privacy.collect.role": "Your role (brand or creator)",
+    "privacy.collect.name": "Your name and email address",
+    "privacy.collect.company": "Your company / brand / channel name (if provided)",
+    "privacy.collect.message": "The message you send us about your needs, category and markets",
+    "privacy.howWeUse": "How we use your data",
+    "privacy.howWeUseIntro": "We use this information only to:",
+    "privacy.use.review": "Review your enquiry",
+    "privacy.use.contact": "Contact you about potential collaboration or services",
+    "privacy.noSell": "We do not sell your data or share it with third parties for their own marketing purposes.",
+    "privacy.legalBasis": "Legal basis",
+    "privacy.legalBasisBody": "Our legal basis for processing your personal data is",
+    "privacy.legitimateInterest": "legitimate interest",
+    "privacy.legalBasisEnd": "in responding to business enquiries and, where applicable, steps taken at your request prior to entering into a contract.",
+    "privacy.retention": "How long we keep your data",
+    "privacy.retentionBody": "We keep your data for as long as it is needed to handle your enquiry and any follow-up conversation. If you ask us to delete your data, we will do so unless we need to keep it for legal or compliance reasons.",
+    "privacy.rights": "Your rights",
+    "privacy.rightsBody": "Subject to applicable data protection law, you may have the right to access, correct or delete your personal data, and to object to or restrict certain forms of processing.",
+    "privacy.rightsContact": "To exercise these rights, please email us at",
+    "privacy.updates": "Updates",
+    "privacy.updatesBody": "We may update this Privacy Policy from time to time. The latest version will always be available on this page.",
+    "privacy.backHome": "← Back to home",
+    "privacy.disclaimer": "This Privacy Policy is for general information only and does not constitute legal advice. Please consult a qualified lawyer to review it for your specific situation and jurisdiction.",
 
     // CONSULTATION MODAL
     "modal.title": "Book a consultation",
@@ -108,6 +154,7 @@ export const translations: Record<Lang, Messages> = {
     "modal.successBody":
       "We've received your request and will get back to you as soon as possible.",
     "modal.close": "Close",
+    "modal.privacyPolicy": "Privacy Policy",
 
     // VALIDATION MESSAGES
     "error.role": "Please select whether you are a Brand or Creator.",
@@ -151,7 +198,7 @@ export const translations: Record<Lang, Messages> = {
     "side.pill.retail": "零售与快闪合作伙伴",
     "side.pill.experts": "品类专家与品味领袖",
 
-    // CREATORS SECTION
+    // CREATORS SECTION (homepage)
     "creators.sectionLabel": "创作者与社群",
     "creators.title": "超越曝光，更重关系与信任",
     "creators.p1":
@@ -169,7 +216,7 @@ export const translations: Record<Lang, Messages> = {
     "creators.bullet.hybrid":
       "整合数字、零售与产品的混合项目",
 
-    // SERVICES SECTION
+    // SERVICES SECTION (homepage)
     "services.sectionLabel": "我们的服务",
     "services.sectionTitle": "为新一代品牌设计的服务组合",
     "services.sectionBody":
@@ -194,6 +241,52 @@ export const translations: Record<Lang, Messages> = {
     "services.card.expansion": "欧洲市场拓展",
     "services.card.expansionBody":
       "本地化进入策略、合作伙伴与运营支持，助力多个欧洲市场的持续增长。",
+
+    // SERVICES PAGE
+    "servicesPage.label": "我们的服务",
+    "servicesPage.title": "欧洲市场增长所需的一切支持。",
+    "servicesPage.subtitle": "我们将战略、创意与执行整合在一起，专注于创作者驱动的营销和社群驱动的增长。",
+
+    // ABOUT PAGE
+    "about.label": "关于 ONDA",
+    "about.title": "营销、品牌打造与创作者策略，一站式服务。",
+    "about.subtitle": "ONDA 专注于帮助品牌进入、发展并在欧洲市场保持竞争力，尤其擅长创作者营销与社群驱动的零售。",
+
+    // CONTACT PAGE
+    "contact.label": "联系我们",
+    "contact.title": "让我们聊聊你的项目。",
+    "contact.subtitle": "准备好在欧洲发展你的品牌了吗？预约咨询，讨论你的目标以及我们如何帮助你。",
+
+    // PRIVACY PAGE
+    "privacy.label": "法律信息",
+    "privacy.title": "隐私政策",
+    "privacy.intro": "本页说明 ONDA 如何使用和保护你通过咨询表单向我们提供的个人数据。",
+    "privacy.whoWeAre": "我们是谁",
+    "privacy.whoWeAreBody": "ONDA 是一家营销与品牌工作室，帮助全球品牌与欧洲的创作者和社群合作。你可以通过以下邮箱联系我们：",
+    "privacy.whatWeCollect": "我们收集哪些数据",
+    "privacy.whatWeCollectIntro": "当你提交咨询表单时，我们会收集：",
+    "privacy.collect.role": "你的身份（品牌方或创作者）",
+    "privacy.collect.name": "你的姓名和邮箱地址",
+    "privacy.collect.company": "你的公司 / 品牌 / 频道名称（如提供）",
+    "privacy.collect.message": "你发送给我们的关于需求、品类和市场的留言",
+    "privacy.howWeUse": "我们如何使用你的数据",
+    "privacy.howWeUseIntro": "我们仅将这些信息用于：",
+    "privacy.use.review": "审阅你的咨询",
+    "privacy.use.contact": "就潜在的合作或服务与你联系",
+    "privacy.noSell": "我们不会出售你的数据，也不会将其分享给第三方用于其自身的营销目的。",
+    "privacy.legalBasis": "法律依据",
+    "privacy.legalBasisBody": "我们处理你个人数据的法律依据是",
+    "privacy.legitimateInterest": "合法利益",
+    "privacy.legalBasisEnd": "，即回应业务咨询，以及在适用情况下，应你的要求在签订合同前采取的步骤。",
+    "privacy.retention": "我们保留数据多长时间",
+    "privacy.retentionBody": "我们会在处理你的咨询及后续沟通所需的时间内保留你的数据。如果你要求删除数据，我们会照办，除非出于法律或合规原因需要保留。",
+    "privacy.rights": "你的权利",
+    "privacy.rightsBody": "根据适用的数据保护法，你可能有权访问、更正或删除你的个人数据，以及反对或限制某些形式的处理。",
+    "privacy.rightsContact": "如需行使这些权利，请发送邮件至：",
+    "privacy.updates": "更新",
+    "privacy.updatesBody": "我们可能会不时更新本隐私政策。最新版本将始终在本页面提供。",
+    "privacy.backHome": "← 返回首页",
+    "privacy.disclaimer": "本隐私政策仅供一般参考，不构成法律建议。请咨询合格律师，根据你的具体情况和管辖区域进行审核。",
 
     // CONSULTATION MODAL
     "modal.title": "预约咨询",
@@ -220,6 +313,7 @@ export const translations: Record<Lang, Messages> = {
     "modal.successBody":
       "我们已经收到你的信息，会尽快与你联系。",
     "modal.close": "关闭",
+    "modal.privacyPolicy": "隐私政策",
 
     // VALIDATION
     "error.role": "请选择你是品牌方还是创作者。",
