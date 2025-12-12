@@ -296,68 +296,47 @@ All colors MUST be HSL.
 @keyframes loader-scale-in {
   0% {
     opacity: 0;
-    transform: scale(0.8) translateY(10px);
-    filter: blur(8px);
+    transform: scale(0.85);
   }
-  50% {
+  60% {
     opacity: 1;
-    transform: scale(1.02) translateY(0);
-    filter: blur(0);
+    transform: scale(1.02);
   }
   100% {
     opacity: 1;
-    transform: scale(1) translateY(0);
-    filter: blur(0);
+    transform: scale(1);
   }
 }
 
-@keyframes loader-wave {
+@keyframes loader-subtle-pulse {
   0%, 100% {
-    transform: scale(1) rotate(0deg);
-  }
-  25% {
-    transform: scale(1.01) rotate(0.5deg);
+    transform: scale(1);
   }
   50% {
-    transform: scale(0.99) rotate(-0.5deg);
-  }
-  75% {
-    transform: scale(1.01) rotate(0.3deg);
+    transform: scale(1.015);
   }
 }
 
 @keyframes loader-exit {
   0% {
     opacity: 1;
-    transform: scale(1) translateY(0);
-    filter: blur(0);
+    transform: scale(1);
   }
   100% {
     opacity: 0;
-    transform: scale(1.1) translateY(-20px);
-    filter: blur(12px);
+    transform: scale(1.08);
   }
 }
 
-@keyframes wave-reveal {
-  0% {
-    clip-path: circle(0% at 50% 50%);
-  }
-  100% {
-    clip-path: circle(150% at 50% 50%);
-  }
+.loader-logo-container {
+  will-change: transform, opacity, filter;
 }
 
 .loader-enter {
-  animation: loader-scale-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards,
-             loader-wave 2s ease-in-out 0.8s infinite;
+  animation: loader-scale-in 1s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+             loader-subtle-pulse 1.5s ease-in-out 1s infinite;
 }
 
 .loader-exit {
-  animation: loader-exit 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.wave-reveal {
-  background: transparent;
-  animation: wave-reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: loader-exit 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

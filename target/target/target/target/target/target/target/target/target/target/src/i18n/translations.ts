@@ -173,48 +173,50 @@ export const translations: Record<Lang, Messages> = {
     // NAV
     "nav.services": "服务",
     "nav.about": "关于我们",
-    "nav.creators": "创作者",
+    "nav.creators": "创作者达人",
     "nav.bookConsultation": "预约咨询",
     "nav.brandCreatorsNewMarkets": "品牌 · 创作者 · 新市场",
 
     // HERO
-    "hero.title": "在这里，品牌遇见合适的创作者，在欧洲实现增长。",
+    "hero.title": "在这里，助力品牌牵手契合的创作者达人，让品牌在欧洲实现增长。",
     "hero.body":
-      "ONDA 是一家营销与品牌工作室，专注于数字营销、内容制作、创作者合作以及以社区为驱动的零售体验。我们把全球品牌与本地创作者和受众连接在一起。",
+      "ONDA 是一家营销与品牌工作室，专注于数字营销、内容制作、创作者达人合作以及以社区为驱动的零售体验。我们把全球品牌与本地创作者达人和受众连接在一起。",
     "hero.schedule": "预约咨询",
     "hero.exploreServices": "了解我们的服务",
-    "hero.whatWeDo": "我们的工作",
+    "hero.whatWeDo": "我们专注于",
     "hero.whatWeDoBody": "战略、内容、整合营销与品牌打造。",
-    "hero.howWeWork": "我们的方式",
-    "hero.howWeWorkBody": "精干资深团队 · 创作者优先。",
+    "hero.howWeWork": "我们拥有",
+    "hero.howWeWorkBody": "精干资深团队 · 大量本地创作者达人。",
 
     // SIDE CARD
-    "side.matchmaking": "创作者与品牌匹配",
+    "side.matchmaking": "创作者达人与品牌匹配",
     "side.localFirstTitle": "本地优先的策略。",
     "side.localFirstBody":
-      "我们为你的品类梳理创作者、文化与零售格局，打造真正适配各个欧洲市场的本地化活动方案。",
-    "side.pill.influencers": "意见领袖与品牌大使",
+      "我们为您的品类梳理本地创作者达人，适应本地文化与零售格局，打造真正适配各个欧洲市场的本地化品牌进驻及实施方案。",
+    "side.pill.influencers": "网红达人与品牌大使",
     "side.pill.communities": "拥有真实社群的创作者",
     "side.pill.retail": "零售与快闪合作伙伴",
-    "side.pill.experts": "品类专家与品味领袖",
+    "side.pill.experts": "品类专家与风向引领者",
 
     // CREATORS SECTION (homepage)
-    "creators.sectionLabel": "创作者与社群",
-    "creators.title": "超越曝光，更重关系与信任",
+    "creators.sectionLabel": "创作者达人与社群",
+    "creators.title": "超越曝光，更注重关系与信任",
     "creators.p1":
-      "我们把创作者视为长期合作伙伴，而不是一次性的媒体投放。我们的重点在于相关性、契合度和可信度——对双方都是如此。",
+      "我们将创作者达人视为长期合作伙伴，而不只是一次性的媒体投放。我们的工作重点在于相关性、匹配度与可信度——对品牌和创作者达人双方皆然。",
     "creators.p2":
-      "我们帮助品牌找到在受众、价值观和审美上真正匹配的创作者。可能是一位深受信任的小众专家，也可能是一位能够承载全国级发布的头部账号。",
+      "我们帮助品牌找到在受众、价值观与审美风格上真正契合其品牌主张的创作者达人。这个人选可能是一个在细分领域拥有深度信任的专家型达人，也可能是覆盖面更广、能够为新品发布或活动“定调”的核心创作者。",
     "creators.p3":
-      "当匹配完成后，我们协助完成简报、内容方向、合作流程以及长期关系的经营，让合作对品牌和创作者来说都自然顺畅、可持续。",
-    "creators.programsLabel": "创作者项目",
-    "creators.programsTitle": "从单次合作到自有社群",
+      "当匹配到位后，我们会协助完成需求简报、内容方向把控、流程协作以及长期关系建设，让每一次合作对所有参与方而言都顺畅且可持续。",
+    "creators.programsLabel": "创作者达人项目",
+    "creators.programsTitle": "从一次性内容发布到自有社群运营",
     "creators.programsBody":
-      "我们设计的创作者项目可以从轻量启动，并随着品牌成长逐步放大：",
-    "creators.bullet.mapping": "优先市场的创作者与 KOL 地图梳理",
-    "creators.bullet.story": "活动创意与叙事框架设计",
+      "我们设计的创作者达人项目可以先从轻量启动，并随着需求逐步扩展：",
+    "creators.bullet.mapping":
+      "针对重点市场的创作者与影响者梳理及匹配",
+    "creators.bullet.story":
+      "活动概念与故事叙事框架",
     "creators.bullet.hybrid":
-      "整合数字、零售与产品的混合项目",
+      "混合型整合营销：数字渠道 + 零售 + 产品体验",
 
     // SERVICES SECTION (homepage)
     "services.sectionLabel": "我们的服务",
@@ -245,48 +247,61 @@ export const translations: Record<Lang, Messages> = {
     // SERVICES PAGE
     "servicesPage.label": "我们的服务",
     "servicesPage.title": "欧洲市场增长所需的一切支持。",
-    "servicesPage.subtitle": "我们将战略、创意与执行整合在一起，专注于创作者驱动的营销和社群驱动的增长。",
+    "servicesPage.subtitle":
+      "我们将战略、创意与执行整合在一起，专注于创作者驱动的营销和社群驱动的增长。",
 
     // ABOUT PAGE
     "about.label": "关于 ONDA",
     "about.title": "营销、品牌打造与创作者策略，一站式服务。",
-    "about.subtitle": "ONDA 专注于帮助品牌进入、发展并在欧洲市场保持竞争力，尤其擅长创作者营销与社群驱动的零售。",
+    "about.subtitle":
+      "ONDA 专注于帮助品牌进入、发展并在欧洲市场保持竞争力，尤其擅长创作者营销与社群驱动的零售。",
 
     // CONTACT PAGE
     "contact.label": "联系我们",
     "contact.title": "让我们聊聊你的项目。",
-    "contact.subtitle": "准备好在欧洲发展你的品牌了吗？预约咨询，讨论你的目标以及我们如何帮助你。",
+    "contact.subtitle":
+      "准备好在欧洲发展你的品牌了吗？预约咨询，讨论你的目标以及我们如何帮助你。",
 
     // PRIVACY PAGE
     "privacy.label": "法律信息",
     "privacy.title": "隐私政策",
-    "privacy.intro": "本页说明 ONDA 如何使用和保护你通过咨询表单向我们提供的个人数据。",
+    "privacy.intro":
+      "本页说明 ONDA 如何使用和保护你通过咨询表单向我们提供的个人数据。",
     "privacy.whoWeAre": "我们是谁",
-    "privacy.whoWeAreBody": "ONDA 是一家营销与品牌工作室，帮助全球品牌与欧洲的创作者和社群合作。你可以通过以下邮箱联系我们：",
+    "privacy.whoWeAreBody":
+      "ONDA 是一家营销与品牌工作室，帮助全球品牌与欧洲的创作者和社群合作。你可以通过以下邮箱联系我们：",
     "privacy.whatWeCollect": "我们收集哪些数据",
     "privacy.whatWeCollectIntro": "当你提交咨询表单时，我们会收集：",
     "privacy.collect.role": "你的身份（品牌方或创作者）",
     "privacy.collect.name": "你的姓名和邮箱地址",
-    "privacy.collect.company": "你的公司 / 品牌 / 频道名称（如提供）",
-    "privacy.collect.message": "你发送给我们的关于需求、品类和市场的留言",
+    "privacy.collect.company":
+      "你的公司 / 品牌 / 频道名称（如提供）",
+    "privacy.collect.message":
+      "你发送给我们的关于需求、品类和市场的留言",
     "privacy.howWeUse": "我们如何使用你的数据",
     "privacy.howWeUseIntro": "我们仅将这些信息用于：",
     "privacy.use.review": "审阅你的咨询",
     "privacy.use.contact": "就潜在的合作或服务与你联系",
-    "privacy.noSell": "我们不会出售你的数据，也不会将其分享给第三方用于其自身的营销目的。",
+    "privacy.noSell":
+      "我们不会出售你的数据，也不会将其分享给第三方用于其自身的营销目的。",
     "privacy.legalBasis": "法律依据",
     "privacy.legalBasisBody": "我们处理你个人数据的法律依据是",
     "privacy.legitimateInterest": "合法利益",
-    "privacy.legalBasisEnd": "，即回应业务咨询，以及在适用情况下，应你的要求在签订合同前采取的步骤。",
+    "privacy.legalBasisEnd":
+      "，即回应业务咨询，以及在适用情况下，应你的要求在签订合同前采取的步骤。",
     "privacy.retention": "我们保留数据多长时间",
-    "privacy.retentionBody": "我们会在处理你的咨询及后续沟通所需的时间内保留你的数据。如果你要求删除数据，我们会照办，除非出于法律或合规原因需要保留。",
+    "privacy.retentionBody":
+      "我们会在处理你的咨询及后续沟通所需的时间内保留你的数据。如果你要求删除数据，我们会照办，除非出于法律或合规原因需要保留。",
     "privacy.rights": "你的权利",
-    "privacy.rightsBody": "根据适用的数据保护法，你可能有权访问、更正或删除你的个人数据，以及反对或限制某些形式的处理。",
+    "privacy.rightsBody":
+      "根据适用的数据保护法，你可能有权访问、更正或删除你的个人数据，以及反对或限制某些形式的处理。",
     "privacy.rightsContact": "如需行使这些权利，请发送邮件至：",
     "privacy.updates": "更新",
-    "privacy.updatesBody": "我们可能会不时更新本隐私政策。最新版本将始终在本页面提供。",
+    "privacy.updatesBody":
+      "我们可能会不时更新本隐私政策。最新版本将始终在本页面提供。",
     "privacy.backHome": "← 返回首页",
-    "privacy.disclaimer": "本隐私政策仅供一般参考，不构成法律建议。请咨询合格律师，根据你的具体情况和管辖区域进行审核。",
+    "privacy.disclaimer":
+      "本隐私政策仅供一般参考，不构成法律建议。请咨询合格律师，根据你的具体情况和管辖区域进行审核。",
 
     // CONSULTATION MODAL
     "modal.title": "预约咨询",
