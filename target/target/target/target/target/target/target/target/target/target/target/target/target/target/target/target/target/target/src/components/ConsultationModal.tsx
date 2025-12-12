@@ -146,7 +146,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[500px] bg-card border-border/50 text-foreground max-h-[90vh] overflow-y-auto">
+      <DialogContent className="sm:max-w-[500px] card-glass text-foreground max-h-[90vh] overflow-y-auto">
         {isSuccess ? (
           <div className="py-8 text-center space-y-6">
             <div className="flex justify-center">
