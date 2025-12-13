@@ -9,101 +9,101 @@ export const translations: Record<Lang, Messages> = {
     "nav.about": "About",
     "nav.creators": "Creators",
     "nav.bookConsultation": "Book a consultation",
-    "nav.brandCreatorsNewMarkets": "Brands · Creators · New Markets",
+    "nav.brandCreatorsNewMarkets": "Brands · Creators · European Markets",
 
     // HERO
-    "hero.title.part1": "Where brands meet the",
-    "hero.title.highlight": "right creators",
-    "hero.title.part2": "to grow in Europe.",
+    "hero.title.part1": "Your long-term partner for",
+    "hero.title.highlight": "creator-led growth",
+    "hero.title.part2": "in Europe.",
     "hero.body":
-      "ONDA is a marketing and brand studio specialising in digital campaigns, content production, influencer partnerships and community-driven retail experiences. We connect global brands with local creators and audiences.",
+      "ONDA is a Germany-based growth partner helping Chinese brands enter and scale across European markets. We combine local market expertise with deep cultural understanding to build sustainable, creator-led strategies that work.",
     "hero.schedule": "Schedule a consultation",
     "hero.exploreServices": "Explore our services",
     "hero.whatWeDo": "WHAT WE DO",
     "hero.whatWeDoBody":
-      "Strategy, content, campaigns & brand build.",
+      "Market entry, creator strategy & local execution.",
     "hero.howWeWork": "HOW WE WORK",
     "hero.howWeWorkBody":
-      "Lean, senior team · creator-first.",
+      "Senior team · China-Europe bridge · Long-term focus.",
 
     // SIDE CARD
     "side.matchmaking": "Creator & brand matchmaking",
-    "side.localFirstTitle": "Local-first strategy.",
+    "side.localFirstTitle": "Local execution, global ambition.",
     "side.localFirstBody":
-      "We map the creator, culture and retail landscape for your category, then design campaigns that feel native to each European market.",
-    "side.pill.influencers": "Influencers & ambassadors",
-    "side.pill.communities": "Creators with real communities",
-    "side.pill.retail": "Retail & pop-up partners",
-    "side.pill.experts": "Category experts & tastemakers",
+      "We understand European markets from the inside. Our team maps the creator landscape, cultural nuances and retail ecosystem for your category — then designs strategies that resonate locally while scaling across borders.",
+    "side.pill.influencers": "Local creators & ambassadors",
+    "side.pill.communities": "Creators with engaged communities",
+    "side.pill.retail": "Retail & marketplace partners",
+    "side.pill.experts": "Category experts & market specialists",
 
     // CREATORS SECTION (homepage)
     "creators.sectionLabel": "Creators & Communities",
-    "creators.title": "Beyond impressions, into relationships",
+    "creators.title": "Beyond impressions — building lasting relationships",
     "creators.p1":
-      "We treat creators as long-term partners, not just media placements. Our work focuses on relevance, fit and credibility – on both sides.",
+      "We treat creators as long-term partners, not transactional placements. Our approach prioritises relevance, authenticity and mutual value — for both brands and creators.",
     "creators.p2":
-      "We help brands find creators whose audience, values and aesthetic truly align with what they stand for. That might be a niche specialist with deep trust, or a wider-reach profile who can anchor a launch.",
+      "We help brands identify creators whose audience, values and content style genuinely align with their positioning. This might be a niche specialist with deep community trust, or a broader-reach creator who can anchor a market launch.",
     "creators.p3":
-      "Once the match is right, we support briefing, content direction, workflow and long-term relationship building – so collaborations feel smooth and sustainable for everyone involved.",
+      "Once the right match is made, we manage the entire relationship — from briefing and content direction to workflow coordination and ongoing partnership development. Our goal is collaborations that feel natural and sustainable.",
     "creators.programsLabel": "Creator programs",
     "creators.programsTitle":
-      "From one-off posts to owned communities",
+      "From initial campaigns to owned communities",
     "creators.programsBody":
-      "We design creator programs that can start lean and scale over time:",
+      "We design creator programs that start lean and scale with your growth:",
     "creators.bullet.mapping":
-      "Creator & influencer mapping for priority markets",
+      "Creator mapping and vetting for priority European markets",
     "creators.bullet.story":
-      "Campaign concepts & storytelling frameworks",
+      "Campaign concepts and storytelling frameworks",
     "creators.bullet.hybrid":
-      "Hybrid campaigns: digital + retail + product",
+      "Integrated campaigns: TikTok + marketplaces + retail",
 
     // SERVICES SECTION (homepage)
     "services.sectionLabel": "What we offer",
-    "services.sectionTitle": "Services designed for modern brands",
+    "services.sectionTitle": "Growth pillars for European expansion",
     "services.sectionBody":
-      "From first market entry to ongoing growth, we blend strategy, creative and execution – with a strong focus on creator-led initiatives.",
+      "From first market entry to multi-country scale, we provide the strategy, creative and local execution you need — with TikTok and creator partnerships as the growth engine.",
     "services.viewAll": "View all services",
 
-    "services.card.strategy": "Strategy & Positioning",
+    "services.card.strategy": "Market Entry Strategy",
     "services.card.strategyBody":
-      "Market analysis, brand positioning, go-to-market frameworks and competitive landscape mapping.",
+      "European market analysis, positioning, go-to-market planning and competitive landscape mapping tailored for Chinese brands.",
     "services.card.content": "Content & Campaigns",
     "services.card.contentBody":
-      "End-to-end campaign development from concept through production, launch and performance tracking.",
+      "End-to-end campaign development — from concept and production to launch, localisation and performance tracking.",
     "services.card.partnerships": "Creator Partnerships",
     "services.card.partnershipsBody":
-      "Matchmaking, contract negotiation, briefing, content direction and long-term relationship management.",
+      "Creator sourcing, relationship management, briefing, content direction and long-term partnership development.",
     "services.card.community": "Community Building",
     "services.card.communityBody":
-      "Building engaged communities around your brand through events, ambassador programs and digital spaces.",
-    "services.card.retail": "Retail Activations",
+      "Building engaged communities around your brand through events, ambassador programs and digital presence.",
+    "services.card.retail": "Marketplace & Retail",
     "services.card.retailBody":
-      "Pop-up stores, retail partnerships, in-store experiences and community-driven commerce.",
-    "services.card.expansion": "European Expansion",
+      "EU marketplace strategy, retail partnerships, pop-up activations and community-driven commerce.",
+    "services.card.expansion": "Multi-Market Scale",
     "services.card.expansionBody":
-      "Local market entry strategy, partnerships, operations and growth across European markets.",
+      "Expansion strategy across European markets — local partnerships, operations and sustainable growth.",
 
     // SERVICES PAGE
     "servicesPage.label": "Our Services",
     "servicesPage.title": "Everything you need to grow in Europe.",
-    "servicesPage.subtitle": "We blend strategy, creative and execution with a focus on creator-led marketing and community-driven growth.",
+    "servicesPage.subtitle": "We combine strategy, creative and local execution — with TikTok and creator partnerships as the entry point, and EU marketplaces as the foundation for scale.",
 
     // ABOUT PAGE
     "about.label": "About ONDA",
-    "about.title": "Marketing, brand creation & creator strategy under one roof.",
-    "about.subtitle": "ONDA specialises in helping brands enter, grow and stay relevant in the European market – with a strong focus on creator-led marketing and community-driven retail.",
+    "about.title": "The bridge between Chinese brands and European markets.",
+    "about.subtitle": "ONDA is a Germany-based growth partner specialising in helping Chinese brands enter, grow and build lasting presence across Europe — through creator-led marketing and local market expertise.",
 
     // CONTACT PAGE
     "contact.label": "Get in touch",
-    "contact.title": "Let's talk about your project.",
-    "contact.subtitle": "Ready to grow your brand in Europe? Book a consultation to discuss your goals and how we can help.",
+    "contact.title": "Let's discuss your European expansion.",
+    "contact.subtitle": "Ready to enter or scale in Europe? Book a consultation to discuss your goals and how we can support your growth.",
 
     // PRIVACY PAGE
     "privacy.label": "Legal",
     "privacy.title": "Privacy Policy",
     "privacy.intro": "This page explains how ONDA uses and protects the personal data you share with us, in particular through the consultation form.",
     "privacy.whoWeAre": "Who we are",
-    "privacy.whoWeAreBody": "ONDA is a marketing and brand studio helping global brands work with creators and communities in Europe. You can contact us at",
+    "privacy.whoWeAreBody": "ONDA is a Germany-based growth partner helping Chinese brands work with creators and communities in Europe. You can contact us at",
     "privacy.whatWeCollect": "What data we collect",
     "privacy.whatWeCollectIntro": "When you submit the consultation form, we collect:",
     "privacy.collect.role": "Your role (brand or creator)",
@@ -132,7 +132,7 @@ export const translations: Record<Lang, Messages> = {
     // CONSULTATION MODAL
     "modal.title": "Book a consultation",
     "modal.subtitle":
-      "Tell us a bit about yourself and we'll get back to you shortly.",
+      "Tell us about your brand and goals — we'll get back to you shortly.",
     "modal.roleLabel": "I am a",
     "modal.role.brand": "Brand",
     "modal.role.creator": "Creator",
@@ -144,7 +144,7 @@ export const translations: Record<Lang, Messages> = {
     "modal.companyPlaceholder": "Optional",
     "modal.messageLabel": "Message",
     "modal.messagePlaceholder":
-      "Tell us about your brand or channel, your category, and what you're looking for in Europe.",
+      "Tell us about your brand, your category, and what you're looking to achieve in Europe.",
     "modal.consentLabel":
       "I agree to the processing of my personal data according to the Privacy Policy.",
     "modal.consentHelper":

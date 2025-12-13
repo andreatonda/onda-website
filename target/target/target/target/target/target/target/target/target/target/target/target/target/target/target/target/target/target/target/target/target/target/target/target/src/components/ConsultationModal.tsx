@@ -146,7 +146,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[500px] bg-card border-border/50 text-foreground max-h-[90vh] overflow-y-auto">
+      <DialogContent className="sm:max-w-[500px] card-glass text-foreground max-h-[90vh] overflow-y-auto">
         {isSuccess ? (
           <div className="py-8 text-center space-y-6">
             <div className="flex justify-center">
@@ -160,7 +160,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
             </DialogHeader>
             <Button
               onClick={() => onOpenChange(false)}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-8"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-8 btn-liquid"
             >
               Close
             </Button>
@@ -305,7 +305,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
               <Button
                 type="submit"
                 disabled={!isFormValid || isSubmitting}
-                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground rounded-full py-6 text-base font-medium disabled:opacity-50"
+                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground rounded-full py-6 text-base font-medium disabled:opacity-50 btn-liquid"
               >
                 {isSubmitting ? (
                   <>

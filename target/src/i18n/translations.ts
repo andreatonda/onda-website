@@ -293,7 +293,7 @@ export const translations: Record<Lang, Messages> = {
     "creators.sectionLabel": "创作者与社群",
     "creators.title": "不只追曝光，更重信任与长期合作",
     "creators.p1":
-      "我们把创作者当作长期合作伙伴，而不是一次性投放资源。重点是契合度与可信度：对品牌有效，对创作者也可持续。",
+      "我们把创作者当作长期合作伙伴，而不是, 次性投放资源。重点是契合度与可信度：对品牌有效，对创作者也可持续。",
     "creators.p2":
       "我们会根据你的品类与定位，寻找真正匹配的创作者：可能是细分领域里有深度影响力的专家型账号，也可能是能为新品上市“定调”的头部创作者。",
     "creators.p3":
@@ -334,7 +334,7 @@ export const translations: Record<Lang, Messages> = {
 
     // SERVICES PAGE
     "servicesPage.label": "我们的服务",
-    "servicesPage.title": "一套可落地的欧洲增长方法。",
+    "servicesPage.title": "套可落地的欧洲增长方法。",
     "servicesPage.subtitle":
       "我们的服务不是零散的“菜单”。TikTok 与创作者帮助你进入市场，平台帮助你做规模，本地化执行帮助你在每个国家稳住增长。",
 
