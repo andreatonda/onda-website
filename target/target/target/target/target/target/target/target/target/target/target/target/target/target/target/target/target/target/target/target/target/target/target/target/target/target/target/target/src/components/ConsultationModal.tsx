@@ -87,8 +87,8 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
     }
     if (!formData.message.trim()) {
       newErrors.message = "Message is required.";
-    } else if (formData.message.trim().length < 20) {
-      newErrors.message = "Message must be at least 20 characters.";
+    } else if (formData.message.trim().length < 5) {
+      newErrors.message = "Message must be filled.";
     }
     if (!formData.consent) {
       newErrors.consent = "You must agree to the privacy policy to continue.";
@@ -141,7 +141,7 @@ export const ConsultationModal = ({ open, onOpenChange }: ConsultationModalProps
     formData.role &&
     formData.name.trim() &&
     validateEmail(formData.email) &&
-    formData.message.trim().length >= 20 &&
+    formData.message.trim().length >= 5 &&
     formData.consent;
 
   return (

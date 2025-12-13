@@ -12,195 +12,221 @@ export const translations: Record<Lang, Messages> = {
     "nav.brandCreatorsNewMarkets": "Brands · Creators · European Markets",
 
     // HERO
-    "hero.title.part1": "Your long-term partner for",
+    "hero.title.part1": "A long-term partner for",
     "hero.title.highlight": "creator-led growth",
     "hero.title.part2": "in Europe.",
     "hero.body":
-      "ONDA is a Germany-based growth partner helping Chinese brands enter and scale across European markets. We combine local market expertise with deep cultural understanding to build sustainable, creator-led strategies that work.",
+      "ONDA is based in Germany. We help Chinese brands enter Europe and scale across key markets — starting with TikTok and creators, then building durable growth through marketplaces and local execution.",
     "hero.schedule": "Schedule a consultation",
     "hero.exploreServices": "Explore our services",
     "hero.whatWeDo": "WHAT WE DO",
-    "hero.whatWeDoBody":
-      "Market entry, creator strategy & local execution.",
+    "hero.whatWeDoBody": "Market entry, creator strategy, and local execution.",
     "hero.howWeWork": "HOW WE WORK",
-    "hero.howWeWorkBody":
-      "Senior team · China-Europe bridge · Long-term focus.",
+    "hero.howWeWorkBody": "Senior team · Practical support · Built for scale.",
 
     // SIDE CARD
     "side.matchmaking": "Creator & brand matchmaking",
-    "side.localFirstTitle": "Local execution, global ambition.",
+    "side.localFirstTitle": "Local execution, built to scale.",
     "side.localFirstBody":
-      "We understand European markets from the inside. Our team maps the creator landscape, cultural nuances and retail ecosystem for your category — then designs strategies that resonate locally while scaling across borders.",
+      "We work inside European markets. We map creators, culture, and the retail landscape for your category — then turn that into campaigns and channel plans that feel local and can expand country by country.",
     "side.pill.influencers": "Local creators & ambassadors",
-    "side.pill.communities": "Creators with engaged communities",
-    "side.pill.retail": "Retail & marketplace partners",
-    "side.pill.experts": "Category experts & market specialists",
+    "side.pill.communities": "Creators with real communities",
+    "side.pill.retail": "Marketplaces & retail partners",
+    "side.pill.experts": "Category and market specialists",
 
     // CREATORS SECTION (homepage)
     "creators.sectionLabel": "Creators & Communities",
-    "creators.title": "Beyond impressions — building lasting relationships",
+    "creators.title": "Beyond impressions — building trust over time",
     "creators.p1":
-      "We treat creators as long-term partners, not transactional placements. Our approach prioritises relevance, authenticity and mutual value — for both brands and creators.",
+      "We work with creators as partners, not as one-off placements. The goal is fit and credibility — for the brand and the creator.",
     "creators.p2":
-      "We help brands identify creators whose audience, values and content style genuinely align with their positioning. This might be a niche specialist with deep community trust, or a broader-reach creator who can anchor a market launch.",
+      "We find creators whose audience and style actually match your brand. Sometimes that’s a niche specialist with strong trust. Sometimes it’s a larger profile that can carry a launch.",
     "creators.p3":
-      "Once the right match is made, we manage the entire relationship — from briefing and content direction to workflow coordination and ongoing partnership development. Our goal is collaborations that feel natural and sustainable.",
+      "Once the match is right, we run the process end to end: briefing, content direction, coordination, and the ongoing relationship. We want collaborations that look natural and remain useful month after month.",
     "creators.programsLabel": "Creator programs",
-    "creators.programsTitle":
-      "From initial campaigns to owned communities",
+    "creators.programsTitle": "From first campaigns to long-term programs",
     "creators.programsBody":
-      "We design creator programs that start lean and scale with your growth:",
+      "We build creator programs that can start small and scale with results:",
     "creators.bullet.mapping":
       "Creator mapping and vetting for priority European markets",
-    "creators.bullet.story":
-      "Campaign concepts and storytelling frameworks",
+    "creators.bullet.story": "Campaign concepts and story frameworks",
     "creators.bullet.hybrid":
       "Integrated campaigns: TikTok + marketplaces + retail",
 
     // SERVICES SECTION (homepage)
     "services.sectionLabel": "What we offer",
-    "services.sectionTitle": "Four pillars for European expansion",
+    "services.sectionTitle": "Services built for entering and scaling in Europe",
     "services.sectionBody":
-      "From first market entry to multi-country scale, we provide the strategy, execution and local expertise you need — with creators and TikTok as your entry point, and EU marketplaces as your foundation for growth.",
+      "We help you choose the right first market, launch with creators, and build repeatable sales through marketplaces. TikTok is often the entry point — the operating system is what comes next.",
     "services.viewAll": "View all services",
 
     "services.card.strategy": "Market Entry & Expansion",
     "services.card.strategyBody":
-      "Europe is fragmented — different rules, consumers and platforms per country. We help you decide where to start, which channels to use, and in what order to expand. Germany as entry point, multi-country rollout as the goal.",
+      "Europe isn’t one market. We help you decide where to start, what to prioritise, and how to expand in the right order — usually starting with Germany, then scaling across countries.",
     "services.card.content": "Creator & Influencer Marketing",
     "services.card.contentBody":
-      "Structured, compliant, European-first creator marketing. We source creators across key EU markets, manage campaigns end-to-end, and build long-term relationships — not one-off posts.",
+      "European-first creator marketing with clear briefs, compliance, and strong execution. Built for long-term partnerships, not one-off posts.",
     "services.card.partnerships": "Marketplace & Channel Management",
     "services.card.partnershipsBody":
-      "One partner managing TikTok Shop, Amazon EU, bol.com, eBay and other relevant marketplaces. Account setup, listing localisation, and ongoing operational support.",
+      "We manage TikTok Shop, Amazon EU, bol.com, eBay and other relevant channels — including localisation and day-to-day operations.",
     "services.card.community": "Affiliate & Performance Marketing",
     "services.card.communityBody":
-      "Performance with structure. TikTok affiliate program setup, creator-led performance loops, paid and organic coordination — all focused on sustainable ROAS.",
+      "Affiliate programs, creator-driven performance loops, and paid support when needed. Measured against business outcomes — not vanity metrics.",
     "services.card.retail": "Content & Localisation",
     "services.card.retailBody":
-      "Local language adaptation, cultural translation and content direction that resonates in Germany, France, Italy, Spain, Netherlands and beyond.",
+      "Language and cultural adaptation that fits local markets — including content direction that works in Germany, France, Italy, Spain, and the Netherlands.",
     "services.card.expansion": "Strategic Partnership",
     "services.card.expansionBody":
-      "We work alongside you as a long-term partner — not as an agency for hire. From initial market entry to scaling across multiple European countries.",
+      "We work alongside your team as an ongoing partner — flexible, fast, and focused on building something that lasts.",
 
     // SERVICES PAGE
     "servicesPage.label": "Our Services",
-    "servicesPage.title": "A coherent system for European growth.",
-    "servicesPage.subtitle": "We structure our services as interconnected pillars — not a menu of disconnected offerings. TikTok and creators open the door, marketplaces build the foundation, and local execution sustains your growth.",
+    "servicesPage.title": "A practical system for European growth.",
+    "servicesPage.subtitle":
+      "Our services connect. TikTok and creators help you enter, marketplaces help you scale, and local execution helps you stay competitive in each country.",
 
     // HOW WE WORK SECTION
     "servicesPage.howWeWork.label": "How we work",
-    "servicesPage.howWeWork.title": "A clear path from first market to European scale.",
-    "servicesPage.howWeWork.intro": "We work in phases. Each step builds on the last. The goal is sustainable growth — not short-term wins.",
+    "servicesPage.howWeWork.title":
+      "A clear path from first market to multi-country scale.",
+    "servicesPage.howWeWork.intro":
+      "We work in phases. Each step builds on the last, so growth stays stable as you expand.",
     "servicesPage.howWeWork.step1.title": "Market & channel assessment",
-    "servicesPage.howWeWork.step1.body": "We analyse where your brand fits in Europe. Which countries, which platforms, which channels make sense first. We consider competition, pricing, logistics and consumer behaviour.",
+    "servicesPage.howWeWork.step1.body":
+      "We look at category fit, country priorities, competition, pricing, logistics and channel selection — so you start in the right place.",
     "servicesPage.howWeWork.step2.title": "Creator-led entry",
-    "servicesPage.howWeWork.step2.body": "We start with TikTok and creators. This is the fastest way to build visibility and test product-market fit in a new region. We handle creator sourcing, briefing, content and compliance.",
+    "servicesPage.howWeWork.step2.body":
+      "We use creators and TikTok to build awareness and test what works locally. We manage creator sourcing, briefing, content direction, and compliance.",
     "servicesPage.howWeWork.step3.title": "Marketplace execution",
-    "servicesPage.howWeWork.step3.body": "Once there is traction, we activate marketplaces — TikTok Shop, Amazon EU, bol.com and others. We manage listings, localisation and day-to-day operations.",
+    "servicesPage.howWeWork.step3.body":
+      "When traction is real, we build the sales foundation: TikTok Shop, Amazon EU, bol.com and more. We manage listings, localisation, and operations.",
     "servicesPage.howWeWork.step4.title": "Multi-country expansion",
-    "servicesPage.howWeWork.step4.body": "Germany is usually the starting point. From there, we roll out to France, Italy, Spain, Netherlands and other markets — adapting strategy to each country.",
+    "servicesPage.howWeWork.step4.body":
+      "Germany is often the start. From there, we expand to France, Italy, Spain, the Netherlands and other markets — adapting the plan to each country.",
 
     // SERVICE PILLARS
     "servicesPage.pillars.label": "What we do",
-    "servicesPage.pillars.title": "Five pillars for European expansion.",
+    "servicesPage.pillars.title": "Five core service areas.",
 
     "servicesPage.pillar.creators.title": "Creator & influencer marketing",
-    "servicesPage.pillar.creators.body": "We source, vet and manage creators across European markets. Our focus is on long-term partnerships, not one-off posts. We handle briefings, content direction, compliance and reporting. All campaigns are structured to meet European advertising standards.",
-    "servicesPage.pillar.creators.point1": "Creator sourcing and vetting across Germany, France, Italy, Spain, Netherlands",
+    "servicesPage.pillar.creators.body":
+      "We source, vet and manage creators across Europe. We run campaigns with clear briefs, clean execution, and the right compliance standards for each market.",
+    "servicesPage.pillar.creators.point1":
+      "Creator sourcing across Germany, France, Italy, Spain, Netherlands",
     "servicesPage.pillar.creators.point2": "Campaign management from brief to delivery",
-    "servicesPage.pillar.creators.point3": "Long-term ambassador and partnership programs",
-    "servicesPage.pillar.creators.point4": "European compliance and disclosure requirements",
+    "servicesPage.pillar.creators.point3": "Ambassador and long-term programs",
+    "servicesPage.pillar.creators.point4": "Disclosure and compliance support",
 
     "servicesPage.pillar.tiktok.title": "TikTok Shop & social commerce",
-    "servicesPage.pillar.tiktok.body": "TikTok is the entry point for most brands we work with. We set up and manage TikTok Shop, build creator-driven content loops and run affiliate programs that convert. This is where brand awareness turns into sales.",
-    "servicesPage.pillar.tiktok.point1": "TikTok Shop setup and ongoing management",
-    "servicesPage.pillar.tiktok.point2": "Creator-driven content and affiliate programs",
-    "servicesPage.pillar.tiktok.point3": "Content-led conversion strategies",
+    "servicesPage.pillar.tiktok.body":
+      "We set up and manage TikTok Shop and build creator-driven content loops. This is where awareness turns into measurable sales.",
+    "servicesPage.pillar.tiktok.point1": "TikTok Shop setup and management",
+    "servicesPage.pillar.tiktok.point2": "Creator content and affiliate programs",
+    "servicesPage.pillar.tiktok.point3": "Conversion-focused content direction",
     "servicesPage.pillar.tiktok.point4": "Performance tracking and optimisation",
 
     "servicesPage.pillar.marketplaces.title": "Marketplace management",
-    "servicesPage.pillar.marketplaces.body": "We manage your presence across EU marketplaces. One partner, multiple platforms. We handle account setup, listing localisation and daily operations — so you can focus on product and brand.",
-    "servicesPage.pillar.marketplaces.point1": "Amazon EU (Germany, France, Italy, Spain, Netherlands)",
+    "servicesPage.pillar.marketplaces.body":
+      "One partner for multiple platforms. We support account setup, listing localisation, and daily operations so your team can stay focused on product and supply chain.",
+    "servicesPage.pillar.marketplaces.point1":
+      "Amazon EU (Germany, France, Italy, Spain, Netherlands)",
     "servicesPage.pillar.marketplaces.point2": "TikTok Shop",
-    "servicesPage.pillar.marketplaces.point3": "bol.com, eBay and category-specific platforms",
-    "servicesPage.pillar.marketplaces.point4": "Listing localisation and operational support",
+    "servicesPage.pillar.marketplaces.point3": "bol.com, eBay, and category platforms",
+    "servicesPage.pillar.marketplaces.point4": "Localised listings and operations",
 
     "servicesPage.pillar.affiliate.title": "Affiliate & performance marketing",
-    "servicesPage.pillar.affiliate.body": "We build performance systems that scale without burning through budget. Creator affiliates, paid amplification and organic content work together. Everything is measured against ROAS, not vanity metrics.",
-    "servicesPage.pillar.affiliate.point1": "TikTok affiliate program setup and management",
+    "servicesPage.pillar.affiliate.body":
+      "We build performance systems that stay efficient as you scale — combining affiliates, creators, and paid support when it makes sense.",
+    "servicesPage.pillar.affiliate.point1":
+      "TikTok affiliate program setup and management",
     "servicesPage.pillar.affiliate.point2": "Creator-led performance loops",
     "servicesPage.pillar.affiliate.point3": "Paid and organic coordination",
-    "servicesPage.pillar.affiliate.point4": "ROAS-focused decision making",
+    "servicesPage.pillar.affiliate.point4": "Outcome-based decision making",
 
     "servicesPage.pillar.strategy.title": "Market entry & expansion strategy",
-    "servicesPage.pillar.strategy.body": "Europe is not one market. Each country has different rules, platforms, consumer habits and competitive dynamics. We help you decide where to start, which channels to prioritise, and how to sequence your expansion.",
-    "servicesPage.pillar.strategy.point1": "Germany as the typical entry point",
+    "servicesPage.pillar.strategy.body":
+      "Each European country is different. We help you choose the right sequence, channels, and local approach — so expansion doesn’t break what’s already working.",
+    "servicesPage.pillar.strategy.point1": "Germany as a common entry point",
     "servicesPage.pillar.strategy.point2": "Multi-country rollout planning",
     "servicesPage.pillar.strategy.point3": "Channel and platform prioritisation",
-    "servicesPage.pillar.strategy.point4": "Localisation and cultural adaptation",
+    "servicesPage.pillar.strategy.point4": "Localisation and adaptation",
 
     // GEOGRAPHIC REACH
     "servicesPage.geo.label": "Where we operate",
-    "servicesPage.geo.title": "Germany-based. Active across Europe.",
-    "servicesPage.geo.body": "ONDA is headquartered in Germany — the largest e-commerce market in Europe. From here, we support brands entering and scaling across key European countries.",
-    "servicesPage.geo.markets": "Germany, France, Italy, Spain, Netherlands — and other priority markets depending on your category.",
+    "servicesPage.geo.title": "Based in Germany. Active across Europe.",
+    "servicesPage.geo.body":
+      "ONDA is headquartered in Germany — Europe’s largest e-commerce market. From here, we support brands entering and scaling across key countries.",
+    "servicesPage.geo.markets":
+      "Germany, France, Italy, Spain, Netherlands — plus other priority markets depending on your category.",
 
     // PARTNERSHIP
     "servicesPage.partnership.label": "How we partner",
     "servicesPage.partnership.title": "A scalable partner, not a vendor.",
-    "servicesPage.partnership.body": "We work alongside your team — not as an external agency, but as an extension of your operations. We understand the pace and priorities of Chinese brands. We communicate clearly and move quickly.",
-    "servicesPage.partnership.point1": "Long-term partnerships, not project-based engagements",
-    "servicesPage.partnership.point2": "Direct access to senior team members",
+    "servicesPage.partnership.body":
+      "We work alongside your team and stay involved as you grow. Clear communication, fast execution, and a focus on what actually moves the business.",
+    "servicesPage.partnership.point1": "Long-term partnerships over one-off projects",
+    "servicesPage.partnership.point2": "Direct access to senior operators",
     "servicesPage.partnership.point3": "Bilingual communication (English and Chinese)",
-    "servicesPage.partnership.point4": "Flexible structures that scale with your growth",
-    "servicesPage.partnership.closing": "We are the bridge between Chinese brands and European markets. We understand both sides. That is why brands stay with us.",
+    "servicesPage.partnership.point4": "Flexible scope that scales with your needs",
+    "servicesPage.partnership.closing":
+      "We understand both sides — how Chinese brands operate, and how Europe works in practice.",
 
     // ABOUT PAGE
     "about.label": "About ONDA",
-    "about.title": "The bridge between Chinese brands and European markets.",
-    "about.subtitle": "ONDA is a Germany-based growth partner specialising in helping Chinese brands enter, grow and build lasting presence across Europe — through creator-led marketing and local market expertise.",
+    "about.title": "Built in Germany. Focused on China-to-Europe growth.",
+    "about.subtitle":
+      "ONDA helps Chinese brands enter Europe and scale sustainably — through creators, marketplaces, and local execution that works country by country.",
 
     // CONTACT PAGE
     "contact.label": "Get in touch",
-    "contact.title": "Let's discuss your European expansion.",
-    "contact.subtitle": "Ready to enter or scale in Europe? Book a consultation to discuss your goals and how we can support your growth.",
+    "contact.title": "Let’s talk about your European expansion.",
+    "contact.subtitle":
+      "Tell us where you are today and what you’re aiming for. We’ll come back with a clear view of how we can help.",
 
     // PRIVACY PAGE
     "privacy.label": "Legal",
     "privacy.title": "Privacy Policy",
-    "privacy.intro": "This page explains how ONDA uses and protects the personal data you share with us, in particular through the consultation form.",
+    "privacy.intro":
+      "This page explains how ONDA uses and protects the personal data you share with us, in particular through the consultation form.",
     "privacy.whoWeAre": "Who we are",
-    "privacy.whoWeAreBody": "ONDA is a Germany-based growth partner helping Chinese brands work with creators and communities in Europe. You can contact us at",
+    "privacy.whoWeAreBody":
+      "ONDA is a Germany-based growth partner helping Chinese brands work with creators and communities in Europe. You can contact us at",
     "privacy.whatWeCollect": "What data we collect",
-    "privacy.whatWeCollectIntro": "When you submit the consultation form, we collect:",
+    "privacy.whatWeCollectIntro":
+      "When you submit the consultation form, we collect:",
     "privacy.collect.role": "Your role (brand or creator)",
     "privacy.collect.name": "Your name and email address",
     "privacy.collect.company": "Your company / brand / channel name (if provided)",
-    "privacy.collect.message": "The message you send us about your needs, category and markets",
+    "privacy.collect.message":
+      "The message you send us about your needs, category and markets",
     "privacy.howWeUse": "How we use your data",
     "privacy.howWeUseIntro": "We use this information only to:",
     "privacy.use.review": "Review your enquiry",
     "privacy.use.contact": "Contact you about potential collaboration or services",
-    "privacy.noSell": "We do not sell your data or share it with third parties for their own marketing purposes.",
+    "privacy.noSell":
+      "We do not sell your data or share it with third parties for their own marketing purposes.",
     "privacy.legalBasis": "Legal basis",
     "privacy.legalBasisBody": "Our legal basis for processing your personal data is",
     "privacy.legitimateInterest": "legitimate interest",
-    "privacy.legalBasisEnd": "in responding to business enquiries and, where applicable, steps taken at your request prior to entering into a contract.",
+    "privacy.legalBasisEnd":
+      "in responding to business enquiries and, where applicable, steps taken at your request prior to entering into a contract.",
     "privacy.retention": "How long we keep your data",
-    "privacy.retentionBody": "We keep your data for as long as it is needed to handle your enquiry and any follow-up conversation. If you ask us to delete your data, we will do so unless we need to keep it for legal or compliance reasons.",
+    "privacy.retentionBody":
+      "We keep your data for as long as it is needed to handle your enquiry and any follow-up conversation. If you ask us to delete your data, we will do so unless we need to keep it for legal or compliance reasons.",
     "privacy.rights": "Your rights",
-    "privacy.rightsBody": "Subject to applicable data protection law, you may have the right to access, correct or delete your personal data, and to object to or restrict certain forms of processing.",
+    "privacy.rightsBody":
+      "Subject to applicable data protection law, you may have the right to access, correct or delete your personal data, and to object to or restrict certain forms of processing.",
     "privacy.rightsContact": "To exercise these rights, please email us at",
     "privacy.updates": "Updates",
-    "privacy.updatesBody": "We may update this Privacy Policy from time to time. The latest version will always be available on this page.",
+    "privacy.updatesBody":
+      "We may update this Privacy Policy from time to time. The latest version will always be available on this page.",
     "privacy.backHome": "← Back to home",
-    "privacy.disclaimer": "This Privacy Policy is for general information only and does not constitute legal advice. Please consult a qualified lawyer to review it for your specific situation and jurisdiction.",
+    "privacy.disclaimer":
+      "This Privacy Policy is for general information only and does not constitute legal advice. Please consult a qualified lawyer to review it for your specific situation and jurisdiction.",
 
     // CONSULTATION MODAL
     "modal.title": "Book a consultation",
-    "modal.subtitle":
-      "Tell us about your brand and goals — we'll get back to you shortly.",
+    "modal.subtitle": "Tell us what you’re building — we’ll reply shortly.",
     "modal.roleLabel": "I am a",
     "modal.role.brand": "Brand",
     "modal.role.creator": "Creator",
@@ -212,7 +238,7 @@ export const translations: Record<Lang, Messages> = {
     "modal.companyPlaceholder": "Optional",
     "modal.messageLabel": "Message",
     "modal.messagePlaceholder":
-      "Tell us about your brand, your category, and what you're looking to achieve in Europe.",
+      "Share your category, where you sell today, and what you want to achieve in Europe.",
     "modal.consentLabel":
       "I agree to the processing of my personal data according to the Privacy Policy.",
     "modal.consentHelper":
@@ -220,8 +246,7 @@ export const translations: Record<Lang, Messages> = {
     "modal.submit": "Send request",
     "modal.sending": "Sending...",
     "modal.successTitle": "Thank you!",
-    "modal.successBody":
-      "We've received your request and will get back to you as soon as possible.",
+    "modal.successBody": "We’ve received your message and will get back to you soon.",
     "modal.close": "Close",
     "modal.privacyPolicy": "Privacy Policy",
 
@@ -232,8 +257,7 @@ export const translations: Record<Lang, Messages> = {
     "error.emailInvalid": "Please enter a valid email address.",
     "error.messageRequired": "Message is required.",
     "error.messageShort": "Message must be at least 5 characters.",
-    "error.consent":
-      "You must agree to the privacy policy to continue.",
+    "error.consent": "You must agree to the privacy policy to continue.",
     "error.submit":
       "Something went wrong while sending your request. Please try again or email us directly at andre@meetonda.com."
   },
@@ -242,141 +266,220 @@ export const translations: Record<Lang, Messages> = {
     // NAV
     "nav.services": "服务",
     "nav.about": "关于我们",
-    "nav.creators": "创作者达人",
+    "nav.creators": "创作者",
     "nav.bookConsultation": "预约咨询",
-    "nav.brandCreatorsNewMarkets": "品牌 · 创作者 · 新市场",
+    "nav.brandCreatorsNewMarkets": "品牌 · 创作者 · 欧洲市场",
 
     // HERO
-    "hero.title.part1": "在这里，助力品牌牵手契合的",
-    "hero.title.highlight": "创作者达人",
-    "hero.title.part2": "，让品牌在欧洲实现增长。",
+    "hero.title.part1": "我们是品牌在欧洲的长期伙伴：",
+    "hero.title.highlight": "创作者驱动增长",
+    "hero.title.part2": "。",
     "hero.body":
-      "ONDA 是一家营销与品牌工作室，专注于数字营销、内容制作、创作者达人合作以及以社区为驱动的零售体验。我们把全球品牌与本地创作者达人和受众连接在一起。",
+      "ONDA 总部位于德国。我们帮助中国品牌进入欧洲并实现多国规模化：先用 TikTok 与创作者打开市场，再通过主流电商平台与本地化运营把销量做稳、把增长做长。",
     "hero.schedule": "预约咨询",
     "hero.exploreServices": "了解我们的服务",
-    "hero.whatWeDo": "我们专注于",
-    "hero.whatWeDoBody": "战略、内容、整合营销与品牌打造。",
-    "hero.howWeWork": "我们拥有",
-    "hero.howWeWorkBody": "精干资深团队 · 大量本地创作者达人。",
+    "hero.whatWeDo": "我们做什么",
+    "hero.whatWeDoBody": "欧洲进入策略、创作者项目、以及落地执行。",
+    "hero.howWeWork": "我们怎么做",
+    "hero.howWeWorkBody": "资深团队 · 结果导向 · 可持续扩张。",
 
     // SIDE CARD
-    "side.matchmaking": "创作者达人与品牌匹配",
-    "side.localFirstTitle": "本地优先的策略。",
+    "side.matchmaking": "创作者与品牌匹配",
+    "side.localFirstTitle": "本地化落地，按国家复制扩张。",
     "side.localFirstBody":
-      "我们为您的品类梳理本地创作者达人，适应本地文化与零售格局，打造真正适配各个欧洲市场的本地化品牌进驻及实施方案。",
-    "side.pill.influencers": "网红达人与品牌大使",
-    "side.pill.communities": "拥有真实社群的创作者",
-    "side.pill.retail": "零售与快闪合作伙伴",
-    "side.pill.experts": "品类专家与风向引领者",
+      "我们深耕欧洲本地市场，熟悉各国家的内容偏好、平台规则与零售生态。我们会先把品类的“人、内容、渠道”梳理清楚，再把策略落到可执行的项目里，逐国扩张。",
+    "side.pill.influencers": "本地创作者与品牌大使",
+    "side.pill.communities": "有真实社群的创作者",
+    "side.pill.retail": "电商平台与零售合作",
+    "side.pill.experts": "品类专家与市场运营",
 
     // CREATORS SECTION (homepage)
-    "creators.sectionLabel": "创作者达人与社群",
-    "creators.title": "超越曝光，更注重关系与信任",
+    "creators.sectionLabel": "创作者与社群",
+    "creators.title": "不只追曝光，更重信任与长期合作",
     "creators.p1":
-      "我们将创作者达人视为长期合作伙伴，而不只是一次性的媒体投放。我们的工作重点在于相关性、匹配度与可信度——对品牌和创作者达人双方皆然。",
+      "我们把创作者当作长期合作伙伴，而不是一次性投放资源。重点是契合度与可信度：对品牌有效，对创作者也可持续。",
     "creators.p2":
-      "我们帮助品牌找到在受众、价值观与审美风格上真正契合其品牌主张的创作者达人。这个人选可能是一个在细分领域拥有深度信任的专家型达人，也可能是一位覆盖面更广、能够为新品发布或活动“定调”的核心创作者。",
+      "我们会根据你的品类与定位，寻找真正匹配的创作者：可能是细分领域里有深度影响力的专家型账号，也可能是能为新品上市“定调”的头部创作者。",
     "creators.p3":
-      "当匹配到位后，我们会协助完成需求简报、内容方向把控、流程协作以及长期关系建设，让每一次合作对所有参与方而言都顺畅且可持续。",
-    "creators.programsLabel": "创作者达人项目",
-    "creators.programsTitle": "从一次性内容发布到自有社群运营",
+      "确定合作后，我们负责整个流程：需求梳理、内容方向、沟通推进与长期关系维护。目标是让合作看起来自然、跑得顺、并且能持续带来结果。",
+    "creators.programsLabel": "创作者项目",
+    "creators.programsTitle": "从首轮合作到长期项目化运营",
     "creators.programsBody":
-      "我们设计的创作者达人项目可以先从轻量启动，并随着需求逐步扩展：",
-    "creators.bullet.mapping":
-      "针对重点市场的创作者与影响者梳理及匹配",
-    "creators.bullet.story":
-      "活动概念与故事叙事框架",
-    "creators.bullet.hybrid":
-      "混合型整合营销：数字渠道 + 零售 + 产品体验",
+      "创作者项目可以先轻量启动，再根据效果逐步放大：",
+    "creators.bullet.mapping": "重点国家的创作者筛选与评估",
+    "creators.bullet.story": "活动概念与叙事框架",
+    "creators.bullet.hybrid": "组合打法：TikTok + 平台 + 线下触点",
 
     // SERVICES SECTION (homepage)
     "services.sectionLabel": "我们的服务",
-    "services.sectionTitle": "为新一代品牌设计的服务组合",
+    "services.sectionTitle": "面向欧洲进入与扩张的服务体系",
     "services.sectionBody":
-      "从首次进入欧洲市场，到后续持续增长，我们将战略、创意和执行整合在一起，并以创作者为核心。",
+      "我们帮助你选对第一站、用创作者打开市场，并通过平台与本地运营把增长做稳。TikTok 往往是入口，但真正决定规模的是后续的渠道与运营系统。",
     "services.viewAll": "查看全部服务",
 
-    "services.card.strategy": "战略与定位",
+    "services.card.strategy": "欧洲进入与扩张策略",
     "services.card.strategyBody":
-      "市场分析、品牌定位、进入策略框架以及竞品格局洞察。",
-    "services.card.content": "内容与整合营销",
+      "欧洲不是一个市场。我们帮助你确定先做哪个国家、优先什么渠道、以及扩张顺序。通常从德国起步，再逐国复制。",
+    "services.card.content": "创作者与达人营销",
     "services.card.contentBody":
-      "从创意到制作、上线与效果追踪的一站式整合营销项目。",
-    "services.card.partnerships": "创作者合作管理",
+      "以欧洲市场规则为前提的创作者营销：清晰的 Brief、合规披露、以及能持续迭代的合作机制。",
+    "services.card.partnerships": "平台与渠道管理",
     "services.card.partnershipsBody":
-      "筛选与匹配、合同谈判、简报撰写、内容方向与长期关系维护。",
-    "services.card.community": "品牌社群建设",
+      "统一管理 TikTok Shop、Amazon EU、bol.com、eBay 等平台：开店、内容与商品本地化、以及日常运营支持。",
+    "services.card.community": "联盟与效果营销",
     "services.card.communityBody":
-      "通过线下活动、品牌大使项目与数字空间，打造有温度的品牌社群。",
-    "services.card.retail": "零售与线下体验",
+      "搭建可规模化的效果体系：达人联盟、内容带货闭环、必要时配合投放。以实际业务结果为标准，而不是“好看数据”。",
+    "services.card.retail": "内容与本地化",
     "services.card.retailBody":
-      "快闪店、零售合作、门店体验以及以社区为驱动的线下零售。",
-    "services.card.expansion": "欧洲市场拓展",
+      "语言与文化适配、内容方向与素材把控，让你的表达更像“本地品牌”，而不是“翻译过来的品牌”。",
+    "services.card.expansion": "长期合作伙伴",
     "services.card.expansionBody":
-      "本地化进入策略、合作伙伴与运营支持，助力多个欧洲市场的持续增长。",
+      "我们不是一次性交付的外包团队，而是陪你一起把欧洲做起来的长期伙伴：节奏快、沟通清楚、可随规模调整。",
 
     // SERVICES PAGE
     "servicesPage.label": "我们的服务",
-    "servicesPage.title": "欧洲市场增长所需的一切支持。",
+    "servicesPage.title": "一套可落地的欧洲增长方法。",
     "servicesPage.subtitle":
-      "我们将战略、创意与执行整合在一起，专注于创作者驱动的营销和社群驱动的增长。",
+      "我们的服务不是零散的“菜单”。TikTok 与创作者帮助你进入市场，平台帮助你做规模，本地化执行帮助你在每个国家稳住增长。",
+
+    // HOW WE WORK SECTION
+    "servicesPage.howWeWork.label": "我们的流程",
+    "servicesPage.howWeWork.title": "从进入第一个国家，到多国规模化的清晰路径。",
+    "servicesPage.howWeWork.intro":
+      "我们按阶段推进。每一步为下一步打基础，让增长在扩张过程中依然稳定。",
+    "servicesPage.howWeWork.step1.title": "市场与渠道判断",
+    "servicesPage.howWeWork.step1.body":
+      "我们会结合你的品类与供应链能力，评估欧洲各国机会与难点：竞争、价格带、物流与合规、渠道优先级等，帮你选对第一站。",
+    "servicesPage.howWeWork.step2.title": "创作者驱动进入",
+    "servicesPage.howWeWork.step2.body":
+      "用 TikTok 与创作者快速建立认知并验证打法。我们负责创作者筛选、合作推进、内容方向把控与合规披露。",
+    "servicesPage.howWeWork.step3.title": "平台执行与运营",
+    "servicesPage.howWeWork.step3.body":
+      "当内容与需求跑通，我们把销量基础搭起来：TikTok Shop、Amazon EU、bol.com 等平台的开店、商品与页面本地化、以及日常运营支持。",
+    "servicesPage.howWeWork.step4.title": "多国复制扩张",
+    "servicesPage.howWeWork.step4.body":
+      "通常从德国起步，然后扩张到法国、意大利、西班牙、荷兰等国家。每个国家的内容表达与平台策略都需要调整，我们会逐国落地。",
+
+    // SERVICE PILLARS
+    "servicesPage.pillars.label": "我们能做什么",
+    "servicesPage.pillars.title": "五个核心服务方向。",
+
+    "servicesPage.pillar.creators.title": "创作者与达人营销",
+    "servicesPage.pillar.creators.body":
+      "我们在欧洲本地筛选、评估并管理创作者合作。强调长期合作、合规披露与可执行的内容方向，让合作更稳定、更可复制。",
+    "servicesPage.pillar.creators.point1":
+      "德国、法国、意大利、西班牙、荷兰等国家的创作者资源",
+    "servicesPage.pillar.creators.point2": "从 Brief 到交付的全流程管理",
+    "servicesPage.pillar.creators.point3": "品牌大使与长期项目",
+    "servicesPage.pillar.creators.point4": "欧洲披露与合规支持",
+
+    "servicesPage.pillar.tiktok.title": "TikTok Shop 与社交电商",
+    "servicesPage.pillar.tiktok.body":
+      "我们搭建并运营 TikTok Shop，通过创作者内容与联盟带货形成转化闭环，把“种草”变成可衡量的销量。",
+    "servicesPage.pillar.tiktok.point1": "TikTok Shop 搭建与运营",
+    "servicesPage.pillar.tiktok.point2": "创作者内容与联盟项目",
+    "servicesPage.pillar.tiktok.point3": "内容导向的转化策略",
+    "servicesPage.pillar.tiktok.point4": "数据追踪与持续优化",
+
+    "servicesPage.pillar.marketplaces.title": "平台运营管理",
+    "servicesPage.pillar.marketplaces.body":
+      "一个团队管理多个平台。我们支持开店、商品与页面本地化、以及日常运营，减少你在欧洲多平台同时推进的沟通成本。",
+    "servicesPage.pillar.marketplaces.point1":
+      "Amazon EU（德国/法国/意大利/西班牙/荷兰）",
+    "servicesPage.pillar.marketplaces.point2": "TikTok Shop",
+    "servicesPage.pillar.marketplaces.point3": "bol.com、eBay 及垂直平台",
+    "servicesPage.pillar.marketplaces.point4": "Listing 本地化与运营支持",
+
+    "servicesPage.pillar.affiliate.title": "联盟与效果营销",
+    "servicesPage.pillar.affiliate.body":
+      "我们搭建可规模化的效果体系：达人联盟、内容带货闭环、必要时配合投放。以业务结果为标准，持续迭代。",
+    "servicesPage.pillar.affiliate.point1": "TikTok 联盟项目搭建与管理",
+    "servicesPage.pillar.affiliate.point2": "创作者驱动的效果闭环",
+    "servicesPage.pillar.affiliate.point3": "投放与自然流量协同",
+    "servicesPage.pillar.affiliate.point4": "以实际结果为导向的决策",
+
+    "servicesPage.pillar.strategy.title": "欧洲进入与扩张策略",
+    "servicesPage.pillar.strategy.body":
+      "欧洲各国的规则、平台与消费习惯差异很大。我们帮助你选对顺序、明确重点渠道，并为每个国家做本地化调整。",
+    "servicesPage.pillar.strategy.point1": "德国常作为第一站",
+    "servicesPage.pillar.strategy.point2": "多国扩张节奏与规划",
+    "servicesPage.pillar.strategy.point3": "渠道与平台优先级",
+    "servicesPage.pillar.strategy.point4": "本地化与文化适配",
+
+    // GEOGRAPHIC REACH
+    "servicesPage.geo.label": "覆盖市场",
+    "servicesPage.geo.title": "总部德国，服务覆盖欧洲。",
+    "servicesPage.geo.body":
+      "ONDA 总部位于德国（欧洲最大的电商市场）。我们从德国出发，支持品牌进入并扩张到多个欧洲国家。",
+    "servicesPage.geo.markets":
+      "德国、法国、意大利、西班牙、荷兰等核心国家；也可根据品类选择其他重点市场。",
+
+    // PARTNERSHIP
+    "servicesPage.partnership.label": "合作方式",
+    "servicesPage.partnership.title": "可扩张的长期伙伴，而不是一次性外包。",
+    "servicesPage.partnership.body":
+      "我们会与品牌团队并肩推进：沟通清楚、响应快、执行强。随着你的节奏与预算变化，合作范围也能灵活调整。",
+    "servicesPage.partnership.point1": "更偏长期合作，而不是一次性交付",
+    "servicesPage.partnership.point2": "直接对接资深团队成员",
+    "servicesPage.partnership.point3": "支持中文与英文沟通",
+    "servicesPage.partnership.point4": "合作结构可随规模调整",
+    "servicesPage.partnership.closing":
+      "我们理解中国品牌的节奏，也熟悉欧洲市场的规则与打法，所以合作会更顺、更可控。",
 
     // ABOUT PAGE
     "about.label": "关于 ONDA",
-    "about.title": "营销、品牌打造与创作者策略，一站式服务。",
+    "about.title": "立足德国，专注中国品牌欧洲增长。",
     "about.subtitle":
-      "ONDA 专注于帮助品牌进入、发展并在欧洲市场保持竞争力，尤其擅长创作者营销与社群驱动的零售。",
+      "ONDA 帮助中国品牌进入欧洲并实现可持续扩张：以创作者和内容打开市场，以平台与本地运营建立规模。",
 
     // CONTACT PAGE
     "contact.label": "联系我们",
-    "contact.title": "让我们聊聊你的项目。",
+    "contact.title": "聊聊你的欧洲计划。",
     "contact.subtitle":
-      "准备好在欧洲发展你的品牌了吗？预约咨询，讨论你的目标以及我们如何帮助你。",
+      "告诉我们你的品类、当前渠道以及目标市场。我们会给你一个清晰的建议：从哪里开始、怎么做、怎么扩张。",
 
     // PRIVACY PAGE
     "privacy.label": "法律信息",
     "privacy.title": "隐私政策",
     "privacy.intro":
-      "本页说明 ONDA 如何使用和保护你通过咨询表单向我们提供的个人数据。",
+      "本页说明 ONDA 如何使用并保护你在咨询表单中提交的个人信息。",
     "privacy.whoWeAre": "我们是谁",
     "privacy.whoWeAreBody":
-      "ONDA 是一家营销与品牌工作室，帮助全球品牌与欧洲的创作者和社群合作。你可以通过以下邮箱联系我们：",
-    "privacy.whatWeCollect": "我们收集哪些数据",
+      "ONDA 总部位于德国，帮助中国品牌在欧洲与创作者及社群开展合作。如需联系，请发送邮件至：",
+    "privacy.whatWeCollect": "我们收集哪些信息",
     "privacy.whatWeCollectIntro": "当你提交咨询表单时，我们会收集：",
     "privacy.collect.role": "你的身份（品牌方或创作者）",
-    "privacy.collect.name": "你的姓名和邮箱地址",
-    "privacy.collect.company":
-      "你的公司 / 品牌 / 频道名称（如提供）",
-    "privacy.collect.message":
-      "你发送给我们的关于需求、品类和市场的留言",
-    "privacy.howWeUse": "我们如何使用你的数据",
-    "privacy.howWeUseIntro": "我们仅将这些信息用于：",
-    "privacy.use.review": "审阅你的咨询",
-    "privacy.use.contact": "就潜在的合作或服务与你联系",
+    "privacy.collect.name": "你的姓名与邮箱地址",
+    "privacy.collect.company": "你的公司 / 品牌 / 账号名称（如有）",
+    "privacy.collect.message": "你提交的需求信息（品类、市场、目标等）",
+    "privacy.howWeUse": "我们如何使用这些信息",
+    "privacy.howWeUseIntro": "我们仅用于：",
+    "privacy.use.review": "评估你的咨询内容",
+    "privacy.use.contact": "与您联系并讨论可能的合作或服务",
     "privacy.noSell":
-      "我们不会出售你的数据，也不会将其分享给第三方用于其自身的营销目的。",
+      "我们不会出售你的信息，也不会将其提供给第三方用于其营销目的。",
     "privacy.legalBasis": "法律依据",
-    "privacy.legalBasisBody": "我们处理你个人数据的法律依据是",
+    "privacy.legalBasisBody": "我们处理个人信息的法律依据是",
     "privacy.legitimateInterest": "合法利益",
     "privacy.legalBasisEnd":
-      "，即回应业务咨询，以及在适用情况下，应你的要求在签订合同前采取的步骤。",
-    "privacy.retention": "我们保留数据多长时间",
+      "，即回应业务咨询，以及在适用情况下，应你的请求在签订合同前采取的必要步骤。",
+    "privacy.retention": "我们保存多久",
     "privacy.retentionBody":
-      "我们会在处理你的咨询及后续沟通所需的时间内保留你的数据。如果你要求删除数据，我们会照办，除非出于法律或合规原因需要保留。",
+      "我们仅在处理咨询与后续沟通所需的时间范围内保存信息。如你要求删除，我们会删除，除非法律或合规要求我们保留。",
     "privacy.rights": "你的权利",
     "privacy.rightsBody":
-      "根据适用的数据保护法，你可能有权访问、更正或删除你的个人数据，以及反对或限制某些形式的处理。",
-    "privacy.rightsContact": "如需行使这些权利，请发送邮件至：",
+      "根据适用的数据保护法律，你可能有权访问、更正或删除个人信息，并对某些处理方式提出反对或限制。",
+    "privacy.rightsContact": "如需行使上述权利，请发送邮件至：",
     "privacy.updates": "更新",
     "privacy.updatesBody":
-      "我们可能会不时更新本隐私政策。最新版本将始终在本页面提供。",
+      "我们可能会不定期更新本隐私政策，最新版本将始终在本页面展示。",
     "privacy.backHome": "← 返回首页",
     "privacy.disclaimer":
-      "本隐私政策仅供一般参考，不构成法律建议。请咨询合格律师，根据你的具体情况和管辖区域进行审核。",
+      "本隐私政策仅供一般信息参考，不构成法律意见。请根据你的具体情况与所在地法律咨询专业律师。",
 
     // CONSULTATION MODAL
     "modal.title": "预约咨询",
-    "modal.subtitle": "请简单介绍一下你自己，我们会尽快与你联系。",
+    "modal.subtitle": "简单介绍你的情况，我们会尽快回复。",
     "modal.roleLabel": "我是",
     "modal.role.brand": "品牌方",
     "modal.role.creator": "创作者",
@@ -384,32 +487,30 @@ export const translations: Record<Lang, Messages> = {
     "modal.namePlaceholder": "你的姓名",
     "modal.emailLabel": "邮箱",
     "modal.emailPlaceholder": "your@email.com",
-    "modal.companyLabel": "公司 / 品牌 / 频道名称",
+    "modal.companyLabel": "公司 / 品牌 / 账号名称",
     "modal.companyPlaceholder": "选填",
     "modal.messageLabel": "需求说明",
     "modal.messagePlaceholder":
-      "请介绍你的品牌或账号、所在品类，以及你希望在欧洲达成的目标。",
-    "modal.consentLabel":
-      "我同意按照隐私政策处理我的个人数据。",
+      "请说明你的品类、目前销售渠道，以及希望在欧洲达成的目标。",
+    "modal.consentLabel": "我同意按隐私政策处理我的个人信息。",
     "modal.consentHelper":
-      "我们仅会使用这些信息来回应你的咨询，你可以随时要求删除你的数据。",
-    "modal.submit": "发送请求",
+      "我们仅用于回复你的咨询，你也可以随时要求删除信息。",
+    "modal.submit": "发送",
     "modal.sending": "发送中...",
-    "modal.successTitle": "谢谢！",
-    "modal.successBody":
-      "我们已经收到你的信息，会尽快与你联系。",
+    "modal.successTitle": "已收到",
+    "modal.successBody": "谢谢，我们会尽快与你联系。",
     "modal.close": "关闭",
     "modal.privacyPolicy": "隐私政策",
 
     // VALIDATION
     "error.role": "请选择你是品牌方还是创作者。",
-    "error.name": "姓名为必填项。",
-    "error.emailRequired": "邮箱为必填项。",
+    "error.name": "请填写姓名。",
+    "error.emailRequired": "请填写邮箱。",
     "error.emailInvalid": "请输入有效的邮箱地址。",
     "error.messageRequired": "请填写需求说明。",
-    "error.messageShort": "需求说明至少需要 5 个字符。",
+    "error.messageShort": "需求说明至少 5 个字符。",
     "error.consent": "请先同意隐私政策再继续。",
     "error.submit":
-      "提交时出现问题，请重试或直接发送邮件至 andre@meetonda.com。"
+      "提交失败，请稍后重试，或直接发送邮件至 andre@meetonda.com。"
   }
 };

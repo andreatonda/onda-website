@@ -9,12 +9,14 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
+import FirstVisitLoader from "./components/FirstVisitLoader";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <FirstVisitLoader />
       <Toaster />
       <Sonner />
       <BrowserRouter>

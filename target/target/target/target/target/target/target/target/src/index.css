@@ -291,3 +291,73 @@ All colors MUST be HSL.
     transform: translateY(0) scale(1.01);
   }
 }
+
+/* First Visit Loader Animations */
+@keyframes loader-scale-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(10px);
+    filter: blur(8px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02) translateY(0);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes loader-wave {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.01) rotate(0.5deg);
+  }
+  50% {
+    transform: scale(0.99) rotate(-0.5deg);
+  }
+  75% {
+    transform: scale(1.01) rotate(0.3deg);
+  }
+}
+
+@keyframes loader-exit {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1) translateY(-20px);
+    filter: blur(12px);
+  }
+}
+
+@keyframes wave-reveal {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(150% at 50% 50%);
+  }
+}
+
+.loader-enter {
+  animation: loader-scale-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+             loader-wave 2s ease-in-out 0.8s infinite;
+}
+
+.loader-exit {
+  animation: loader-exit 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.wave-reveal {
+  background: transparent;
+  animation: wave-reveal 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
