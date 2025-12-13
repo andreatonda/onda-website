@@ -88,6 +88,74 @@ export const translations: Record<Lang, Messages> = {
     "servicesPage.title": "A coherent system for European growth.",
     "servicesPage.subtitle": "We structure our services as interconnected pillars — not a menu of disconnected offerings. TikTok and creators open the door, marketplaces build the foundation, and local execution sustains your growth.",
 
+    // HOW WE WORK SECTION
+    "servicesPage.howWeWork.label": "How we work",
+    "servicesPage.howWeWork.title": "A clear path from first market to European scale.",
+    "servicesPage.howWeWork.intro": "We work in phases. Each step builds on the last. The goal is sustainable growth — not short-term wins.",
+    "servicesPage.howWeWork.step1.title": "Market & channel assessment",
+    "servicesPage.howWeWork.step1.body": "We analyse where your brand fits in Europe. Which countries, which platforms, which channels make sense first. We consider competition, pricing, logistics and consumer behaviour.",
+    "servicesPage.howWeWork.step2.title": "Creator-led entry",
+    "servicesPage.howWeWork.step2.body": "We start with TikTok and creators. This is the fastest way to build visibility and test product-market fit in a new region. We handle creator sourcing, briefing, content and compliance.",
+    "servicesPage.howWeWork.step3.title": "Marketplace execution",
+    "servicesPage.howWeWork.step3.body": "Once there is traction, we activate marketplaces — TikTok Shop, Amazon EU, bol.com and others. We manage listings, localisation and day-to-day operations.",
+    "servicesPage.howWeWork.step4.title": "Multi-country expansion",
+    "servicesPage.howWeWork.step4.body": "Germany is usually the starting point. From there, we roll out to France, Italy, Spain, Netherlands and other markets — adapting strategy to each country.",
+
+    // SERVICE PILLARS
+    "servicesPage.pillars.label": "What we do",
+    "servicesPage.pillars.title": "Five pillars for European expansion.",
+
+    "servicesPage.pillar.creators.title": "Creator & influencer marketing",
+    "servicesPage.pillar.creators.body": "We source, vet and manage creators across European markets. Our focus is on long-term partnerships, not one-off posts. We handle briefings, content direction, compliance and reporting. All campaigns are structured to meet European advertising standards.",
+    "servicesPage.pillar.creators.point1": "Creator sourcing and vetting across Germany, France, Italy, Spain, Netherlands",
+    "servicesPage.pillar.creators.point2": "Campaign management from brief to delivery",
+    "servicesPage.pillar.creators.point3": "Long-term ambassador and partnership programs",
+    "servicesPage.pillar.creators.point4": "European compliance and disclosure requirements",
+
+    "servicesPage.pillar.tiktok.title": "TikTok Shop & social commerce",
+    "servicesPage.pillar.tiktok.body": "TikTok is the entry point for most brands we work with. We set up and manage TikTok Shop, build creator-driven content loops and run affiliate programs that convert. This is where brand awareness turns into sales.",
+    "servicesPage.pillar.tiktok.point1": "TikTok Shop setup and ongoing management",
+    "servicesPage.pillar.tiktok.point2": "Creator-driven content and affiliate programs",
+    "servicesPage.pillar.tiktok.point3": "Content-led conversion strategies",
+    "servicesPage.pillar.tiktok.point4": "Performance tracking and optimisation",
+
+    "servicesPage.pillar.marketplaces.title": "Marketplace management",
+    "servicesPage.pillar.marketplaces.body": "We manage your presence across EU marketplaces. One partner, multiple platforms. We handle account setup, listing localisation and daily operations — so you can focus on product and brand.",
+    "servicesPage.pillar.marketplaces.point1": "Amazon EU (Germany, France, Italy, Spain, Netherlands)",
+    "servicesPage.pillar.marketplaces.point2": "TikTok Shop",
+    "servicesPage.pillar.marketplaces.point3": "bol.com, eBay and category-specific platforms",
+    "servicesPage.pillar.marketplaces.point4": "Listing localisation and operational support",
+
+    "servicesPage.pillar.affiliate.title": "Affiliate & performance marketing",
+    "servicesPage.pillar.affiliate.body": "We build performance systems that scale without burning through budget. Creator affiliates, paid amplification and organic content work together. Everything is measured against ROAS, not vanity metrics.",
+    "servicesPage.pillar.affiliate.point1": "TikTok affiliate program setup and management",
+    "servicesPage.pillar.affiliate.point2": "Creator-led performance loops",
+    "servicesPage.pillar.affiliate.point3": "Paid and organic coordination",
+    "servicesPage.pillar.affiliate.point4": "ROAS-focused decision making",
+
+    "servicesPage.pillar.strategy.title": "Market entry & expansion strategy",
+    "servicesPage.pillar.strategy.body": "Europe is not one market. Each country has different rules, platforms, consumer habits and competitive dynamics. We help you decide where to start, which channels to prioritise, and how to sequence your expansion.",
+    "servicesPage.pillar.strategy.point1": "Germany as the typical entry point",
+    "servicesPage.pillar.strategy.point2": "Multi-country rollout planning",
+    "servicesPage.pillar.strategy.point3": "Channel and platform prioritisation",
+    "servicesPage.pillar.strategy.point4": "Localisation and cultural adaptation",
+
+    // GEOGRAPHIC REACH
+    "servicesPage.geo.label": "Where we operate",
+    "servicesPage.geo.title": "Germany-based. Active across Europe.",
+    "servicesPage.geo.body": "ONDA is headquartered in Germany — the largest e-commerce market in Europe. From here, we support brands entering and scaling across key European countries.",
+    "servicesPage.geo.markets": "Germany, France, Italy, Spain, Netherlands — and other priority markets depending on your category.",
+
+    // PARTNERSHIP
+    "servicesPage.partnership.label": "How we partner",
+    "servicesPage.partnership.title": "A scalable partner, not a vendor.",
+    "servicesPage.partnership.body": "We work alongside your team — not as an external agency, but as an extension of your operations. We understand the pace and priorities of Chinese brands. We communicate clearly and move quickly.",
+    "servicesPage.partnership.point1": "Long-term partnerships, not project-based engagements",
+    "servicesPage.partnership.point2": "Direct access to senior team members",
+    "servicesPage.partnership.point3": "Bilingual communication (English and Chinese)",
+    "servicesPage.partnership.point4": "Flexible structures that scale with your growth",
+    "servicesPage.partnership.closing": "We are the bridge between Chinese brands and European markets. We understand both sides. That is why brands stay with us.",
+
     // ABOUT PAGE
     "about.label": "About ONDA",
     "about.title": "The bridge between Chinese brands and European markets.",

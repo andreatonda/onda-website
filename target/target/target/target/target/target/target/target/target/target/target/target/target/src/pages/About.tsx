@@ -1,6 +1,9 @@
 import { Header } from "@/components/Header";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -10,15 +13,13 @@ const About = () => {
           <div className="shell">
             <div className="reveal max-w-3xl">
               <div className="text-xs uppercase tracking-wider text-accent mb-4">
-                About ONDA
+                {t("about.label")}
               </div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                Marketing, brand creation & creator strategy under one roof.
+                {t("about.title")}
               </h1>
               <p className="text-xl text-muted-foreground">
-                ONDA specialises in helping brands enter, grow and stay relevant in the
-                European market – with a strong focus on creator-led marketing and
-                community-driven retail.
+                {t("about.subtitle")}
               </p>
             </div>
           </div>
