@@ -59,34 +59,34 @@ export const translations: Record<Lang, Messages> = {
 
     // SERVICES SECTION (homepage)
     "services.sectionLabel": "What we offer",
-    "services.sectionTitle": "Growth pillars for European expansion",
+    "services.sectionTitle": "Four pillars for European expansion",
     "services.sectionBody":
-      "From first market entry to multi-country scale, we provide the strategy, creative and local execution you need — with TikTok and creator partnerships as the growth engine.",
+      "From first market entry to multi-country scale, we provide the strategy, execution and local expertise you need — with creators and TikTok as your entry point, and EU marketplaces as your foundation for growth.",
     "services.viewAll": "View all services",
 
-    "services.card.strategy": "Market Entry Strategy",
+    "services.card.strategy": "Market Entry & Expansion",
     "services.card.strategyBody":
-      "European market analysis, positioning, go-to-market planning and competitive landscape mapping tailored for Chinese brands.",
-    "services.card.content": "Content & Campaigns",
+      "Europe is fragmented — different rules, consumers and platforms per country. We help you decide where to start, which channels to use, and in what order to expand. Germany as entry point, multi-country rollout as the goal.",
+    "services.card.content": "Creator & Influencer Marketing",
     "services.card.contentBody":
-      "End-to-end campaign development — from concept and production to launch, localisation and performance tracking.",
-    "services.card.partnerships": "Creator Partnerships",
+      "Structured, compliant, European-first creator marketing. We source creators across key EU markets, manage campaigns end-to-end, and build long-term relationships — not one-off posts.",
+    "services.card.partnerships": "Marketplace & Channel Management",
     "services.card.partnershipsBody":
-      "Creator sourcing, relationship management, briefing, content direction and long-term partnership development.",
-    "services.card.community": "Community Building",
+      "One partner managing TikTok Shop, Amazon EU, bol.com, eBay and other relevant marketplaces. Account setup, listing localisation, and ongoing operational support.",
+    "services.card.community": "Affiliate & Performance Marketing",
     "services.card.communityBody":
-      "Building engaged communities around your brand through events, ambassador programs and digital presence.",
-    "services.card.retail": "Marketplace & Retail",
+      "Performance with structure. TikTok affiliate program setup, creator-led performance loops, paid and organic coordination — all focused on sustainable ROAS.",
+    "services.card.retail": "Content & Localisation",
     "services.card.retailBody":
-      "EU marketplace strategy, retail partnerships, pop-up activations and community-driven commerce.",
-    "services.card.expansion": "Multi-Market Scale",
+      "Local language adaptation, cultural translation and content direction that resonates in Germany, France, Italy, Spain, Netherlands and beyond.",
+    "services.card.expansion": "Strategic Partnership",
     "services.card.expansionBody":
-      "Expansion strategy across European markets — local partnerships, operations and sustainable growth.",
+      "We work alongside you as a long-term partner — not as an agency for hire. From initial market entry to scaling across multiple European countries.",
 
     // SERVICES PAGE
     "servicesPage.label": "Our Services",
-    "servicesPage.title": "Everything you need to grow in Europe.",
-    "servicesPage.subtitle": "We combine strategy, creative and local execution — with TikTok and creator partnerships as the entry point, and EU marketplaces as the foundation for scale.",
+    "servicesPage.title": "A coherent system for European growth.",
+    "servicesPage.subtitle": "We structure our services as interconnected pillars — not a menu of disconnected offerings. TikTok and creators open the door, marketplaces build the foundation, and local execution sustains your growth.",
 
     // ABOUT PAGE
     "about.label": "About ONDA",
