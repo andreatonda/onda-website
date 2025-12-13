@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,16 +10,41 @@ export const Header = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const { lang, setLang, t } = useLanguage();
+  const menuRef = useRef<HTMLElement>(null);
 
   const languages: { code: "en" | "zh"; label: string }[] = [
     { code: "en", label: "EN" },
     { code: "zh", label: "中文" }
   ];
 
+  const closeMobileMenu = () => setMobileOpen(false);
+
   const handleOpenModal = () => {
-    setMobileOpen(false);
+    closeMobileMenu();
     setModalOpen(true);
   };
+
+  // Close menu on scroll, escape, or outside click
+  useEffect(() => {
+    if (!mobileOpen) return;
+
+    const handleScroll = () => closeMobileMenu();
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeMobileMenu();
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("wheel", handleScroll, { passive: true });
+    window.addEventListener("touchmove", handleScroll, { passive: true });
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("touchmove", handleScroll);
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [mobileOpen]);
 
   return (
     <>
@@ -86,59 +111,71 @@ export const Header = () => {
           </nav>
         </div>
 
-        {/* Mobile menu panel */}
+        {/* Mobile menu backdrop + panel */}
         {mobileOpen && (
-          <nav className="md:hidden border-t border-border/60 bg-background/98 backdrop-blur-xl">
-            <div className="px-6 py-6 space-y-4">
-              <Link
-                to="/services"
-                onClick={() => setMobileOpen(false)}
-                className="block text-base font-medium text-foreground hover:text-accent transition-colors"
-              >
-                {t("nav.services")}
-              </Link>
-              <Link
-                to="/about"
-                onClick={() => setMobileOpen(false)}
-                className="block text-base font-medium text-foreground hover:text-accent transition-colors"
-              >
-                {t("nav.about")}
-              </Link>
-              <Link
-                to="/services#creators"
-                onClick={() => setMobileOpen(false)}
-                className="block text-base font-medium text-foreground hover:text-accent transition-colors"
-              >
-                {t("nav.creators")}
-              </Link>
+          <>
+            {/* Backdrop overlay */}
+            <div
+              className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm md:hidden"
+              onClick={closeMobileMenu}
+              aria-hidden="true"
+            />
+            {/* Menu panel */}
+            <nav
+              ref={menuRef}
+              className="fixed left-0 right-0 top-[80px] z-50 md:hidden border-t border-border/60 bg-background/98 backdrop-blur-xl animate-fade-in"
+            >
+              <div className="px-6 py-6 space-y-4">
+                <Link
+                  to="/services"
+                  onClick={closeMobileMenu}
+                  className="block text-base font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  {t("nav.services")}
+                </Link>
+                <Link
+                  to="/about"
+                  onClick={closeMobileMenu}
+                  className="block text-base font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  {t("nav.about")}
+                </Link>
+                <Link
+                  to="/services#creators"
+                  onClick={closeMobileMenu}
+                  className="block text-base font-medium text-foreground hover:text-accent transition-colors"
+                >
+                  {t("nav.creators")}
+                </Link>
 
-              {/* Mobile language switcher */}
-              <div className="flex items-center gap-2 pt-2">
-                {languages.map((l) => (
-                  <button
-                    key={l.code}
-                    type="button"
-                    onClick={() => setLang(l.code)}
-                    className={`px-3 py-1 rounded-full text-sm transition-all ${
-                      lang === l.code
-                        ? "bg-accent text-accent-foreground font-semibold"
-                        : "bg-black/40 border border-white/10 text-muted-foreground hover:text-foreground"
-                    }`}
-                  >
-                    {l.label}
-                  </button>
-                ))}
+                {/* Mobile language switcher */}
+                <div className="flex items-center gap-2 pt-2">
+                  {languages.map((l) => (
+                    <button
+                      key={l.code}
+                      type="button"
+                      onClick={() => setLang(l.code)}
+                      className={`px-3 py-1 rounded-full text-sm transition-all ${
+                        lang === l.code
+                          ? "bg-accent text-accent-foreground font-semibold"
+                          : "bg-black/40 border border-white/10 text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      {l.label}
+                    </button>
+                  ))}
+                </div>
+
+                <Button
+                  onClick={handleOpenModal}
+                  className="w-full mt-4 bg-accent hover:bg-accent/90 text-accent-foreground rounded-full btn-liquid"
+                >
+                  {t("nav.bookConsultation")}
+                  <span className="ml-1">↗</span>
+                </Button>
               </div>
-
-              <Button
-                onClick={handleOpenModal}
-                className="w-full mt-4 bg-accent hover:bg-accent/90 text-accent-foreground rounded-full btn-liquid"
-              >
-                {t("nav.bookConsultation")}
-                <span className="ml-1">↗</span>
-              </Button>
-            </div>
-          </nav>
+            </nav>
+          </>
         )}
       </header>
 

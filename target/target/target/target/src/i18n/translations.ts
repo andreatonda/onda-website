@@ -81,95 +81,91 @@ export const translations: Record<Lang, Messages> = {
 
     // SERVICES PAGE
     "servicesPage.label": "Our Services",
-    "servicesPage.title": "A practical system for European growth.",
+    "servicesPage.title": "Growth infrastructure for Europe.",
     "servicesPage.subtitle":
-      "Our services connect. TikTok and creators help you enter, marketplaces help you scale, and local execution helps you stay competitive in each country.",
+      "Creators open the door. Marketplaces build the revenue. Local execution keeps you competitive country by country.",
 
     // HOW WE WORK SECTION
     "servicesPage.howWeWork.label": "How we work",
-    "servicesPage.howWeWork.title":
-      "A clear path from first market to multi-country scale.",
+    "servicesPage.howWeWork.title": "Four phases. One system.",
     "servicesPage.howWeWork.intro":
-      "We work in phases. Each step builds on the last, so growth stays stable as you expand.",
-    "servicesPage.howWeWork.step1.title": "Market & channel assessment",
+      "Each phase builds on the last. Growth stays stable as you expand.",
+    "servicesPage.howWeWork.step1.title": "Market assessment",
     "servicesPage.howWeWork.step1.body":
-      "We look at category fit, country priorities, competition, pricing, logistics and channel selection — so you start in the right place.",
+      "Category fit, country priorities, competition, pricing, logistics. We figure out where to start and which channels to use first.",
     "servicesPage.howWeWork.step2.title": "Creator-led entry",
     "servicesPage.howWeWork.step2.body":
-      "We use creators and TikTok to build awareness and test what works locally. We manage creator sourcing, briefing, content direction, and compliance.",
+      "TikTok and creators build awareness and test local resonance. We handle sourcing, briefing, content direction, and compliance.",
     "servicesPage.howWeWork.step3.title": "Marketplace execution",
     "servicesPage.howWeWork.step3.body":
-      "When traction is real, we build the sales foundation: TikTok Shop, Amazon EU, bol.com and more. We manage listings, localisation, and operations.",
+      "Once traction is real, we build sales infrastructure: TikTok Shop, Amazon EU, bol.com. Listings, localisation, daily operations.",
     "servicesPage.howWeWork.step4.title": "Multi-country expansion",
     "servicesPage.howWeWork.step4.body":
-      "Germany is often the start. From there, we expand to France, Italy, Spain, the Netherlands and other markets — adapting the plan to each country.",
+      "Germany first, then France, Italy, Spain, Netherlands. The playbook adapts to each market.",
 
     // SERVICE PILLARS
     "servicesPage.pillars.label": "What we do",
-    "servicesPage.pillars.title": "Five core service areas.",
+    "servicesPage.pillars.title": "Five service areas. One operating system.",
 
     "servicesPage.pillar.creators.title": "Creator & influencer marketing",
     "servicesPage.pillar.creators.body":
-      "We source, vet and manage creators across Europe. We run campaigns with clear briefs, clean execution, and the right compliance standards for each market.",
-    "servicesPage.pillar.creators.point1":
-      "Creator sourcing across Germany, France, Italy, Spain, Netherlands",
-    "servicesPage.pillar.creators.point2": "Campaign management from brief to delivery",
-    "servicesPage.pillar.creators.point3": "Ambassador and long-term programs",
-    "servicesPage.pillar.creators.point4": "Disclosure and compliance support",
+      "We find, vet, and manage creators across Europe. Clear briefs, clean execution, proper compliance. Long-term relationships over one-off posts.",
+    "servicesPage.pillar.creators.point1": "Creator sourcing in DE, FR, IT, ES, NL",
+    "servicesPage.pillar.creators.point2": "Full campaign management",
+    "servicesPage.pillar.creators.point3": "Ambassador programs",
+    "servicesPage.pillar.creators.point4": "Disclosure and compliance",
 
     "servicesPage.pillar.tiktok.title": "TikTok Shop & social commerce",
     "servicesPage.pillar.tiktok.body":
-      "We set up and manage TikTok Shop and build creator-driven content loops. This is where awareness turns into measurable sales.",
-    "servicesPage.pillar.tiktok.point1": "TikTok Shop setup and management",
-    "servicesPage.pillar.tiktok.point2": "Creator content and affiliate programs",
-    "servicesPage.pillar.tiktok.point3": "Conversion-focused content direction",
-    "servicesPage.pillar.tiktok.point4": "Performance tracking and optimisation",
+      "We run TikTok Shop and build creator-driven content loops. Awareness turns into measurable sales.",
+    "servicesPage.pillar.tiktok.point1": "TikTok Shop setup",
+    "servicesPage.pillar.tiktok.point2": "Creator affiliate programs",
+    "servicesPage.pillar.tiktok.point3": "Content that converts",
+    "servicesPage.pillar.tiktok.point4": "Performance tracking",
 
     "servicesPage.pillar.marketplaces.title": "Marketplace management",
     "servicesPage.pillar.marketplaces.body":
-      "One partner for multiple platforms. We support account setup, listing localisation, and daily operations so your team can stay focused on product and supply chain.",
-    "servicesPage.pillar.marketplaces.point1":
-      "Amazon EU (Germany, France, Italy, Spain, Netherlands)",
+      "One partner for multiple platforms. Account setup, listing localisation, daily ops. Your team stays focused on product and supply chain.",
+    "servicesPage.pillar.marketplaces.point1": "Amazon EU (5 countries)",
     "servicesPage.pillar.marketplaces.point2": "TikTok Shop",
-    "servicesPage.pillar.marketplaces.point3": "bol.com, eBay, and category platforms",
-    "servicesPage.pillar.marketplaces.point4": "Localised listings and operations",
+    "servicesPage.pillar.marketplaces.point3": "bol.com, eBay, category platforms",
+    "servicesPage.pillar.marketplaces.point4": "Localised listings and ops",
 
     "servicesPage.pillar.affiliate.title": "Affiliate & performance marketing",
     "servicesPage.pillar.affiliate.body":
-      "We build performance systems that stay efficient as you scale — combining affiliates, creators, and paid support when it makes sense.",
-    "servicesPage.pillar.affiliate.point1":
-      "TikTok affiliate program setup and management",
-    "servicesPage.pillar.affiliate.point2": "Creator-led performance loops",
-    "servicesPage.pillar.affiliate.point3": "Paid and organic coordination",
-    "servicesPage.pillar.affiliate.point4": "Outcome-based decision making",
+      "Performance systems that stay efficient at scale. Affiliates, creators, paid support when it makes sense.",
+    "servicesPage.pillar.affiliate.point1": "TikTok affiliate setup",
+    "servicesPage.pillar.affiliate.point2": "Creator performance loops",
+    "servicesPage.pillar.affiliate.point3": "Paid + organic coordination",
+    "servicesPage.pillar.affiliate.point4": "Outcome-based decisions",
 
-    "servicesPage.pillar.strategy.title": "Market entry & expansion strategy",
+    "servicesPage.pillar.strategy.title": "Market entry & expansion",
     "servicesPage.pillar.strategy.body":
-      "Each European country is different. We help you choose the right sequence, channels, and local approach — so expansion doesn’t break what’s already working.",
-    "servicesPage.pillar.strategy.point1": "Germany as a common entry point",
-    "servicesPage.pillar.strategy.point2": "Multi-country rollout planning",
-    "servicesPage.pillar.strategy.point3": "Channel and platform prioritisation",
-    "servicesPage.pillar.strategy.point4": "Localisation and adaptation",
+      "Each European country is different. We help you pick the right sequence, channels, and local approach.",
+    "servicesPage.pillar.strategy.point1": "Germany as entry point",
+    "servicesPage.pillar.strategy.point2": "Multi-country rollout",
+    "servicesPage.pillar.strategy.point3": "Channel prioritisation",
+    "servicesPage.pillar.strategy.point4": "Local adaptation",
 
     // GEOGRAPHIC REACH
     "servicesPage.geo.label": "Where we operate",
-    "servicesPage.geo.title": "Based in Germany. Active across Europe.",
+    "servicesPage.geo.title": "Germany HQ. Active across Europe.",
     "servicesPage.geo.body":
-      "ONDA is headquartered in Germany — Europe’s largest e-commerce market. From here, we support brands entering and scaling across key countries.",
+      "We are headquartered in Germany, Europe's largest e-commerce market. From here, we support brands across priority countries.",
     "servicesPage.geo.markets":
-      "Germany, France, Italy, Spain, Netherlands — plus other priority markets depending on your category.",
+      "Germany, France, Italy, Spain, Netherlands, plus others depending on category.",
 
     // PARTNERSHIP
     "servicesPage.partnership.label": "How we partner",
-    "servicesPage.partnership.title": "A scalable partner, not a vendor.",
+    "servicesPage.partnership.title": "A partner, not a vendor.",
     "servicesPage.partnership.body":
-      "We work alongside your team and stay involved as you grow. Clear communication, fast execution, and a focus on what actually moves the business.",
-    "servicesPage.partnership.point1": "Long-term partnerships over one-off projects",
+      "We work alongside your team and stay involved as you grow. Clear communication, fast execution, focus on what moves the business.",
+    "servicesPage.partnership.point1": "Long-term over one-off",
     "servicesPage.partnership.point2": "Direct access to senior operators",
-    "servicesPage.partnership.point3": "Bilingual communication (English and Chinese)",
-    "servicesPage.partnership.point4": "Flexible scope that scales with your needs",
+    "servicesPage.partnership.point3": "Bilingual (English + Chinese)",
+    "servicesPage.partnership.point4": "Scope that scales with you",
     "servicesPage.partnership.closing":
-      "We understand both sides — how Chinese brands operate, and how Europe works in practice.",
+      "We understand both sides: how Chinese brands operate, and how Europe works in practice.",
 
     // ABOUT PAGE
     "about.label": "About ONDA",

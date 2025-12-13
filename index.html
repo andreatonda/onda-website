@@ -4,18 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ONDA – Marketing, Advertising & Brand Creation</title>
-    <meta name="description" content="ONDA is a marketing and brand creation studio specialising in digital campaigns, content production, creator partnerships and European market entry." />
+    <meta
+      name="description"
+      content="ONDA is a marketing and brand creation studio specialising in digital campaigns, content production, creator partnerships and European market entry."
+    />
     <meta name="author" content="ONDA" />
-   <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png?v=1" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png?v=1" />
 
     <meta property="og:title" content="ONDA – Marketing, Advertising & Brand Creation" />
-    <meta property="og:description" content="ONDA is a marketing and brand creation studio specialising in digital campaigns, content production, creator partnerships and European market entry." />
+    <meta
+      property="og:description"
+      content="ONDA is a marketing and brand creation studio specialising in digital campaigns, content production, creator partnerships and European market entry."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Lovable" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <!-- SPA redirect restore (for GitHub Pages / static hosting refresh on sub-pages) -->
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search);
+        const redirect = params.get("redirect");
+        if (redirect) {
+          window.history.replaceState(null, "", redirect);
+        }
+      })();
+    </script>
   </head>
 
   <body>
