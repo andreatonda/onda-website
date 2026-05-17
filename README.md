@@ -1,73 +1,75 @@
-# Welcome to your Lovable project
+# Bob — sito statico
 
-## Project info
+Sito statico per [Bob](https://bob.meetonda.com), marketplace italiano che mette in contatto privati e professionisti locali.
 
-**URL**: https://lovable.dev/projects/02f967f1-fe9e-4236-9bbe-dff32e068407
+## Stack
 
-## How can I edit this code?
+- HTML / CSS / JS statico (zero build step richiesto).
+- Hostato su GitHub Pages con dominio custom `bob.meetonda.com`.
 
-There are several ways of editing your application.
+## Struttura
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/02f967f1-fe9e-4236-9bbe-dff32e068407) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+/
+├── index.html                  Home
+├── come-funziona.html
+├── professionisti.html
+├── faq.html
+├── contatti.html
+├── 404.html
+├── servizi/                    pagine categoria
+│   ├── dj-per-eventi.html
+│   ├── fotografi.html
+│   ├── ripetizioni.html
+│   └── supporto-excel.html
+├── citta/                      pagine città
+│   ├── milano.html
+│   ├── roma.html
+│   └── torino.html
+├── assets/
+│   ├── styles.css
+│   └── main.js
+├── robots.txt
+├── sitemap.xml
+├── CNAME                       bob.meetonda.com
+├── .nojekyll                   disabilita Jekyll su Pages
+└── .github/workflows/pages.yml deploy automatico
 ```
 
-**Edit a file directly in GitHub**
+## Sviluppo locale
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Apri `index.html` nel browser, oppure servi la cartella con un piccolo server:
 
-**Use GitHub Codespaces**
+```bash
+python3 -m http.server 8000
+# poi http://localhost:8000
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Tutti i link sono relativi, quindi il sito funziona anche in locale.
 
-## What technologies are used for this project?
+## Deploy
 
-This project is built with:
+Il deploy è automatico su `main`:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Push o merge su `main`.
+2. Il workflow `.github/workflows/pages.yml` carica tutta la cartella su GitHub Pages.
+3. Il file `CNAME` punta GitHub Pages a `bob.meetonda.com`.
 
-## How can I deploy this project?
+Per il primo deploy, in **Settings → Pages**:
 
-Simply open [Lovable](https://lovable.dev/projects/02f967f1-fe9e-4236-9bbe-dff32e068407) and click on Share -> Publish.
+- **Source**: GitHub Actions.
+- **Custom domain**: `bob.meetonda.com` (già impostato via `CNAME`).
+- **Enforce HTTPS**: attivo.
 
-## Can I connect a custom domain to my Lovable project?
+DNS sul dominio `meetonda.com`:
 
-Yes, you can!
+```
+CNAME    bob    andreatonda.github.io.
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Aggiungere una nuova pagina
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1. Crea il file HTML usando come riferimento una pagina esistente (intestazione + footer condivisi).
+2. Aggiungi titolo + meta description unici.
+3. Aggiungi la nuova URL a `sitemap.xml`.
+4. Linka la pagina dalla home, dal footer e dalle pagine correlate (categoria ↔ città).
