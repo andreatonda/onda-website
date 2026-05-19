@@ -189,7 +189,7 @@
         state.city = o;
         userSay(o.label);
         if (o.slug === 'altro') {
-          await botSay("Per ora sono attivo a Milano, Roma e Torino. Posso comunque inoltrare la tua richiesta: i pro nelle nuove città vengono aggiunti rapidamente.");
+          await botSay("Per ora sono attivo a Milano, Roma e Torino. Posso comunque inoltrare la tua richiesta: i professionisti nelle nuove città vengono aggiunti rapidamente.");
         }
         await botSay("Quando ti servirebbe?");
         clienteStep3();
@@ -207,6 +207,24 @@
           state.when = o.value;
           state.whenLabel = o.label;
           userSay(o.label);
+          clienteStep4();
+        }
+      );
+    }
+    async function clienteStep4() {
+      await botSay("Un'ultima cosa: <strong>che budget hai in mente?</strong> Indicarlo aiuta i professionisti a darti una proposta seria e a evitare perdite di tempo da entrambe le parti. Non è vincolante.");
+      setOptions(
+        [
+          { label: 'Sotto 100€', value: '<100€' },
+          { label: '100–500€', value: '100-500€' },
+          { label: '500–2000€', value: '500-2000€' },
+          { label: 'Oltre 2000€', value: '2000€+' },
+          { label: 'Non lo so ancora', value: 'non so' },
+        ],
+        async function (o) {
+          state.budget = o.value;
+          state.budgetLabel = o.label;
+          userSay(o.label);
           await botSay("Tutto chiaro. Ti porto al posto giusto.");
           clienteShowResult();
         }
@@ -222,7 +240,7 @@
         '<p class="muted mb-0">Da qui puoi richiedere un preventivo gratuito. Ho già compilato per te quello che mi hai detto.</p>' +
         '<div class="cta-row">' +
         '<a class="btn btn-primary" href="' + serviceUrl + '">Richiedi preventivo</a>' +
-        (cityUrl ? '<a class="btn btn-secondary" href="' + cityUrl + '">Vedi pro a ' + c.label + '</a>' : '') +
+        (cityUrl ? '<a class="btn btn-secondary" href="' + cityUrl + '">Vedi professionisti a ' + c.label + '</a>' : '') +
         '</div>';
       resultEl.innerHTML = html;
       resultEl.style.display = 'block';
@@ -231,6 +249,7 @@
           service: s.label, slug: s.slug,
           city: c ? c.label : '',
           when: state.when, whenLabel: state.whenLabel,
+          budget: state.budget, budgetLabel: state.budgetLabel,
           message: state.freeText
         }));
       } catch (_) {}
@@ -240,7 +259,7 @@
     // FLUSSO PROFESSIONISTA
     // ============================================================
     async function proStep1() {
-      await botSay("Fantastico, ho sempre bisogno di nuovi pro. Che servizio offri?");
+      await botSay("Fantastico, ho sempre bisogno di nuovi professionisti. Che servizio offri?");
       setOptions(services.map(function (s) { return { label: s.label, value: s }; }).concat([{ label: 'Altro', value: { slug: 'altro', label: 'Altro' } }]), async function (o) {
         state.service = o.value;
         userSay(o.label);
@@ -295,20 +314,24 @@
             async function (o2) {
               state.capacity = o2.value;
               userSay(o2.label);
-              await botSay("Lasciami la tua email: ti ricontatto io per attivare il profilo.");
-              setInput('La tua email', async function (v) {
-                if (!isEmail(v)) {
-                  await botSay("Mmm, questa email non sembra valida. Riprova?");
-                  setInput('La tua email', arguments.callee, 'email');
-                  return;
-                }
-                state.email = v;
-                await botSay("Ultimo passaggio: lasciami il tuo nome (e cognome se vuoi).");
-                setInput('Il tuo nome', async function (n) {
-                  state.name = n;
-                  await proSubmit();
-                });
-              }, 'email');
+              await botSay("Su BOB la <strong>trasparenza dei prezzi</strong> è il valore principale: i clienti vedono subito chi dichiara la propria tariffa. Qual è la tua <strong>tariffa oraria indicativa</strong> in €/h? (solo manodopera, eventuali materiali a parte)");
+              setInput('Es. 35', async function (rate) {
+                state.hourlyRate = rate;
+                await botSay("Perfetto, segnato: <strong>" + rate + " €/h</strong>. Lasciami la tua email: ti ricontatto io per attivare il profilo.");
+                setInput('La tua email', async function emailHandler(v) {
+                  if (!isEmail(v)) {
+                    await botSay("Mmm, questa email non sembra valida. Riprova?");
+                    setInput('La tua email', emailHandler, 'email');
+                    return;
+                  }
+                  state.email = v;
+                  await botSay("Ultimo passaggio: lasciami il tuo nome (e cognome se vuoi).");
+                  setInput('Il tuo nome', async function (n) {
+                    state.name = n;
+                    await proSubmit();
+                  });
+                }, 'email');
+              }, 'number');
             }
           );
         }
@@ -320,7 +343,7 @@
       await botSay("Un attimo, ti salvo nei miei contatti...");
       try {
         var fd = new FormData();
-        fd.append('_subject', 'Iscrizione PRO da chat — BOB');
+        fd.append('_subject', 'Iscrizione professionista da chat — BOB');
         fd.append('_origine', 'bob.meetonda.com/chat');
         fd.append('tipo', 'professionista');
         fd.append('nome', state.name || '');
@@ -329,6 +352,7 @@
         fd.append('citta', state.city ? state.city.label : '');
         fd.append('esperienza', state.experience || '');
         fd.append('capacita_mensile', state.capacity || '');
+        fd.append('tariffa_oraria_eur', state.hourlyRate || '');
         var res = await fetch(FORMSPREE, {
           method: 'POST',
           headers: { 'Accept': 'application/json' },
@@ -358,7 +382,8 @@
           name: state.name, email: state.email,
           service: state.service ? state.service.label : '',
           city: state.city ? state.city.label : '',
-          experience: state.experience, capacity: state.capacity
+          experience: state.experience, capacity: state.capacity,
+          hourlyRate: state.hourlyRate
         }));
       } catch (_) {}
     }
@@ -371,14 +396,16 @@
     var lead = sessionStorage.getItem('bob_lead');
     if (lead) {
       var data = JSON.parse(lead);
-      var serviceField = document.querySelector('form[data-bob-form] [name="servizio"]');
-      var cityField = document.querySelector('form[data-bob-form] [name="citta"]');
-      var msgField = document.querySelector('form[data-bob-form] [name="messaggio"]');
-      var whenField = document.querySelector('form[data-bob-form] [name="quando"]');
+      var serviceField = document.querySelector('form[data-bob-form][data-role="cliente"] [name="servizio"]') || document.querySelector('form[data-bob-form] [name="servizio"]');
+      var cityField = document.querySelector('form[data-bob-form][data-role="cliente"] [name="citta"]') || document.querySelector('form[data-bob-form] [name="citta"]');
+      var msgField = document.querySelector('form[data-bob-form][data-role="cliente"] [name="messaggio"]') || document.querySelector('form[data-bob-form] [name="messaggio"]');
+      var whenField = document.querySelector('form[data-bob-form][data-role="cliente"] [name="quando"]') || document.querySelector('form[data-bob-form] [name="quando"]');
+      var budgetField = document.querySelector('form[data-bob-form][data-role="cliente"] [name="budget"]') || document.querySelector('form[data-bob-form] [name="budget"]');
       if (serviceField && data.service && !serviceField.value) serviceField.value = data.service;
       if (cityField && data.city && !cityField.value) cityField.value = data.city;
       if (msgField && data.message && !msgField.value) msgField.value = data.message;
       if (whenField && data.when && !whenField.value) whenField.value = data.when;
+      if (budgetField && data.budget && !budgetField.value) budgetField.value = data.budget;
     }
   } catch (_) {}
 
@@ -387,16 +414,18 @@
     var proLead = sessionStorage.getItem('bob_pro_lead');
     if (proLead) {
       var pd = JSON.parse(proLead);
-      var f = document.querySelector('form[data-bob-form]');
+      var f = document.querySelector('form[data-bob-form][data-role="professionista"]') || document.querySelector('form[data-bob-form]');
       if (f) {
         var nameF = f.querySelector('[name="nome"]');
         var emailF = f.querySelector('[name="email"]');
         var svcF = f.querySelector('[name="servizio"]');
         var cityF = f.querySelector('[name="citta"]');
+        var rateF = f.querySelector('[name="tariffa_oraria_eur"]');
         if (nameF && pd.name && !nameF.value) nameF.value = pd.name;
         if (emailF && pd.email && !emailF.value) emailF.value = pd.email;
         if (svcF && pd.service && !svcF.value) svcF.value = pd.service;
         if (cityF && pd.city && !cityF.value) cityF.value = pd.city;
+        if (rateF && pd.hourlyRate && !rateF.value) rateF.value = pd.hourlyRate;
       }
     }
   } catch (_) {}

@@ -14,7 +14,7 @@ Sito statico per [BOB](https://bob.meetonda.com), marketplace italiano che mette
 /
 ├── index.html                  Home (con chat wizard)
 ├── come-funziona.html
-├── professionisti.html         (con form iscrizione PRO)
+├── professionisti.html         (con form iscrizione professionista)
 ├── faq.html
 ├── contatti.html               (con form + chat)
 ├── 404.html

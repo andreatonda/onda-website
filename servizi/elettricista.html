@@ -78,7 +78,7 @@
   <section>
     <div class="container">
       <h2 class="section-title">Domande frequenti</h2>
-      <details><summary>Come trovo un elettricista certificato?</summary><p>Tutti i pro su BOB hanno la qualifica e possono rilasciare la dichiarazione di conformità DM 37/08.</p></details><details><summary>Si fa pronto intervento elettrico la sera?</summary><p>Sì, alcuni elettricisti su BOB offrono pronto intervento 24h con tariffe maggiorate.</p></details><details><summary>Posso avere un preventivo gratuito?</summary><p>Per piccoli interventi spesso sì. Per impianti completi serve un sopralluogo, anche quello solitamente gratuito.</p></details>
+      <details><summary>Come trovo un elettricista certificato?</summary><p>Tutti i professionisti su BOB hanno la qualifica e possono rilasciare la dichiarazione di conformità DM 37/08.</p></details><details><summary>Si fa pronto intervento elettrico la sera?</summary><p>Sì, alcuni elettricisti su BOB offrono pronto intervento 24h con tariffe maggiorate.</p></details><details><summary>Posso avere un preventivo gratuito?</summary><p>Per piccoli interventi spesso sì. Per impianti completi serve un sopralluogo, anche quello solitamente gratuito.</p></details>
     </div>
   </section>
 
@@ -86,7 +86,7 @@
     <div class="container">
       <h2 class="section-title">Richiedi un preventivo per Elettricista</h2>
       <p class="section-sub">Compila il form: rispondiamo entro 24h lavorative.</p>
-      <form class="form-wrap" data-bob-form action="https://formspree.io/f/manrbvok" method="POST" novalidate>
+      <form class="form-wrap" data-bob-form data-role="cliente" action="https://formspree.io/f/manrbvok" method="POST" novalidate>
   <input type="hidden" name="_subject" value="Richiesta Elettricista — BOB">
   <input type="hidden" name="_origine" value="bob.meetonda.com">
   <div class="form-row two">
@@ -115,6 +115,13 @@
       <select id="servizio" name="servizio"><option value="Idraulico">Idraulico</option><option value="Elettricista" selected>Elettricista</option><option value="Pulizie">Pulizie</option><option value="Imbianchino">Imbianchino</option><option value="Traslochi">Traslochi</option><option value="Tuttofare">Tuttofare</option><option value="Personal trainer">Personal trainer</option><option value="DJ per eventi">DJ per eventi</option><option value="Fotografi">Fotografi</option><option value="Ripetizioni">Ripetizioni</option><option value="Supporto Excel">Supporto Excel</option><option value="Altro">Altro</option></select>
     </div>
     <div class="form-field">
+      <label for="budget">Budget indicativo (€)</label>
+      <input id="budget" name="budget" type="text" required placeholder="Es. 200-400€ oppure “non so”">
+      <span class="hint">Anche una stima ampia aiuta i professionisti a proporti soluzioni realistiche.</span>
+    </div>
+  </div>
+  <div class="form-row two">
+    <div class="form-field">
       <label for="quando">Quando ti serve</label>
       <select id="quando" name="quando">
         <option value="">Seleziona</option>
@@ -124,6 +131,7 @@
         <option value="esplora">Sto esplorando</option>
       </select>
     </div>
+    <div class="form-field"></div>
   </div>
   <div class="form-row">
     <div class="form-field">

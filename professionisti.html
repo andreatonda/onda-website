@@ -42,7 +42,7 @@
   <section class="hero">
     <div class="container">
       <h1>Lavora con BOB. Più clienti, zero lead a pagamento.</h1>
-      <p class="lead">BOB è il marketplace italiano dove pubblichi il tuo profilo, ricevi richieste in target e paghi solo quando il lavoro si chiude davvero.</p>
+      <p class="lead">BOB è il marketplace italiano dove pubblichi il tuo profilo, ricevi richieste in target e paghi solo quando il lavoro si chiude davvero. La <strong>trasparenza dei prezzi</strong> è ciò che ci differenzia.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#iscrizione">Richiedi l'iscrizione</a>
         <a class="btn btn-secondary" href="#vantaggi">Scopri i vantaggi</a>
@@ -66,6 +66,17 @@
 
   <section>
     <div class="container">
+      <h2 class="section-title">Dichiara la tua tariffa: per te è un vantaggio</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>Più contatti, meno chiamate a vuoto</h3><p>I clienti che vedono la tua tariffa e ti contattano già sanno cosa aspettarsi. Meno trattative inutili.</p></div>
+        <div class="card"><h3>Visibilità prioritaria</h3><p>I profili che dichiarano la tariffa oraria appaiono in alto nei risultati: i clienti scelgono più in fretta.</p></div>
+        <div class="card"><h3>Materiali a parte, sempre</h3><p>La tariffa riguarda la manodopera. Eventuali materiali, trasferte o sopralluoghi li specifichi tu nella proposta.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="container">
       <h2 class="section-title">Come funziona per te</h2>
       <div class="steps">
         <div class="step"><div class="step-num">1</div><div class="step-body"><h3>Crea il profilo</h3><p>Categorie, città di copertura, tariffe indicative e qualche foto.</p></div></div>
@@ -75,12 +86,12 @@
     </div>
   </section>
 
-  <section id="iscrizione" class="soft">
+  <section id="iscrizione">
     <div class="container">
       <h2 class="section-title">Richiedi l'iscrizione</h2>
-      <p class="section-sub">Stiamo selezionando i primi professionisti per il pilota. Raccontaci cosa fai.</p>
-      <form class="form-wrap" data-bob-form action="https://formspree.io/f/manrbvok" method="POST" novalidate>
-  <input type="hidden" name="_subject" value="Iscrizione PRO — BOB">
+      <p class="section-sub">Stiamo selezionando i primi professionisti per il pilota. Raccontaci cosa fai e dichiara la tua tariffa oraria.</p>
+      <form class="form-wrap" data-bob-form data-role="professionista" action="https://formspree.io/f/manrbvok" method="POST" novalidate>
+  <input type="hidden" name="_subject" value="Iscrizione professionista — BOB">
   <input type="hidden" name="_origine" value="bob.meetonda.com">
   <div class="form-row two">
     <div class="form-field">
@@ -108,6 +119,13 @@
       <select id="servizio" name="servizio"><option value="Idraulico">Idraulico</option><option value="Elettricista">Elettricista</option><option value="Pulizie">Pulizie</option><option value="Imbianchino">Imbianchino</option><option value="Traslochi">Traslochi</option><option value="Tuttofare">Tuttofare</option><option value="Personal trainer">Personal trainer</option><option value="DJ per eventi">DJ per eventi</option><option value="Fotografi">Fotografi</option><option value="Ripetizioni">Ripetizioni</option><option value="Supporto Excel">Supporto Excel</option><option value="Altro">Altro</option></select>
     </div>
     <div class="form-field">
+      <label for="tariffa_oraria">Tariffa oraria (€/h)</label>
+      <input id="tariffa_oraria" name="tariffa_oraria" type="number" min="0" step="1" required placeholder="Es. 30">
+      <span class="hint">Dichiarala apertamente. Su BOB la trasparenza dei prezzi è il valore principale.</span>
+    </div>
+  </div>
+  <div class="form-row two">
+    <div class="form-field">
       <label for="quando">Quando ti serve</label>
       <select id="quando" name="quando">
         <option value="">Seleziona</option>
@@ -117,11 +135,12 @@
         <option value="esplora">Sto esplorando</option>
       </select>
     </div>
+    <div class="form-field"></div>
   </div>
   <div class="form-row">
     <div class="form-field">
-      <label for="messaggio">Descrivi il lavoro</label>
-      <textarea id="messaggio" name="messaggio" required placeholder="Più dettagli ci dai (zona, orari, esigenze), più precise saranno le proposte."></textarea>
+      <label for="messaggio">Raccontaci di te</label>
+      <textarea id="messaggio" name="messaggio" required placeholder="Esperienza, specializzazioni, zona di lavoro. Se la tariffa varia (materiali esclusi, sopralluogo, ecc.), spiegalo qui."></textarea>
     </div>
   </div>
   <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">

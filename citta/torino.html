@@ -117,8 +117,8 @@
   <section id="richiesta">
     <div class="container">
       <h2 class="section-title">Richiedi un preventivo a Torino</h2>
-      <p class="section-sub">Compila il form: i pro nella tua zona ti contatteranno.</p>
-      <form class="form-wrap" data-bob-form action="https://formspree.io/f/manrbvok" method="POST" novalidate>
+      <p class="section-sub">Compila il form: i professionisti nella tua zona ti contatteranno.</p>
+      <form class="form-wrap" data-bob-form data-role="cliente" action="https://formspree.io/f/manrbvok" method="POST" novalidate>
   <input type="hidden" name="_subject" value="Richiesta Torino — BOB">
   <input type="hidden" name="_origine" value="bob.meetonda.com">
   <div class="form-row two">
@@ -147,6 +147,13 @@
       <select id="servizio" name="servizio"><option value="Idraulico">Idraulico</option><option value="Elettricista">Elettricista</option><option value="Pulizie">Pulizie</option><option value="Imbianchino">Imbianchino</option><option value="Traslochi">Traslochi</option><option value="Tuttofare">Tuttofare</option><option value="Personal trainer">Personal trainer</option><option value="DJ per eventi">DJ per eventi</option><option value="Fotografi">Fotografi</option><option value="Ripetizioni">Ripetizioni</option><option value="Supporto Excel">Supporto Excel</option><option value="Altro">Altro</option></select>
     </div>
     <div class="form-field">
+      <label for="budget">Budget indicativo (€)</label>
+      <input id="budget" name="budget" type="text" required placeholder="Es. 200-400€ oppure “non so”">
+      <span class="hint">Anche una stima ampia aiuta i professionisti a proporti soluzioni realistiche.</span>
+    </div>
+  </div>
+  <div class="form-row two">
+    <div class="form-field">
       <label for="quando">Quando ti serve</label>
       <select id="quando" name="quando">
         <option value="">Seleziona</option>
@@ -156,6 +163,7 @@
         <option value="esplora">Sto esplorando</option>
       </select>
     </div>
+    <div class="form-field"></div>
   </div>
   <div class="form-row">
     <div class="form-field">
